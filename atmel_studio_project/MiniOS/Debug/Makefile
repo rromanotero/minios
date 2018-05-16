@@ -132,6 +132,7 @@ C_SRCS +=  \
 ../src/minios/hal/hal_io.c \
 ../src/minios/hal/hal_memreg.c \
 ../src/minios/hal/hal_nvmem.c \
+../src/minios/hal/hal_pio.c \
 ../src/minios/loader.c \
 ../src/minios/scheduler.c \
 ../src/minios/syscalls.c \
@@ -194,6 +195,7 @@ src/minios/hal/hal_cpu_asm.o \
 src/minios/hal/hal_io.o \
 src/minios/hal/hal_memreg.o \
 src/minios/hal/hal_nvmem.o \
+src/minios/hal/hal_pio.o \
 src/minios/loader.o \
 src/minios/scheduler.o \
 src/minios/syscalls.o \
@@ -248,6 +250,7 @@ src/minios/hal/hal_cpu_asm.o \
 src/minios/hal/hal_io.o \
 src/minios/hal/hal_memreg.o \
 src/minios/hal/hal_nvmem.o \
+src/minios/hal/hal_pio.o \
 src/minios/loader.o \
 src/minios/scheduler.o \
 src/minios/syscalls.o \
@@ -302,6 +305,7 @@ src/minios/hal/hal_cpu_asm.d \
 src/minios/hal/hal_io.d \
 src/minios/hal/hal_memreg.d \
 src/minios/hal/hal_nvmem.d \
+src/minios/hal/hal_pio.d \
 src/minios/loader.d \
 src/minios/scheduler.d \
 src/minios/syscalls.d \
@@ -356,6 +360,7 @@ src/minios/hal/hal_cpu_asm.d \
 src/minios/hal/hal_io.d \
 src/minios/hal/hal_memreg.d \
 src/minios/hal/hal_nvmem.d \
+src/minios/hal/hal_pio.d \
 src/minios/loader.d \
 src/minios/scheduler.d \
 src/minios/syscalls.d \
@@ -415,6 +420,8 @@ LINKER_SCRIPT_DEP+=  \
 
 
 # AVR32/GNU C Compiler
+
+
 
 
 

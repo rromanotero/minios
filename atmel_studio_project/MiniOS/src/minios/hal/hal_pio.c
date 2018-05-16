@@ -6,6 +6,7 @@
  */ 
 
 #include <asf.h>
+#include "hal_pio.h"
 
 // Create PIO pins
 ioport_pin_t hal_create_pio_pin(pio_port pp, int pin_num){

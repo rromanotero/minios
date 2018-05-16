@@ -93,12 +93,13 @@ void system_panic( const uint8_t* panic_msg ){
 	//Show panic LED sequence.
 	bool led_state = false;
 	while( true ){
-		//toggle all LEDs
-		for( uint32_t i=0; i<5; i++ )
-		hal_io_led_write( i, led_state = !led_state );
+		//toggle all board LEDs
+		// FIX THIS WHEN HAL IS FINISHED
+		//for( uint32_t i=0; i<5; i++ )
+		//hal_io_led_write( i, led_state = !led_state );
 		
 		//pause
-		hal_cpu_delay(150);
+		//hal_cpu_delay(150);
 	}
 }
 
@@ -112,7 +113,8 @@ static void io_init(void){
 	show_init_info( "Starting SerialB" );		hal_io_serial_start_poll( SerialB, SYS_CONF_SERIAL_A_BAUDRATE );
 	show_init_info( "Starting Light Sensor" );	hal_io_sensor_start_poll( SensorLight );
 	show_init_info( "Starting Temp Sensor" );	hal_io_sensor_start_poll( SensorTemp );
-	show_init_info( "Starting LEDs" );			hal_io_led_start();
+	// FIX THIS
+	//show_init_info( "Starting LEDs" );			hal_io_led_start();
 	show_init_info( "Starting Clock" );			hal_io_clock_start();
 	
 	//Clock starts at 00:13:00 July 14, 1991
@@ -135,11 +137,12 @@ static void io_init(void){
 static void init_sequence(void){
 		
 	//All LEDs On
-	hal_io_led_write(Led0, LedOn);
-	hal_io_led_write(Led1, LedOn);
-	hal_io_led_write(Led2, LedOn);
-	hal_io_led_write(Led3, LedOn);
-	hal_io_led_write(Led4, LedOn);
+	// FIX THIS WHEN HAL FINISHED
+	//hal_io_led_write(Led0, LedOn);
+	//hal_io_led_write(Led1, LedOn);
+	//hal_io_led_write(Led2, LedOn);
+	//hal_io_led_write(Led3, LedOn);
+	//hal_io_led_write(Led4, LedOn);
 		
 	//Screen "on"
 #ifdef SYS_IO_DISPLAY_PRESENT
@@ -154,11 +157,12 @@ static void init_sequence(void){
 	hal_cpu_delay(50);
 	
 	//All LEDs Off
-	hal_io_led_write(Led0, LedOff);
-	hal_io_led_write(Led1, LedOff);
-	hal_io_led_write(Led2, LedOff);
-	hal_io_led_write(Led3, LedOff);
-	hal_io_led_write(Led4, LedOff);
+	// FIX THIS
+	//hal_io_led_write(Led0, LedOff);
+	//hal_io_led_write(Led1, LedOff);
+	//hal_io_led_write(Led2, LedOff);
+	//hal_io_led_write(Led3, LedOff);
+	//hal_io_led_write(Led4, LedOff);
 		
 	//clear screen
 #ifdef SYS_IO_DISPLAY_PRESENT

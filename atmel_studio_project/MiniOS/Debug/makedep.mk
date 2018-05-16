@@ -20,6 +20,8 @@ src\minios\hal\hal_memreg.c
 
 src\minios\hal\hal_nvmem.c
 
+src\minios\hal\hal_pio.c
+
 src\minios\loader.c
 
 src\minios\scheduler.c
