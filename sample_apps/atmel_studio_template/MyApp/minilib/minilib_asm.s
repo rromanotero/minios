@@ -36,7 +36,9 @@
 .equ	SVCMtimerRead,		22
 //System
 .equ	SVCSysinfo,			23
-//Paralle IO
+//Scheduler
+.equ	SVCThreadCreate,	28
+//Parallel IO
 .equ	SVCPIOCreatePin,	31
 .equ	SVCPIOWritePin,		32
 .equ	SVCPIOReadPin,		33
@@ -47,6 +49,15 @@
 	For details on how to receive data 
 	from the OS see: https://embedntks.com/datastructs/resources/syscall-return-hint.png
 */
+
+/* 
+	Threads
+*/
+.thumb_func 
+.global thread_create
+thread_create:
+	svc SVCThreadCreate
+	bx lr
 
 
 /* 

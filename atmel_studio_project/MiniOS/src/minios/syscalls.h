@@ -59,6 +59,7 @@ enum{
 	
 	//Scheduler
 	SVCProcessCreate		= 27,
+	SVCThreadCreate			= 28,
 	
 	//Parallel IO
 	SVCPIOCreatePin			= 31,

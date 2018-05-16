@@ -170,6 +170,9 @@
     <Compile Include="minilib\serial.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="minilib\threads.h">
+      <SubType>compile</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Device_Startup\" />
