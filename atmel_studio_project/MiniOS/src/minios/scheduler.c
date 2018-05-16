@@ -3,6 +3,7 @@
 #include "loader.h"
 #include "utils/stack.h"
 #include "scheduler.h"
+#include "scheduling_policy.h"
 
 #define TICK_FREQ		3
 #define CONTEXT_SIZE    16
@@ -12,19 +13,13 @@
 
 __attribute__((naked)) static void tick_callback(void);
 
-typedef struct{
-	uint8_t* name;
-	uint32_t* sp;
-	tProcessState state;
-}MiniProcess;
-
-static MiniProcess proc[1];			// processes
-static MiniProcess* wait_list[1];	//dummy waiting list
-static MiniProcess* active_proc;	//The active process
+static tProcessList proc_list;			// process list
+static tMiniProcess* wait_list[10];		//waiting list
+static tMiniProcess* active_proc;		//The active process
 static uint32_t proc_count = 0;
 
 //A null process (used to mark the lack of an active process)
-static MiniProcess null_proc = { 
+static tMiniProcess null_proc = { 
 			.name = "null", 
 			.state = ProcessStateNull
 	};		
@@ -42,6 +37,9 @@ void scheduler_init(void){
 	
 	//Active process is the null process
 	active_proc = &null_proc;
+	
+	//No processes
+	proc_count = 0;
 }
 
 /*
@@ -60,11 +58,11 @@ __attribute__((naked)) static void tick_callback(void){
 		active_proc->sp = hal_cpu_get_psp();
 		
 		//place active process in dummy waiting list
-		wait_list[0] = active_proc;
+		//wait_list[0] = active_proc;
 	}
 	
-	//get next active process from dummy waiting list
-	active_proc = wait_list[0];
+	//get next active process
+	active_proc = scheduling_policy_next( active_proc, &proc_list );
 	
 	//restore SP
 	hal_cpu_set_psp( active_proc->sp );
@@ -93,29 +91,64 @@ uint32_t scheduler_process_create( uint8_t* binary_file_name, uint8_t* name, uin
 	}
 
 	//Set process info
-	proc[0].name = name;
-	proc[0].state = ProcessStateReady;
+	proc_list.list[proc_list.count].name = name;
+	proc_list.list[proc_list.count].state = ProcessStateReady;
 	
 	//Allocate space for "fake" context
 	stack_alloc( CONTEXT_SIZE );
 	
 	//Allocate space for remaining stack
-	proc[0].sp = stack_top();                //set SP
-	stack_alloc( stack_sz - CONTEXT_SIZE );  //make space 
+	proc_list.list[proc_list.count].sp = stack_top();       //set SP
+	stack_alloc( stack_sz - CONTEXT_SIZE );					//make space 
 	
 	//Insert "fake" context
-	proc[0].sp[OFFSET_PC] =     ((uint32_t) (proc_memregion.base +1));
-	proc[0].sp[OFFSET_APSR] =   ((uint32_t) INITIAL_APSR);
+	proc_list.list[proc_list.count].sp[OFFSET_PC] =     ((uint32_t) (proc_memregion.base +1));
+	proc_list.list[proc_list.count].sp[OFFSET_APSR] =   ((uint32_t) INITIAL_APSR);
+	
+	//Increment counter in list
+	proc_list.count++;
 	
 	//Add new process to dummy wait list
-	wait_list[0] = &proc[0];
-	proc_count++;
+	//wait_list[proc_count] = &proc[0];
+	//proc_count++;
 	
 	//Start ticking on first process
-	if( proc_count == 1 ){
-		hal_cpu_set_psp( proc[0].sp );						//or else the first tick fails
+	if( proc_list.count == 1 ){
+		hal_cpu_set_psp( proc_list.list[0].sp );						//or else the first tick fails
 		hal_cpu_systimer_start( TICK_FREQ, tick_callback );
 	}
 	
 	return SCHEDULER_PROCESS_CREATE_SUCCESS;	
+}
+
+/*
+*	Scheduler Thread Create
+*
+*	Creates a Thread 
+*
+*   It's really a process, but processes are so simple, that there's 
+*   no  difference between a process and a thread.
+*
+*/
+uint32_t scheduler_thread_create( uint8_t* thread_code, uint8_t* name, uint32_t stack_sz ){
+	
+	//Set process info
+	proc_list.list[proc_list.count].name = name;
+	proc_list.list[proc_list.count].state = ProcessStateReady;
+	
+	//Allocate space for "fake" context
+	stack_alloc( CONTEXT_SIZE );
+	
+	//Allocate space for remaining stack
+	proc_list.list[proc_list.count].sp = stack_top();       //set SP
+	stack_alloc( stack_sz - CONTEXT_SIZE );					//make space
+	
+	//Insert "fake" context
+	proc_list.list[proc_list.count].sp[OFFSET_PC] =     ((uint32_t) (thread_code +1));
+	proc_list.list[proc_list.count].sp[OFFSET_APSR] =   ((uint32_t) INITIAL_APSR);
+	
+	//Increment counter in list
+	proc_list.count++;
+		
+	return SCHEDULER_PROCESS_CREATE_SUCCESS;
 }

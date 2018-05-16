@@ -116,9 +116,10 @@ void syscalls_entry_point(void){
 
 		//Scheduler	
 		case SVCProcessCreate:		scheduler_process_create( (uint8_t*)arg0, (uint8_t*)arg1, (uint32_t*)arg2 );	break;
+		case SVCThreadCreate:		scheduler_thread_create( (uint8_t*)arg0, (uint8_t*)arg1, (uint32_t)arg2 );		break;
 		
 		//Parallel IO
-		case SVCPIOCreatePin:		hal_io_pio_create_pin( (tPioPin*)arg0, (tPio)arg1, (uint32_t)arg2 );		break;
+		case SVCPIOCreatePin:		hal_io_pio_create_pin( (tPioPin*)arg0, (tPio)arg1, (uint32_t)arg2 );			break;
 		case SVCPIOWritePin:		hal_io_pio_write_pin( (tPioPin*)arg0, (bool)arg1 );								break;
 		case SVCPIOReadPin:			*((uint32_t*)arg1) = hal_io_pio_read_pin( (tPioPin*)arg0 );						break;
 		case SVCPIOSetPinDir:		hal_io_pio_set_pin_dir( (tPioPin*)arg0, (tPioPinDir)arg1 );						break;
