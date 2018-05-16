@@ -67,6 +67,14 @@ void hal_memreg_init( void );
 //  --------------  IO  -----------------
 //  -------------------------------------
 
+// A structure to represent PIO Ports
+typedef enum {
+	PIO_A,
+	PIO_B,
+	PIO_C,
+	PIO_D
+} pio_port;
+
 //Millisecond Timer
 void hal_io_mtimer_start( uint32_t );
 void hal_io_mtimer_start_int( uint32_t, void(*)(void) );
