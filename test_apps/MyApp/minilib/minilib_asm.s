@@ -36,6 +36,12 @@
 .equ	SVCMtimerRead,		22
 //System
 .equ	SVCSysinfo,			23
+//Paralle IO
+.equ	SVCPIOCreatePin,	31
+.equ	SVCPIOWritePin,		32
+.equ	SVCPIOReadPin,		33
+.equ    SVCPIOSetPinDir,	34
+
 
 /* 
 	For details on how to receive data 
@@ -252,32 +258,44 @@ display_currline_aux:
 	bx lr
 
 /* 
-	LED
+	Parallel IO
 */
 .thumb_func 
-.global led_write
-led_write:
-	svc SVCLedWrite
+.global pio_create_pin
+pio_create_pin:
+	svc SVCPIOCreatePin
 	bx lr
 
 .thumb_func 
-.global led_read
-led_read:
+.global pio_write_pin
+pio_write_pin:
+	svc SVCPIOWritePin
+	bx lr
+
+.thumb_func 
+.global pio_set_pin_dir
+pio_set_pin_dir:
+	svc SVCPIOSetPinDir
+	bx lr
+
+.thumb_func 
+.global pio_read_pin
+pio_read_pin:
 	/* prologue */
 	push {lr}
-	sub sp, #4		/* tLedState state */
+	sub sp, #4			/* bool state */
 
 	mov r1, sp
-	bl led_read_aux /* led_read_aux( led_num, &state ); */
+	bl pio_read_pin_aux /* pio_read_pin_aux( (tPioPin*)pio_pin, &state ); */
 
-	ldrb r0, [sp]	/* return (tLedState)state;  */
+	ldrb r0, [sp]		/* return (bool)state;  */
 
 	/* epilogue */
 	add sp, #4
 	pop {pc}
 
-led_read_aux:
-	svc SVCLedRead
+pio_read_pin_aux:
+	svc SVCPIOReadPin
 	bx lr
 
 

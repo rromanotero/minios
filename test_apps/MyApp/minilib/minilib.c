@@ -19,6 +19,7 @@ static bool print_aux_display(const uint8_t*, size_t, size_t );
 static bool print_aux_serial( tSerialId, const uint8_t*, size_t, size_t );
 static void newline_display(void);
 
+
 /*
  * Display Puts
  *

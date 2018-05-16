@@ -134,6 +134,12 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="drivers\led.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="drivers\led.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>
@@ -146,9 +152,6 @@
     <Compile Include="minilib\display.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="minilib\led.h">
-      <SubType>compile</SubType>
-    </Compile>
     <Compile Include="minilib\minilib.c">
       <SubType>compile</SubType>
     </Compile>
@@ -156,6 +159,9 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="minilib\mtimer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="minilib\pio.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="minilib\sensor.h">
@@ -168,6 +174,7 @@
   <ItemGroup>
     <Folder Include="Device_Startup\" />
     <Folder Include="minilib" />
+    <Folder Include="drivers" />
   </ItemGroup>
   <ItemGroup>
     <None Include="device_startup\sam4sd32c_flash.ld">
