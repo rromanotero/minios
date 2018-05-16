@@ -22,22 +22,27 @@ typedef uint32_t tSerialId;		/**< Serial ID type */
 typedef uint32_t tNVMemId;		/**< Non-volatile Memory ID type */
 typedef uint32_t tMemRegionId;	/**< Memory Region ID type */
 typedef uint32_t tFaultOrigin;	/**< Fault Origin type */
+typedef uint32_t tPio;		/**< Parallel IO Port ID */
+typedef uint32_t tPioPinDir;	/**< Parallel IO Pin Direction */
 
-enum tLedState	{ LedOff = false, LedOn };								/**< enumeration for LED states */
-enum tLedNum	{ Led0 = 0, Led1, Led2, Led3, Led4 };					/**< enumeration for LEDs in the board */
-enum tButtonNum	{ Button0 = 0, Button1, Button2, Button3, Button4 };	/**< enumeration for buttons in the board*/
-enum tButtonState { ButtonUnpressed = false, ButtonPressed };				/**< enumeration for Button states */
-enum tSensorId	{ SensorLight = 0, SensorTemp };						/**< enumeration for supported sensors */
-enum tSerialId	{ SerialA = 0, SerialB };								/**< enumeration for supported serial interfaces */
-enum tNVMemId	{ NVMemSDCard = 0, NVMemSDCardFAT, NVMemFlash };		/**< enumeration for non-volatile memories */	
-enum tMemRegionId { MemRegSystem = 0, MemRegApp,
-					MemRegSystemStack, MemRegUserStack };				/**< enumeration for memory regions */
-enum tFaultOrigin { FaultApp = 0, FaultSystem };						/**< enumeration for Fault Origin types */
+
+enum tLedState		{ LedOff = false, LedOn };								
+enum tLedNum		{ Led0 = 0, Led1, Led2, Led3, Led4 };					
+enum tButtonNum		{ Button0 = 0, Button1, Button2, Button3, Button4 };	
+enum tButtonState	{ ButtonUnpressed = false, ButtonPressed };				
+enum tSensorId		{ SensorLight = 0, SensorTemp };					
+enum tSerialId		{ SerialA = 0, SerialB };							
+enum tNVMemId		{ NVMemSDCard = 0, NVMemSDCardFAT, NVMemFlash };		
+enum tMemRegionId	{ MemRegSystem = 0, MemRegApp, MemRegSystemStack, MemRegUserStack };	
+enum tFaultOrigin	{ FaultApp = 0, FaultSystem };			
+enum tPio			{ PioA = 0, PioB, PioC, PioD };
+enum tPioPinDir		{ PioPinDirOutput = 0, PioPinDirInput } ;
+
 
 #define MEM_FAT_MAX_FNAME_LENGTH	30	/**< max file name size for the FAT file system */
 
 /**
-* A structure to represent time
+* Time
 */
 typedef struct{
 	uint32_t seconds; /**< seconds */
@@ -49,13 +54,22 @@ typedef struct{
 }tTime;
 
 /**
-* A structure to represent memory regions
+* Memory regions
 */
 typedef struct{
 	tMemRegionId	id;
 	uint8_t*		base;		/**< a pointer to the beginning of the region */
 	uint32_t		size;		/**< size in bytes */
 }tMemRegion;
+
+/**
+* Parallel IO Pins
+*/
+typedef struct{
+	uint32_t		pin_number;
+	tPio		pio_port;
+	uint32_t		internal_rep; /* How the pin is represented internally (this is hardware specific) */ 		
+}tPioPin;
 
 //  --------------  INIT  ---------------
 //  -------------------------------------
@@ -67,13 +81,12 @@ void hal_memreg_init( void );
 //  --------------  IO  -----------------
 //  -------------------------------------
 
-// A structure to represent PIO Ports
-typedef enum {
-	PIO_A,
-	PIO_B,
-	PIO_C,
-	PIO_D
-} pio_port;
+//Parallel IO
+void hal_io_pio_start();
+void hal_io_pio_create_pin(tPioPin*, tPio, uint32_t);
+void hal_io_pio_write_pin(tPioPin*, bool);
+bool hal_io_pio_read_pin(tPioPin*);
+void hal_io_pio_set_pin_dir(tPioPin*, tPioPinDir);
 
 //Millisecond Timer
 void hal_io_mtimer_start( uint32_t );
@@ -93,11 +106,6 @@ void hal_io_display_cls( void );
 void hal_io_display_gotoxy( uint32_t, uint32_t );
 uint32_t hal_io_display_numlines( void );
 uint32_t hal_io_display_currline( void );
-
-//LED
-void hal_io_led_start( void );
-void hal_io_led_write( tLedNum, tLedState );
-tLedState hal_io_led_read( tLedNum );
 
 //Clock
 void hal_io_clock_start( void );

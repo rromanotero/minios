@@ -58,7 +58,14 @@ enum{
 	SVCSysinfo				= 23,
 	
 	//Scheduler
-	SVCProcessCreate		= 27 
+	SVCProcessCreate		= 27,
+	
+	//Parallel IO
+	SVCPIOCreatePin			= 31,
+	SVCPIOWritePin			= 32,
+	SVCPIOReadPin			= 33,
+	SVCPIOSetPinDir			= 34 
+	
 
 };
 
