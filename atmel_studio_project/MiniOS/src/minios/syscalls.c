@@ -67,8 +67,9 @@ void syscalls_entry_point(void){
 	//attend syscall
 	switch(svc_number){
 		//LED
-		case SVCLedWrite:			hal_io_led_write( (tLedNum)arg0, (tLedState)arg1 );				break;
-		case SVCLedRead:			*((tLedState*)arg1) = hal_io_led_read( (tLedNum)arg0 );			break;
+		// FIX THIS
+		//case SVCLedWrite:			hal_io_led_write( (tLedNum)arg0, (tLedState)arg1 );				break;
+		//case SVCLedRead:			*((tLedState*)arg1) = hal_io_led_read( (tLedNum)arg0 );			break;
 		
 		//Button
 		//case SVCButtonStartEv:		/* Not supported yet */										break;

@@ -17,8 +17,9 @@ void syscalls_init(void);
 */
 enum{
 	//LED
-	SVCLedWrite				= 0,
-	SVCLedRead				= 1,
+	//FIX THIS
+	//SVCLedWrite				= 0,
+	//SVCLedRead				= 1,
 
 	//Button
 	SVCButtonStartallEv		= 2,
