@@ -38,7 +38,8 @@ void system_panic( const uint8_t* );
 #define SYS_CONSOLE_NEWLINE			"\n\r"		//Some serial console like putty use \n\r as newlines,
 												//others like Atmel's Terminal use only \n. Choose accordingly.
 
-
+#define SYS_MAX_NUM_OF_PROCESSES	10								//Max number of processes supported
+	
 //   ---------   INIT FROM    ---------
 // (Comment one or the other)
 #define SYS_INIT_FROM_CONSOLE		//Uncomment to enable and init from the console	
