@@ -857,6 +857,12 @@
     <Compile Include="src\minios\hal\hal_nvmem.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="src\minios\hal\hal_pio.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\minios\hal\hal_pio.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="src\minios\loader.c">
       <SubType>compile</SubType>
     </Compile>
