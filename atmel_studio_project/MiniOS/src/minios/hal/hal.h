@@ -93,11 +93,10 @@ typedef struct{
 * PWM Pins
 */
 typedef struct{
-	uint32_t				pin_number;
 	tPwmChan				pin_channel;
 	tPwmType				pwm_type;
 	uint32_t				internal_rep; /* How the pin is represented internally (this is hardware specific) */
-	tpwm_chan_abstraction	pwm_channel; 
+	tpwm_chan_abstraction*	pwm_channel;
 }tPwmPin;
 
 //  --------------  INIT  ---------------
@@ -118,7 +117,7 @@ bool hal_io_pio_read_pin(tPioPin*);
 void hal_io_pio_set_pin_dir(tPioPin*, tPioPinDir);
 
 // PWM
-void hal_pwm_init_channel(tPwmPin* pwm, tPioPin* pio_pin, tPwmType pin_type, tPwmChan channel, uint32_t pin_number);
+void hal_pwm_init_channel(tPwmPin* pwm, tPioPin* pio_pin, tPwmType pin_type, tPwmChan channel);
 void hal_pwm_enable(tPwmPin* pwm_pin);
 void hal_pwm_stop(tPwmPin* pwm_pin);
 void hal_pwm_update_period(tPwmPin* pwm, uint32_t period);
