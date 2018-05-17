@@ -14,40 +14,38 @@
 *	Initialize PWM channel and pin
 *
 */
-void hal_pwm_init_channel(tPwmPin* pwm, tPioPin* pio_pin, tPwmType pin_type, tPwmChan channel, uint32_t pin_number){
+void hal_pwm_init_channel(tPwmPin* pwm, tPioPin* pio_pin, tPwmType pin_type, tPwmChan channel){
 	
-	pwm->pin_number = pin_number;
 	pwm->pin_channel = channel;
 	pwm->pwm_type = pin_type;
-	pwm->internal_rep = pio_pin->internal_rep;
 	
 	//PWM Clock options
 	pwm_clock_t pwm_clock_opts = {
 		//100Khz clock frequency = .01 ms steps
-		.ul_clka = 100000, 
+		.ul_clka = 100000,
 		.ul_clkb = 0,
-		.ul_mck =  sysclk_get_main_hz() 
+		.ul_mck =  sysclk_get_main_hz()
 	};
 	//PWM options
-	pwm->pwm_channel.ul_prescaler = PWM_CMR_CPRE_CLKA;
+	pwm->pwm_channel->ul_prescaler = PWM_CMR_CPRE_CLKA;
 	// period = 150 gives us 1.5ms maximum period
-	pwm->pwm_channel.ul_period = 150;
+	pwm->pwm_channel->ul_period = 150;
 	// 10% duty cycle for duty = 7
-	pwm->pwm_channel.ul_duty = 7; 
-	pwm->pwm_channel.polarity = 1;
+	pwm->pwm_channel->ul_duty = 7;
+	//pwm->pwm_channel->polarity = 1;
 	switch (pwm->pin_channel)
 	{
 		case PwmChan0:
-		pwm->pwm_channel.channel = PWM_CHANNEL_0;
+		pwm->pwm_channel->channel = PWM_CHANNEL_0;
 		break;
 		case PwmChan1:
-		pwm->pwm_channel.channel = PWM_CHANNEL_1;
+		pwm->pwm_channel->channel = PWM_CHANNEL_1;
 		break;
 		case PwmChan2:
-		pwm->pwm_channel.channel = PWM_CHANNEL_2;
+		pwm->pwm_channel->channel = PWM_CHANNEL_2;
 		break;
-		case PwmChan3: 
-		pwm->pwm_channel.channel = PWM_CHANNEL_3;
+		case PwmChan3:
+		pwm->pwm_channel->channel = PWM_CHANNEL_3;
 		break;
 		default :
 		printf(" Invalid channel ");
@@ -56,16 +54,16 @@ void hal_pwm_init_channel(tPwmPin* pwm, tPioPin* pio_pin, tPwmType pin_type, tPw
 	switch (pwm->pwm_type)
 	{
 		case PeriphA:
-		pio_configure_pin( pwm->internal_rep, PIO_TYPE_PIO_PERIPH_A );
+		pio_configure_pin( pio_pin->internal_rep, PIO_TYPE_PIO_PERIPH_A );
 		break;
 		case PeriphB:
-		pio_configure_pin( pwm->internal_rep, PIO_TYPE_PIO_PERIPH_B );
+		pio_configure_pin( pio_pin->internal_rep, PIO_TYPE_PIO_PERIPH_B );
 		break;
 		case PeriphC:
-		pio_configure_pin( pwm->internal_rep, PIO_TYPE_PIO_PERIPH_C );
+		pio_configure_pin( pio_pin->internal_rep, PIO_TYPE_PIO_PERIPH_C );
 		break;
 		case PeriphD:
-		pio_configure_pin( pwm->internal_rep, PIO_TYPE_PIO_PERIPH_D );
+		pio_configure_pin( pio_pin->internal_rep, PIO_TYPE_PIO_PERIPH_D );
 		break;
 		default :
 		printf(" Invalid type ");
