@@ -34,7 +34,7 @@ void hal_pwm_init_channel(tPwmPin* pwm, tPioPin* pio_pin, tPwmType pin_type, tPw
 	pwm->pwm_channel.ul_period = 150;
 	// 10% duty cycle for duty = 7
 	pwm->pwm_channel.ul_duty = 7; 
-	pwm->pwm_channel.polarity = PWM_HIGH;
+	pwm->pwm_channel.polarity = 1;
 	switch (pwm->pin_channel)
 	{
 		case PwmChan0:

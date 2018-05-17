@@ -73,15 +73,31 @@ typedef struct{
 	uint32_t		internal_rep; /* How the pin is represented internally (this is hardware specific) */ 		
 }tPioPin;
 
+/**
+* PWM Pins
+*/
+typedef struct{
+	/** Channel number */
+	uint32_t channel;
+	/** Channel prescaler */
+	uint32_t ul_prescaler;
+	/** Channel initial polarity */
+	uint32_t polarity;
+	/** Duty Cycle Value */
+	uint32_t ul_duty;
+	/** Period Cycle Value */
+	uint32_t ul_period;
+}tpwm_chan_abstraction;
+
 /** 
 * PWM Pins
 */
 typedef struct{
-	uint32_t		pin_number;
-	tPwmChan		pin_channel;
-	tPwmType		pwm_type;
-	uint32_t		internal_rep; /* How the pin is represented internally (this is hardware specific) */
-	pwm_channel_t	pwm_channel; // This is an issue - find a way to work around it
+	uint32_t				pin_number;
+	tPwmChan				pin_channel;
+	tPwmType				pwm_type;
+	uint32_t				internal_rep; /* How the pin is represented internally (this is hardware specific) */
+	tpwm_chan_abstraction	pwm_channel; 
 }tPwmPin;
 
 //  --------------  INIT  ---------------
