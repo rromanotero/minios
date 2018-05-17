@@ -19,7 +19,6 @@ void hal_io_pio_start(void){
 	// It does not do anything. Just for compliance with 
 	// "all HAL IO has a start function".
 	//(Maybe in some platforms, PIO needs some initialization)
-	
 }
 
 /**
@@ -43,9 +42,6 @@ void hal_io_pio_create_pin(tPioPin* pio_pin, tPio pio_port, uint32_t pin_number)
 		case PioC:
 			pio_pin->internal_rep = IOPORT_CREATE_PIN(PIOC, pin_number);
 			break;
-		//case PioD: //Doesn;t seem to find a PIOD for some reason
-		//	pin.internal_rep = IOPORT_CREATE_PIN(PIOD, pin_number);
-		//	break;
 		default :
 			printf(" Invalid value ");
 	}
