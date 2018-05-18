@@ -1,50 +1,48 @@
 #include <stdint-gcc.h>
 #include <stdbool.h>
-#include "minilib/threads.h"
+#include "minilib/pio.h"
+#include "minilib/pwm.h"
 #include "minilib/display.h"
-#include "drivers/led.h"
 
 #define MINIOSAPP __attribute__ ((section(".entry_point"))) uint32_t
 #define STACKINFO __attribute__ ((section(".stack_info"))) uint32_t
 
 STACKINFO stack_sz = 512;
-void thread_john_baptiste(void);
-void thread_joanna(void);
+void led_dimmer(void);
 
 MINIOSAPP main(void){
+
+	display_printf( "Watch LED3" );
+		
+	thread_create( led_dimmer, "led dimmer thread", 512 );
+
+	while(true);
+}
+
+void led_dimmer(){
 	
-	thread_create( thread_john_baptiste, "john baptiste", 512 );
-	thread_create( thread_joanna, "joanna", 512 );
+	//Set ups LED pin
+	tPioPin	led3;
+	pio_create_pin( &led3, PioC, 22 );
+	pio_set_pin_dir( &led3, PioPinDirOutput );
 
-	for(;;){
-		display_printf( "Main                \n" );
-		led_write( Led0, !led_read(Led0) );
+	//Set PWM Channels on the same pin
+	tPwmChannel channel_led3;
+	channel_led3.io_pin = &led3;
+	
+	//Start PWM channel with a 20ms period and 0% duty cycle
+	channel_led3.period = 50;			//5ms period
+	channel_led3.duty_cycle = 1;		//1% Duty Cycle
+	pwm_channel_start( &channel_led3 );		
+
+	
+	while(true){		
+		//Increase Duty Cycle by 1
+		//(The LED will dim because PWM is inverted)
+		channel_led3.duty_cycle = (channel_led3.duty_cycle + 1 ) % 90;
+		pwm_channel_write( &channel_led3 );
 		
 		//delay
-		for( volatile uint32_t i =0; i<2000000; i++ );
-	}
-		
-	return 0;
-}
-
-void thread_john_baptiste(){
-	for(;;){
-		display_printf( "John Baptiste\n" );
-		led_write( Led1, !led_read(Led1) );
-		led_write( Led2, !led_read(Led2) );
-		
-		//delay
-		for( volatile uint32_t i =0; i<1005000; i++ );
-	}
-}
-
-void thread_joanna(){
-	for(;;){
-		display_printf( "Joanna           \n" );
-		led_write( Led3, !led_read(Led3) );
-		led_write( Led4, !led_read(Led4) );
-		
-		//delay
-		for( volatile uint32_t i =0; i<1000000; i++ );
+		for( volatile uint32_t i =0; i<500000; i++ );	
 	}
 }

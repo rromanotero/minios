@@ -43,12 +43,38 @@
 .equ	SVCPIOWritePin,		32
 .equ	SVCPIOReadPin,		33
 .equ    SVCPIOSetPinDir,	34
+//PWM
+.equ	SVCPWMChannelStart,	38
+.equ	SVCPWMChannelWrite,	39
+.equ    SVCPWMChannelStop,	40
 
 
 /* 
 	For details on how to receive data 
 	from the OS see: https://embedntks.com/datastructs/resources/syscall-return-hint.png
 */
+
+
+/* 
+	PWM
+*/
+.thumb_func 
+.global pwm_channel_start
+pwm_channel_start:
+	svc SVCPWMChannelStart 
+	bx lr
+
+.thumb_func 
+.global pwm_channel_write
+pwm_channel_write:
+	svc SVCPWMChannelWrite
+	bx lr
+
+.thumb_func 
+.global pwm_channel_stop
+pwm_channel_stop:
+	svc SVCPWMChannelStop
+	bx lr
 
 /* 
 	Threads
@@ -58,7 +84,6 @@
 thread_create:
 	svc SVCThreadCreate
 	bx lr
-
 
 /* 
 	Serial

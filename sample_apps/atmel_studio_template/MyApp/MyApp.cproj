@@ -164,6 +164,9 @@
     <Compile Include="minilib\pio.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="minilib\pwm.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="minilib\sensor.h">
       <SubType>compile</SubType>
     </Compile>

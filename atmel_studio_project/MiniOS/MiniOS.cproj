@@ -876,7 +876,7 @@
     <Compile Include="src\minios\hal\hal_io_pio.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="src\minios\hal\hal_pwm.c">
+    <Compile Include="src\minios\hal\hal_io_pwm.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="src\minios\loader.c">
