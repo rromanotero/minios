@@ -65,9 +65,13 @@ enum{
 	SVCPIOCreatePin			= 31,
 	SVCPIOWritePin			= 32,
 	SVCPIOReadPin			= 33,
-	SVCPIOSetPinDir			= 34 
+	SVCPIOSetPinDir			= 34,
 	
-
+	//PWM
+	SVCPWMChannelStart		= 38,
+	SVCPWMChannelWrite		= 39,
+	SVCPWMChannelStop		= 40
+	
 };
 
 

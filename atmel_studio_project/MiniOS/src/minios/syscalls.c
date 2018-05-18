@@ -65,12 +65,7 @@ void syscalls_entry_point(void){
 	void* arg3 = ((uint32_t*)sp)[3];
 	
 	//attend syscall
-	switch(svc_number){
-		//LED
-		// FIX THIS
-		//case SVCLedWrite:			hal_io_led_write( (tLedNum)arg0, (tLedState)arg1 );				break;
-		//case SVCLedRead:			*((tLedState*)arg1) = hal_io_led_read( (tLedNum)arg0 );			break;
-		
+	switch(svc_number){		
 		//Button
 		//case SVCButtonStartEv:		/* Not supported yet */										break;
 		case SVCButtonStartallPoll:	hal_io_button_startall_poll();										break;	
@@ -123,6 +118,11 @@ void syscalls_entry_point(void){
 		case SVCPIOWritePin:		hal_io_pio_write_pin( (tPioPin*)arg0, (bool)arg1 );								break;
 		case SVCPIOReadPin:			*((uint32_t*)arg1) = hal_io_pio_read_pin( (tPioPin*)arg0 );						break;
 		case SVCPIOSetPinDir:		hal_io_pio_set_pin_dir( (tPioPin*)arg0, (tPioPinDir)arg1 );						break;
+		
+		//PWM
+		case SVCPWMChannelStart:	hal_io_pwm_channel_start( (tPwmChannel*)arg0 );									break;
+		case SVCPWMChannelWrite:	hal_io_pwm_channel_write( (tPwmChannel*)arg0 );									break;
+		case SVCPWMChannelStop:		hal_io_pwm_channel_stop( (tPwmChannel*)arg0 );									break;
 		
 		//Error
 		default:																									break;

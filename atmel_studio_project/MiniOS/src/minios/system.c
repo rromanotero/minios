@@ -106,6 +106,7 @@ void system_panic( const uint8_t* panic_msg ){
 static void io_init(void){
 	
 	//Starts All IO devices
+	show_init_info( "Starting PWM" );			hal_io_pwm_start();
 	show_init_info( "Starting Parallel IO" );	hal_io_pio_start();
 #ifdef SYS_IO_DISPLAY_PRESENT
 	show_init_info( "Starting Display" );		hal_io_display_start();
@@ -113,8 +114,6 @@ static void io_init(void){
 	show_init_info( "Starting SerialB" );		hal_io_serial_start_poll( SerialB, SYS_CONF_SERIAL_A_BAUDRATE );
 	show_init_info( "Starting Light Sensor" );	hal_io_sensor_start_poll( SensorLight );
 	show_init_info( "Starting Temp Sensor" );	hal_io_sensor_start_poll( SensorTemp );
-	// FIX THIS
-	//show_init_info( "Starting LEDs" );		hal_io_led_start();
 	show_init_info( "Starting Clock" );			hal_io_clock_start();
 	
 	//Clock starts at 00:13:00 July 14, 1991

@@ -25,10 +25,7 @@ typedef uint32_t tFaultOrigin;	/**< Fault Origin type */
 typedef uint32_t tPio;		/**< Parallel IO Port ID */
 typedef uint32_t tPioPinDir;	/**< Parallel IO Pin Direction */
 typedef uint32_t tPwmType;		/**< PWM Pin Type */
-typedef uint32_t tPwmChan;		/**< PWM Channel */
-
-enum tLedState		{ LedOff = false, LedOn };								
-enum tLedNum		{ Led0 = 0, Led1, Led2, Led3, Led4 };					
+				
 enum tButtonNum		{ Button0 = 0, Button1, Button2, Button3, Button4 };	
 enum tButtonState	{ ButtonUnpressed = false, ButtonPressed };				
 enum tSensorId		{ SensorLight = 0, SensorTemp };					
@@ -38,8 +35,6 @@ enum tMemRegionId	{ MemRegSystem = 0, MemRegApp, MemRegSystemStack, MemRegUserSt
 enum tFaultOrigin	{ FaultApp = 0, FaultSystem };			
 enum tPio			{ PioA = 0, PioB, PioC, PioD };
 enum tPioPinDir		{ PioPinDirOutput = 0, PioPinDirInput } ;
-enum tPwmType		{ PeriphA = 0, PeriphB, PeriphC, PeriphD };
-enum tPwmChan		{ PwmChan0 = 0, PwmChan1, PwmChan2, PwmChan3 };
 
 #define MEM_FAT_MAX_FNAME_LENGTH	30	/**< max file name size for the FAT file system */
 
@@ -74,30 +69,15 @@ typedef struct{
 }tPioPin;
 
 /**
-* PWM Pins
+* Pulse Width Modulation
 */
 typedef struct{
-	/** Channel number */
-	uint32_t channel;
-	/** Channel prescaler */
-	uint32_t ul_prescaler;
-	/** Channel initial polarity */
-	uint32_t polarity;
-	/** Duty Cycle Value */
-	uint32_t ul_duty;
-	/** Period Cycle Value */
-	uint32_t ul_period;
-}tpwm_chan_abstraction;
+	tPioPin* io_pin;
+	uint32_t period;
+	uint32_t duty_cycle;
+}tPwmChannel;
 
-/** 
-* PWM Pins
-*/
-typedef struct{
-	tPwmChan				pin_channel;
-	tPwmType				pwm_type;
-	uint32_t				internal_rep; /* How the pin is represented internally (this is hardware specific) */
-	tpwm_chan_abstraction*	pwm_channel;
-}tPwmPin;
+
 
 //  --------------  INIT  ---------------
 //  -------------------------------------
@@ -117,11 +97,10 @@ bool hal_io_pio_read_pin(tPioPin*);
 void hal_io_pio_set_pin_dir(tPioPin*, tPioPinDir);
 
 // PWM
-void hal_pwm_init_channel(tPwmPin* pwm, tPioPin* pio_pin, tPwmType pin_type, tPwmChan channel);
-void hal_pwm_enable(tPwmPin* pwm_pin);
-void hal_pwm_stop(tPwmPin* pwm_pin);
-void hal_pwm_update_period(tPwmPin* pwm, uint32_t period);
-void hal_pwm_update_duty(tPwmPin* pwm, uint32_t duty);
+void hal_io_pwm_start( void );
+void hal_io_pwm_channel_start( tPwmChannel* );
+void hal_io_pwm_channel_stop( tPwmChannel* );
+void hal_io_pwm_channel_write( tPwmChannel* );
 
 //Millisecond Timer
 void hal_io_mtimer_start( uint32_t );
