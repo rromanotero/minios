@@ -143,6 +143,9 @@
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="minilib\adc.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="minilib\button.h">
       <SubType>compile</SubType>
     </Compile>

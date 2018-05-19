@@ -867,6 +867,9 @@
     <Compile Include="src\minios\hal\hal_io.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="src\minios\hal\hal_io_adc.c">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="src\minios\hal\hal_memreg.c">
       <SubType>compile</SubType>
     </Compile>

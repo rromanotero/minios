@@ -77,6 +77,14 @@ typedef struct{
 	uint32_t duty_cycle;
 }tPwmChannel;
 
+/**
+* Analog to Digital Converter
+*
+*/
+typedef struct{
+	tPioPin* io_pin;
+	uint32_t adc_channel_number;
+}tAdcChannel;
 
 
 //  --------------  INIT  ---------------
@@ -101,6 +109,13 @@ void hal_io_pwm_start( void );
 void hal_io_pwm_channel_start( tPwmChannel* );
 void hal_io_pwm_channel_stop( tPwmChannel* );
 void hal_io_pwm_channel_write( tPwmChannel* );
+
+// ADC
+void hal_io_adc_channel_start();
+void hal_io_adc_channel_enable(tAdcChannel* adc_chan);
+void hal_io_adc_channel_disable(tAdcChannel* adc_chan);
+uint32_t hal_io_adc_channel_status(tAdcChannel* adc_chan);
+uint32_t hal_io_adc_channel_read(tAdcChannel* adc_chan);
 
 //Millisecond Timer
 void hal_io_mtimer_start( uint32_t );

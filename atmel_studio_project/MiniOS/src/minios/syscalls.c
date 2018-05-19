@@ -124,6 +124,13 @@ void syscalls_entry_point(void){
 		case SVCPWMChannelWrite:	hal_io_pwm_channel_write( (tPwmChannel*)arg0 );									break;
 		case SVCPWMChannelStop:		hal_io_pwm_channel_stop( (tPwmChannel*)arg0 );									break;
 		
+		//ADC
+		case SVCADCCHANNELSTART:	hal_io_adc_channel_start();
+		case SVCADCCHANNELENABLE:	hal_io_adc_channel_enable( (tAdcChannel*) arg0);
+		case SVCADCCHANNELDISABLE:	hal_io_adc_channel_disable( (tAdcChannel*) arg0);
+		case SVCADCCHANNELSTATUS:	hal_io_adc_channel_status( (tAdcChannel*) arg0);
+		case SVCADCCHANNELREAD:		hal_io_adc_channel_read( (tAdcChannel*) arg0);
+		
 		//Error
 		default:																									break;
 	}
