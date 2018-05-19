@@ -182,8 +182,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Device_Startup\" />
+    <Folder Include="drivers\" />
     <Folder Include="minilib" />
-    <Folder Include="drivers" />
   </ItemGroup>
   <ItemGroup>
     <None Include="device_startup\sam4sd32c_flash.ld">

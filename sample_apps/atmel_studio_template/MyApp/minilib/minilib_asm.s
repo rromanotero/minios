@@ -48,11 +48,11 @@
 .equ	SVCPWMChannelWrite,	39
 .equ    SVCPWMChannelStop,	40
 //ADC
-.equ	SVCADCCHANNELSTART,		45
-.equ	SVCADCCHANNELENABLE,	46
-.equ	SVCADCCHANNELDISABLE,	47
-.equ	SVCADCCHANNELSTATUS,	48
-.equ	SVCADCCHANNELREAD,		49
+.equ	SVCADCChannelStart,		45
+.equ	SVCADCChannelEnable,	46
+.equ	SVCADCChannelDisable,	47
+.equ	SVCADCChannelStatus,	48
+.equ	SVCADCChannelRead,		49
 
 
 /* 
@@ -60,6 +60,52 @@
 	from the OS see: https://embedntks.com/datastructs/resources/syscall-return-hint.png
 */
 
+/* 
+	ADC
+*/
+.thumb_func 
+.global adc_channel_start
+adc_channel_start:
+	svc SVCADCChannelStart
+	bx lr
+
+.thumb_func 
+.global adc_channel_enable
+adc_channel_enable:
+	svc SVCADCChannelEnable
+	bx lr
+
+	.thumb_func 
+.global adc_channel_disable
+adc_channel_disable:
+	svc SVCADCChannelDisable
+	bx lr
+
+.thumb_func 
+.global adc_channel_status
+adc_channel_status:
+	svc SVCADCChannelStatus 
+	bx lr
+
+.thumb_func 
+.global adc_channel_read
+adc_channel_read:
+	/* prologue */
+	push {lr}
+	sub sp, #4
+
+	mov r1, sp
+	bl adc_channel_read_aux
+
+	ldrb r0, [sp]
+
+	/* epilogue */
+	add sp, #4
+	pop {pc}
+
+adc_channel_read_aux:
+	svc SVCADCChannelRead
+	bx lr
 
 /* 
 	PWM
@@ -67,7 +113,7 @@
 .thumb_func 
 .global pwm_channel_start
 pwm_channel_start:
-	svc SVCPWMChannelStart 
+	svc SVCPWMChannelStart
 	bx lr
 
 .thumb_func 

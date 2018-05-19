@@ -73,11 +73,11 @@ enum{
 	SVCPWMChannelStop		= 40,
 	
 	//ADC
-	SVCADCCHANNELSTART		= 45,
-	SVCADCCHANNELENABLE		= 46,
-	SVCADCCHANNELDISABLE	= 47,
-	SVCADCCHANNELSTATUS		= 48,
-	SVCADCCHANNELREAD		= 49
+	SVCADCChannelStart		= 45,
+	SVCADCChannelEnable		= 46,
+	SVCADCChannelDisable	= 47,
+	SVCADCChannelStatus		= 48,
+	SVCADCChannelRead		= 49
 	
 };
 

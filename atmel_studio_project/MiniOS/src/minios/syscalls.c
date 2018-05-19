@@ -125,11 +125,11 @@ void syscalls_entry_point(void){
 		case SVCPWMChannelStop:		hal_io_pwm_channel_stop( (tPwmChannel*)arg0 );									break;
 		
 		//ADC
-		case SVCADCCHANNELSTART:	hal_io_adc_channel_start();
-		case SVCADCCHANNELENABLE:	hal_io_adc_channel_enable( (tAdcChannel*) arg0);
-		case SVCADCCHANNELDISABLE:	hal_io_adc_channel_disable( (tAdcChannel*) arg0);
-		case SVCADCCHANNELSTATUS:	hal_io_adc_channel_status( (tAdcChannel*) arg0);
-		case SVCADCCHANNELREAD:		hal_io_adc_channel_read( (tAdcChannel*) arg0);
+		case SVCADCChannelStart:	hal_io_adc_channel_start();														break;
+		case SVCADCChannelEnable:	hal_io_adc_channel_enable( (tAdcChannel*) arg0);								break;
+		case SVCADCChannelDisable:	hal_io_adc_channel_disable( (tAdcChannel*) arg0);								break;
+		case SVCADCChannelStatus:	hal_io_adc_channel_status( (tAdcChannel*) arg0);								break;
+		case SVCADCChannelRead:		*((uint32_t*)arg1) = hal_io_adc_channel_read( (tAdcChannel*) arg0);				break;
 		
 		//Error
 		default:																									break;
