@@ -1,6 +1,11 @@
 # MiniOS
 
-A microcontroller instructional operating system (work in progress)
+An instructional operating system, which happens to run on microncontrollers (MCUs) (work in progress)
+
+<p align="center">
+  <img src="https://github.com/rromanotero/minios/blob/master/logo.png" width="290"/>
+  <p align="center">It's supposed to be a "wireless" mug! (because coffee is how it got written)</p>
+</p>
 
 
 # Origins
@@ -9,14 +14,13 @@ MiniOS was originally written as an instructional OS for teaching Operating Syst
 
 Over the years other people have contributed to it (really only Conan Veitch), and it has become more of a microcontroller OS, but the instruction aspects remains. 
 
-
 # The book
 
-There's an instructional guide detailing step by step how to build MiniOS from scratch. Where is it? It is for the msot part complete, but we and the other author have been busy and are still working out the details. Should you want a copy for academic purposes free to send an e-mail.
+There's an instructional guide detailing step by step how to build MiniOS from scratch. Where is it? It is for the most part complete, but me and my co-author (Alex Aravind) have been busy and are still working out the details. Should you want a copy for academic purposes free to send an e-mail.
 
 # What is it used for (other than instruction)?
 
-Still exploring this, but the idea so far is to take advantage of deployable apps.
+Still exploring this, but the idea so far is to take advantage of deployable apps (yes we have apps!). For instance, in MCU robots, such as [this one](https://www.youtube.com/watch?v=Tp8fJ_0Ap_s). 
 
 
 # On what platforms does it run?
