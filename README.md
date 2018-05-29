@@ -14,6 +14,10 @@ Over the years other people have contributed to it (really only Conan Veitch), a
 
 There's an instructional guide detailing step by step how to build MiniOS from scratch. Where is it? It is for the msot part complete, but we and the other author have been busy and are still working out the details. Should you want a copy for academic purposes free to send an e-mail.
 
+# What is it used for (other than instruction)?
+
+Still exploring this, but the idea so far is to take advantage of deployable apps.
+
 
 # On what platforms does it run?
 
@@ -34,5 +38,5 @@ To write your own, you have to use the template in /sample_apps/atmel_studio_tem
 
 # Publications 
 
-Rafael Roman Otero and Alex A. Aravind. 2015. MiniOS: An Instructional Platform for Teaching Operating Systems Projects. In Proceedings of the 46th ACM Technical Symposium on Computer Science Education (SIGCSE ’15). ACM, New York, NY, USA, 430-435. [PDF here](http://embedntks.com/datastructs/papers/minios%20paper%20%28published%20version%29.pdf and here.)
+Rafael Roman Otero and Alex A. Aravind. 2015. MiniOS: An Instructional Platform for Teaching Operating Systems Projects. In Proceedings of the 46th ACM Technical Symposium on Computer Science Education (SIGCSE ’15). ACM, New York, NY, USA, 430-435. [PDF here](http://embedntks.com/datastructs/papers/minios%20paper%20%28published%20version%29.pdf)
 
