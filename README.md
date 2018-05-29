@@ -1,6 +1,6 @@
 # MiniOS
 
-An instructional operating system, which happens to run on microncontrollers (MCUs) (work in progress)
+An instructional operating system, which happens to run on microncontrollers (MCUs) 
 
 <p align="center">
   <img src="https://github.com/rromanotero/minios/blob/master/logo.png" width="290"/>
