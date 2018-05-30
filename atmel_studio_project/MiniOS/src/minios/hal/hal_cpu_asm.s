@@ -19,18 +19,16 @@
 
 
 /**
-*	void hal_cpu_sleep(void) 
 *
 *	Sleep
 *
-*	Makes the CPU sleep by executing the WFI
-*	instruction
+*	Executes the instruction that puts the CPU
+*	to sleep
 */
 .thumb_func 
 .global hal_cpu_sleep
 hal_cpu_sleep:
      wfi
-
      bx lr
 
 /**

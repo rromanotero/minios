@@ -17,7 +17,7 @@
 #define SCHEDULER_MAX_NUM_PROCESSES			SYS_MAX_NUM_OF_PROCESSES
 
 typedef uint32_t tProcessState;
-enum tProcessState { ProcessStateReady = 0, ProcessStateRunning, ProcessStateNull  };	
+enum tProcessState { ProcessStateReady = 0, ProcessStateRunning, ProcessStateDead, ProcessStateNull  };	
 
 typedef struct{
 	uint8_t* name;
@@ -33,6 +33,6 @@ typedef struct{
 void scheduler_init(void);
 uint32_t scheduler_process_create( uint8_t*, uint8_t*, uint32_t* );
 uint32_t scheduler_thread_create( uint8_t*, uint8_t*, uint32_t );
-
+void scheduler_process_current_stop();
 
 #endif /* SCHEDULER_H_ */

@@ -112,6 +112,7 @@ void syscalls_entry_point(void){
 		//Scheduler	
 		case SVCProcessCreate:		scheduler_process_create( (uint8_t*)arg0, (uint8_t*)arg1, (uint32_t*)arg2 );	break;
 		case SVCThreadCreate:		scheduler_thread_create( (uint8_t*)arg0, (uint8_t*)arg1, (uint32_t)arg2 );		break;
+		case SVCProcessStop:		scheduler_process_current_stop();												break;
 		
 		//Parallel IO
 		case SVCPIOCreatePin:		hal_io_pio_create_pin( (tPioPin*)arg0, (tPio)arg1, (uint32_t)arg2 );			break;

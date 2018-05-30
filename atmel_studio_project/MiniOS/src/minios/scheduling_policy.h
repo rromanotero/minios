@@ -7,7 +7,7 @@
 #define SCHEDULING_POLICY_H_
 
 
-tMiniProcess* scheduling_policy_next( tMiniProcess*, tMiniProcess** );
+tMiniProcess* scheduling_policy_next( tMiniProcess*, tProcessList* );
 
 
 #endif /* SCHEDULING_POLICY_H_ */

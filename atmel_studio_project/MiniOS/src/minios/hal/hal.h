@@ -160,10 +160,10 @@ void hal_cpu_systimer_reestart(void);
 //  --------------  CPU  ----------------
 //  -------------------------------------
 
-//Scheduler
-void hal_cpu_return_exception_user_mode();
+//Sleep
+void hal_cpu_sleep(void);
 
-//PendSV
+//Low Priority Software Interrupt
 void hal_cpu_lowpty_softint_trigger(void);
 void hal_cpu_lowpty_softint_register_callback(void(*)(void));
 
@@ -175,7 +175,7 @@ void hal_cpu_systimer_start(uint32_t, void(*)(void));
 //Scheduler
 void hal_cpu_save_context(void);
 void hal_cpu_restore_context(void);
-void hal_cpu_sleep(void);
+void hal_cpu_return_exception_user_mode();
 
 //Faults
 void hal_cpu_fault_register_callback( tFaultOrigin, void(*)(void) );
