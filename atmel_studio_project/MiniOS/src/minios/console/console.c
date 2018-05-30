@@ -147,7 +147,7 @@ void console_begin( void ){
 			
 			if( sched_rval == SCHEDULER_PROCESS_CREATE_SUCCESS ){
 				//process creation went fine, halt
-				//TO DO: Support for continue executing comands
+				//TO DO: Support for continue executing commands
 				while(1);
 			}
 			else{

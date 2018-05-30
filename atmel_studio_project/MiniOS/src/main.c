@@ -33,9 +33,9 @@ int main(void)
 		else if( loader_rval ==  LOADER_APP_TOO_LARGE ) system_panic( "Not enough mem 4 default App" );	
 	}
 #endif
-
+	
 	//Wait here until the timer's first tick
-	//(It also prevent from executing garbage, if the console returns)
+	//TODO: Maybe go to sleep here?
 	while(1);
 }
 

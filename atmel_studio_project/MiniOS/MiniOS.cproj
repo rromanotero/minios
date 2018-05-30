@@ -894,6 +894,9 @@
     <Compile Include="src\minios\scheduler.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="src\minios\scheduler_asm.s">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="src\minios\scheduling_policy.c">
       <SubType>compile</SubType>
     </Compile>
