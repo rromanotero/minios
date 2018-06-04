@@ -1,10 +1,10 @@
 # MiniOS
 
-An instructional operating system, which happens to run on microncontrollers (MCUs) 
+An instructional operating system (which happens to run on microcontrollers). 
 
 <p align="center">
   <img src="https://github.com/rromanotero/minios/blob/master/logo.png" width="290"/>
-  <p align="center">It's supposed to be a "wireless" mug! (because coffee is how it got written)</p>
+  <p align="center">It's supposed to be a "wireless" mug!</p>
 </p>
 
 
@@ -15,9 +15,9 @@ MiniOS was originally written as an instructional OS for teaching Operating Syst
 
 # Use
 
-The OS is intended to be delivered together with a book that shows step by step how to build MiniOS from scratch. So you need to have the book to make sense of this code.
+The OS is intended to be delivered together with *a book showing step by step how to build MiniOS from scratch*. So you need to have the book to make sense of this code.
 
-How to get the book? Well, the book is for the most part complete, but my co-author (Dr. Alex Aravind) and me have been busy and are still working out the final details. Should you want a copy for academic purposes or just for yourself to learn, feel free to send me an e-mail!
+How to get the book? Well, the book is for the most part complete, but my co-author (Dr. Alex Aravind) and me have been busy and are still working out the final details. Should you want a copy for academic purposes or just for yourself to build your own OS, feel free to send me an e-mail!
 
 
 # Can a microcontroller be used to teach Operating Systems?
