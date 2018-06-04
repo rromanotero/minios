@@ -10,17 +10,32 @@ An instructional operating system, which happens to run on microncontrollers (MC
 
 # Origins
 
-MiniOS was originally written as an instructional OS for teaching Operating Systems at the University of Northern BC. This is more or less explained [here](http://embedntks.com/wp-content/uploads/2016/08/MiniOS-Defense-Slides.pptx). (Please note the version initially uploaded here is not exactly the same as the one referenced in the slides)
+MiniOS was originally written as an instructional OS for teaching Operating Systems Labs at the University of Northern BC. This is more or less explained [here](http://embedntks.com/wp-content/uploads/2016/08/MiniOS-Defense-Slides.pptx). (Please note the version initially uploaded here is not exactly the same as the one referenced in the slides)
 
-Over the years other people have contributed to it (really only Conan Veitch), and it has become more of a microcontroller OS, but the instruction aspects remains. 
 
-# The book
+# Use
 
-There's an instructional guide detailing step by step how to build MiniOS from scratch. Where is it? It is for the most part complete, but me and my co-author (Alex Aravind) have been busy and are still working out the details. Should you want a copy for academic purposes free to send an e-mail.
+The OS is intended to be delivered together with a book that shows step by step how to build MiniOS from scratch. So you need to have the book to make sense of this code.
+
+How to get the book? Well, the book for the most part complete, but my co-author (Dr. Alex Aravind) and me have been busy and are still working out the final details. Should you want a copy for academic purposes or just for yourself to learn, feel free to send me an e-mail!
+
+
+# Can a microcontroller be used to teach Operating Systems?
+
+Yes (arguably). For three years we offered OS Labs for Computer Science students at the University of Northern BC. If you're really interested read [Chapter 3 (Rationale)](http://embedntks.com/wp-content/uploads/2016/08/MiniOS-Thesis.pdf). 
+
+
+# MiniOS Apps
+
+One important aspect of MiniOS is that it ca run actual "apps". Separately-written and separately-deployable apps. Like in a general purpose computer system.
+
 
 # What is it used for (other than instruction)?
 
-Still exploring this, but the idea so far is to take advantage of deployable apps (yes we have apps!). For instance, in MCU robots, such as [this one](https://www.youtube.com/watch?v=Tp8fJ_0Ap_s). 
+One of the design goals of MiniOS was that it should be "functional". Meaning, one should be able to use it to build stuff. So even though MiniOS is very minimal, and you could say "it's missing parts", you can still use it. It works! The parts that are written do not randomly break. As long as you are aware of certain constraints (e.g. don't go beyond the max number of processes; or tell the kernel to run something that isn't an app; that'll break it!).
+
+
+What exactly can you build? Still exploring this. One example is MCU robots, such as [this one](https://www.youtube.com/watch?v=Tp8fJ_0Ap_s). 
 
 
 # On what platforms does it run?
@@ -40,7 +55,9 @@ Samples apps (.bin) are in /sample_apps/apps_known_to_work. Run them using the c
 To write your own, you have to use the template in /sample_apps/atmel_studio_template (also an Atmel Studio Project)
 
 
-# Publications 
+# Publication and Thesis
+
+Rafael Roman Otero. MiniOS: An Instructional Platform for Teaching Operating Systems Labs (Master's Thesis).  University of Northern British Columbia. 2016. [PDF here](http://embedntks.com/wp-content/uploads/2016/08/MiniOS-Thesis.pdf)
 
 Rafael Roman Otero and Alex A. Aravind. 2015. MiniOS: An Instructional Platform for Teaching Operating Systems Projects. In Proceedings of the 46th ACM Technical Symposium on Computer Science Education (SIGCSE ’15). ACM, New York, NY, USA, 430-435. [PDF here](http://embedntks.com/datastructs/papers/minios%20paper%20%28published%20version%29.pdf)
 
