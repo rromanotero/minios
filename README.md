@@ -22,7 +22,7 @@ How to get the book? Well, the book is for the most part complete, but my co-aut
 
 # Can a microcontroller be used to teach Operating Systems?
 
-Yes (arguably). For three years we offered OS Labs for Computer Science students at the University of Northern BC. If you're really interested read [Chapter 3 (Rationale)](http://embedntks.com/wp-content/uploads/2016/08/MiniOS-Thesis.pdf). 
+Yes (arguably). For three years we offered OS Labs for Computer Science students at the University of Northern BC (more details in the arXiv paper, see below).
 
 
 # MiniOS Apps
@@ -48,9 +48,9 @@ Currently the SAM4S Xplained Pro.
 Source code is an Atmel Studio Project. It's shown in the book.
 
 
-# Publication and Thesis
+# Publications and arXiv
 
-Rafael Roman Otero. MiniOS: An Instructional Platform for Teaching Operating Systems Labs (Master's Thesis).  University of Northern British Columbia. 2016. [PDF here](http://embedntks.com/wp-content/uploads/2016/08/MiniOS-Thesis.pdf)
+Rafael Roman Otero and Alex Aravind. 2018. MiniOS: an instructional platform for teaching operating systems labs. arXiv:1811.09792, Dec 2018. [PDF here](https://arxiv.org/abs/1811.09792v2)
 
-Rafael Roman Otero and Alex A. Aravind. 2015. MiniOS: An Instructional Platform for Teaching Operating Systems Projects. In Proceedings of the 46th ACM Technical Symposium on Computer Science Education (SIGCSE ’15). ACM, New York, NY, USA, 430-435. [PDF here](http://embedntks.com/datastructs/papers/minios%20paper%20%28published%20version%29.pdf)
+Rafael Roman Otero and Alex Aravind. 2015. MiniOS: An Instructional Platform for Teaching Operating Systems Projects. In Proceedings of the 46th ACM Technical Symposium on Computer Science Education (SIGCSE ’15). ACM, New York, NY, USA, 430-435. [PDF here](http://embedntks.com/datastructs/papers/minios%20paper%20%28published%20version%29.pdf)
 
