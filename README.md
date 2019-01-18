@@ -57,7 +57,7 @@ You'd need:
  - The MiniOS Book
  - A lab instructor (or TA) that either has some experience or at least understands how to operate a computer at a very low-level; who is also very patient. Concurrent low-level software is hard!
  - A copy of this source code
- - An Atmel SAM4S Xplained Pro boards [See here](https://www.microchip.com/DevelopmentTools/ProductDetails/atsam4s-xpro) per team of students or per student. With a few Extension Kits, if possible (not required). I suggest the IO1, OLED1, and the BNO055 (you can build some cool robots with the BNO055). 
+ - An Atmel SAM4S Xplained Pro boards ([See here](https://www.microchip.com/DevelopmentTools/ProductDetails/atsam4s-xpro)) per team of students or per student. With a few Extension Kits, if possible (not required). I suggest the IO1, OLED1, and the BNO055 (you can build some cool robots with the BNO055). 
  
 
 # Publications and arXiv
@@ -68,5 +68,5 @@ Rafael Roman Otero and Alex Aravind. 2015. MiniOS: An Instructional Platform for
 
 This is the one about teaching computer architecture:
 
-Rafael Roman Otero and Alex Aravind. 2018. Teaching Computer Architecture Labs using a MCU Platform. In Proceedings of the 23rd Western Canadian Conference on Computing Education (WCCCE '18). ACM, New York, NY, USA, Article 3, 6 pages. [PDF here] (http://embedntks.com/datastructs/papers/wccce%20teaching%20computer%20architecture%20%28published%20version%29.pdf)
+Rafael Roman Otero and Alex Aravind. 2018. Teaching Computer Architecture Labs using a MCU Platform. In Proceedings of the 23rd Western Canadian Conference on Computing Education (WCCCE '18). ACM, New York, NY, USA, Article 3, 6 pages. [PDF here](http://embedntks.com/datastructs/papers/wccce%20teaching%20computer%20architecture%20%28published%20version%29.pdf)
 
