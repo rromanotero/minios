@@ -10,19 +10,19 @@ An instructional operating system (which happens to run on microcontrollers).
 
 # Origins
 
-MiniOS was originally written as an instructional OS for teaching Operating Systems Labs at the University of Northern BC. This is more or less explained [here](http://embedntks.com/wp-content/uploads/2016/08/MiniOS-Defense-Slides.pptx). (Please note the version initially uploaded here is not exactly the same as the one referenced in the slides)
+MiniOS was originally written as an instructional OS for teaching Operating Systems Labs at the University of Northern BC. The first version started on 2014, and it's being refined on every offering ever since. (Currently I'm teaching Operating Systems at BCIT and I'm trying to adapt the material for x86; task which is proving to be difficult)
 
 
 # Use
 
 The OS is intended to be delivered together with *a book showing step by step how to build MiniOS from scratch*. So you need to have the book to make sense of this code.
 
-How to get the book? Well, the book is for the most part complete, but my co-author (Dr. Alex Aravind) and me have been busy and are still working out the final details. Should you want a copy for academic purposes or just for yourself to build your own OS, feel free to send me an e-mail!
+How to get the book? Well, the book is for the most part complete, but my co-author (Dr. Alex Aravind) and me have been busy and are still working out the final details. Should you want a copy for academic purposes or just for yourself to build your own OS, feel free to send me an e-mail! 
 
 
 # Can a microcontroller be used to teach Operating Systems?
 
-Yes (arguably). For three years we offered OS Labs for Computer Science students at the University of Northern BC (more details in the arXiv paper, see below).
+Yes (arguably). More details in the arXiv paper, see below.
 
 
 # MiniOS Apps
@@ -35,7 +35,7 @@ One important aspect of MiniOS is that it ca run actual "apps". Separately-writt
 One of the design goals of MiniOS was that it should be "functional". Meaning, one should be able to use it to build stuff. So, even though, MiniOS is very minimal, and you could say "it's missing parts", you can still use it. It works! The parts that are written do not randomly break. As long as you are aware of certain constraints (e.g. don't go beyond the max number of processes; or tell the kernel to run something that isn't an app; that'll break it!).
 
 
-What exactly can you build? Still exploring this. One example is MCU robots, such as [this one](https://www.youtube.com/watch?v=Tp8fJ_0Ap_s). 
+What exactly can you build? Still exploring this. One example is MCU robots, such as [this MiniOS-based robot](https://www.youtube.com/watch?v=Tp8fJ_0Ap_s). 
 
 
 # On what platforms does it run?
