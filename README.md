@@ -10,7 +10,7 @@ An instructional operating system (which happens to run on microcontrollers).
 
 # Origins
 
-MiniOS was originally written as an instructional OS for teaching Operating Systems Labs at the University of Northern BC. The first version started on 2014, and it's being refined on every offering ever since. (Currently I'm teaching Operating Systems at BCIT and I'm trying to adapt the material for x86; task which is proving to be difficult)
+MiniOS was originally written as an instructional OS for teaching Operating Systems Labs at the University of Northern BC. The first version started on 2014, and it's being refined on every offering ever since. (Currently I'm trying to adapt the material for Raspberry PI)
 
 
 # Use
