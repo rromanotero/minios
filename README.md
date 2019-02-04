@@ -1,6 +1,6 @@
 # MiniOS
 
-An instructional operating system (which happens to run on microcontrollers). 
+An instructional operating system for ARM CPUs (The Atmel SAM4S MCU, and Raspbery PI 2 and 3)
 
 <p align="center">
   <img src="https://github.com/rromanotero/minios/blob/master/logo.png" width="290"/>
