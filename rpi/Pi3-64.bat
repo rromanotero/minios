@@ -14,7 +14,16 @@ set "linkerflags=-Wl,-gc-sections -Wl,--build-id=none -Wl,-Bdynamic -Wl,-Map,out
 set "outflags=-o output/kernel_rp3.elf"
 set "libflags=-lc -lm -lgcc"
 @echo on
-"%bindir%aarch64-elf-gcc.exe" %cpuflags% %asmflags% %linkerflags% -Wl,-T,linker/rpi64.ld src/main.c src/boot/SmartStart64.S src/boot/rpi-SmartStart.c src/drivers/stdio/emb-stdio.c src/drivers/sdcard/SDCard.c %outflags% %libflags%
+"%bindir%aarch64-elf-gcc.exe" %cpuflags% %asmflags% %linkerflags% -Wl,-T,linker/rpi64.ld ^
+  src/main.c ^
+  src/boot/SmartStart64.S ^
+  src/boot/rpi-SmartStart.c ^
+  src/drivers/stdio/emb-stdio.c ^
+  src/drivers/sdcard/SDCard.c ^
+  src/hal/fonts.c ^
+  src/hal/hal_io.c ^
+  %outflags% %libflags%
+
 @echo off
 if %errorlevel% EQU 1 (goto build_fail)
 

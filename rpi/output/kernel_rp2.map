@@ -1,19 +1,19 @@
 Archive member included to satisfy reference by file (symbol)
 
 c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libc.a(lib_a-ctype_.o)
-                              C:\Users\A01169~1\AppData\Local\Temp\cc5BvP9K.o (_ctype_)
+                              C:\Users\A01169~1\AppData\Local\Temp\ccqhpZjG.o (_ctype_)
 c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libc.a(lib_a-memcpy.o)
-                              C:\Users\A01169~1\AppData\Local\Temp\ccCKbk7J.o (memcpy)
+                              C:\Users\A01169~1\AppData\Local\Temp\ccRbWBA9.o (memcpy)
 c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libc.a(lib_a-reent.o)
-                              C:\Users\A01169~1\AppData\Local\Temp\ccCKbk7J.o (errno)
+                              C:\Users\A01169~1\AppData\Local\Temp\ccRbWBA9.o (errno)
 c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libc.a(lib_a-strchr.o)
-                              C:\Users\A01169~1\AppData\Local\Temp\cc8pel7z.o (strchr)
+                              C:\Users\A01169~1\AppData\Local\Temp\cckT5DVO.o (strchr)
 c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libc.a(lib_a-strlen-stub.o)
-                              C:\Users\A01169~1\AppData\Local\Temp\ccCKbk7J.o (strlen)
+                              C:\Users\A01169~1\AppData\Local\Temp\ccRbWBA9.o (strlen)
 c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libc.a(lib_a-strnlen.o)
-                              C:\Users\A01169~1\AppData\Local\Temp\cc5BvP9K.o (strnlen)
+                              C:\Users\A01169~1\AppData\Local\Temp\ccqhpZjG.o (strnlen)
 c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libc.a(lib_a-wctob.o)
-                              C:\Users\A01169~1\AppData\Local\Temp\cc8pel7z.o (wctob)
+                              C:\Users\A01169~1\AppData\Local\Temp\cckT5DVO.o (wctob)
 c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libc.a(lib_a-freer.o)
                               c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libc.a(lib_a-reent.o) (_free_r)
 c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libc.a(lib_a-impure.o)
@@ -51,7 +51,7 @@ __lock___sinit_recursive_mutex
                     0x1               c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libc.a(lib_a-lock.o)
 __lock___malloc_recursive_mutex
                     0x1               c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libc.a(lib_a-lock.o)
-buffer              0x1f4             C:\Users\A01169~1\AppData\Local\Temp\ccMXYCww.o
+buffer              0x1f4             C:\Users\A01169~1\AppData\Local\Temp\ccoHf1Zb.o
 __lock___at_quick_exit_mutex
                     0x1               c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libc.a(lib_a-lock.o)
 __lock___dd_hash_mutex
@@ -62,18 +62,35 @@ __lock___sfp_recursive_mutex
 
 Discarded input sections
 
- .data          0x00000000        0x0 C:\Users\A01169~1\AppData\Local\Temp\ccMXYCww.o
- .bss           0x00000000        0x0 C:\Users\A01169~1\AppData\Local\Temp\ccMXYCww.o
- .comment       0x00000000       0x76 C:\Users\A01169~1\AppData\Local\Temp\ccMXYCww.o
- .text          0x00000000        0x0 C:\Users\A01169~1\AppData\Local\Temp\cc4JWiQO.o
- .data          0x00000000        0x0 C:\Users\A01169~1\AppData\Local\Temp\cc4JWiQO.o
- .bss           0x00000000        0x0 C:\Users\A01169~1\AppData\Local\Temp\cc4JWiQO.o
- .text._sbrk    0x00000000       0x2c C:\Users\A01169~1\AppData\Local\Temp\cc4JWiQO.o
- .comment       0x00000000       0x76 C:\Users\A01169~1\AppData\Local\Temp\ccCKbk7J.o
- .data          0x00000000        0x0 C:\Users\A01169~1\AppData\Local\Temp\cc5BvP9K.o
- .bss           0x00000000        0x0 C:\Users\A01169~1\AppData\Local\Temp\cc5BvP9K.o
- .comment       0x00000000       0x76 C:\Users\A01169~1\AppData\Local\Temp\cc5BvP9K.o
- .comment       0x00000000       0x76 C:\Users\A01169~1\AppData\Local\Temp\cc8pel7z.o
+ .data          0x00000000        0x0 C:\Users\A01169~1\AppData\Local\Temp\ccoHf1Zb.o
+ .bss           0x00000000        0x0 C:\Users\A01169~1\AppData\Local\Temp\ccoHf1Zb.o
+ .comment       0x00000000       0x76 C:\Users\A01169~1\AppData\Local\Temp\ccoHf1Zb.o
+ .text          0x00000000        0x0 C:\Users\A01169~1\AppData\Local\Temp\ccMrilcU.o
+ .data          0x00000000        0x0 C:\Users\A01169~1\AppData\Local\Temp\ccMrilcU.o
+ .bss           0x00000000        0x0 C:\Users\A01169~1\AppData\Local\Temp\ccMrilcU.o
+ .text._sbrk    0x00000000       0x2c C:\Users\A01169~1\AppData\Local\Temp\ccMrilcU.o
+ .comment       0x00000000       0x76 C:\Users\A01169~1\AppData\Local\Temp\ccRbWBA9.o
+ .data          0x00000000        0x0 C:\Users\A01169~1\AppData\Local\Temp\ccqhpZjG.o
+ .bss           0x00000000        0x0 C:\Users\A01169~1\AppData\Local\Temp\ccqhpZjG.o
+ .comment       0x00000000       0x76 C:\Users\A01169~1\AppData\Local\Temp\ccqhpZjG.o
+ .comment       0x00000000       0x76 C:\Users\A01169~1\AppData\Local\Temp\cckT5DVO.o
+ .text          0x00000000      0x4fc C:\Users\A01169~1\AppData\Local\Temp\cc2uVrMj.o
+ .data          0x00000000        0x0 C:\Users\A01169~1\AppData\Local\Temp\cc2uVrMj.o
+ .bss           0x00000000      0x8bc C:\Users\A01169~1\AppData\Local\Temp\cc2uVrMj.o
+ .comment       0x00000000       0x76 C:\Users\A01169~1\AppData\Local\Temp\cc2uVrMj.o
+ .ARM.attributes
+                0x00000000       0x39 C:\Users\A01169~1\AppData\Local\Temp\cc2uVrMj.o
+ .text          0x00000000      0x944 C:\Users\A01169~1\AppData\Local\Temp\cc2B0v44.o
+ .data          0x00000000        0x8 C:\Users\A01169~1\AppData\Local\Temp\cc2B0v44.o
+ .bss           0x00000000        0x0 C:\Users\A01169~1\AppData\Local\Temp\cc2B0v44.o
+ .comment       0x00000000       0x76 C:\Users\A01169~1\AppData\Local\Temp\cc2B0v44.o
+ .ARM.attributes
+                0x00000000       0x39 C:\Users\A01169~1\AppData\Local\Temp\cc2B0v44.o
+ .text          0x00000000      0x144 C:\Users\A01169~1\AppData\Local\Temp\ccME9cKS.o
+ .data          0x00000000        0x0 C:\Users\A01169~1\AppData\Local\Temp\ccME9cKS.o
+ .bss           0x00000000        0x0 C:\Users\A01169~1\AppData\Local\Temp\ccME9cKS.o
+ .ARM.attributes
+                0x00000000       0x27 C:\Users\A01169~1\AppData\Local\Temp\ccME9cKS.o
  .text          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libc.a(lib_a-ctype_.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libc.a(lib_a-ctype_.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libc.a(lib_a-ctype_.o)
@@ -232,24 +249,24 @@ Linker script and memory map
                 0x00008000                __text_start__ = .
                 0x00008000                _start = .
  *(.text.startup)
- .text.startup  0x00008000      0x43c C:\Users\A01169~1\AppData\Local\Temp\cc4JWiQO.o
+ .text.startup  0x00008000      0x43c C:\Users\A01169~1\AppData\Local\Temp\ccMrilcU.o
                 0x0000839c                RPi_CpuIdString
                 0x000083f4                EnableInterrupts
                 0x000083fc                DisableInterrupts
                 0x00008404                CoreExecute
  *(.text .text.* .gnu.linkonce.t.*)
- .text          0x0000843c      0x284 C:\Users\A01169~1\AppData\Local\Temp\ccMXYCww.o
+ .text          0x0000843c      0x284 C:\Users\A01169~1\AppData\Local\Temp\ccoHf1Zb.o
                 0x0000843c                DisplayDirectory
                 0x00008560                kernel_main
  .text.ARMaddrToGPUaddr
-                0x000086c0       0x14 C:\Users\A01169~1\AppData\Local\Temp\cc4JWiQO.o
+                0x000086c0       0x14 C:\Users\A01169~1\AppData\Local\Temp\ccMrilcU.o
                 0x000086c0                ARMaddrToGPUaddr
  .text.GPUaddrToARMaddr
-                0x000086d4       0x5c C:\Users\A01169~1\AppData\Local\Temp\cc4JWiQO.o
+                0x000086d4       0x5c C:\Users\A01169~1\AppData\Local\Temp\ccMrilcU.o
                 0x000086d4                GPUaddrToARMaddr
                 0x000086e8                c_irq_handler
                 0x000086ec                c_irq_identify_and_clear_source
- .text          0x00008730     0x2368 C:\Users\A01169~1\AppData\Local\Temp\ccCKbk7J.o
+ .text          0x00008730     0x2368 C:\Users\A01169~1\AppData\Local\Temp\ccRbWBA9.o
                 0x0000971c                gpio_setup
                 0x00009780                gpio_output
                 0x000097d8                gpio_input
@@ -290,12 +307,12 @@ Linker script and memory map
                 0x0000a9bc                _fstat
                 0x0000a9cc                _exit
                 0x0000a9d0                _write
- .text          0x0000aa98      0xaac C:\Users\A01169~1\AppData\Local\Temp\cc5BvP9K.o
+ .text          0x0000aa98      0xaac C:\Users\A01169~1\AppData\Local\Temp\ccqhpZjG.o
                 0x0000ad44                vsprintf
                 0x0000b4c4                sprintf
                 0x0000b4f0                printf
  *fill*         0x0000b544        0x4 
- .text          0x0000b548     0x35bc C:\Users\A01169~1\AppData\Local\Temp\cc8pel7z.o
+ .text          0x0000b548     0x35bc C:\Users\A01169~1\AppData\Local\Temp\cckT5DVO.o
                 0x0000c794                sdTransferBlocks
                 0x0000ca90                sdClearBlocks
                 0x0000cbc0                getSetNextCluster
@@ -346,20 +363,20 @@ Linker script and memory map
  .v4_bx         0x0000eea0        0x0 linker stubs
 
 .iplt           0x0000eea0        0x0
- .iplt          0x0000eea0        0x0 C:\Users\A01169~1\AppData\Local\Temp\ccMXYCww.o
+ .iplt          0x0000eea0        0x0 C:\Users\A01169~1\AppData\Local\Temp\ccoHf1Zb.o
 
 .bss            0x0000eea0     0x27e8
                 0x0000eea0                . = ALIGN (0x4)
                 0x0000eea0                __bss_start__ = .
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x0000eea0       0x4c C:\Users\A01169~1\AppData\Local\Temp\ccCKbk7J.o
+ .bss           0x0000eea0       0x4c C:\Users\A01169~1\AppData\Local\Temp\ccRbWBA9.o
                 0x0000eea4                console
  *fill*         0x0000eeec        0x4 
- .bss           0x0000eef0     0x25a0 C:\Users\A01169~1\AppData\Local\Temp\cc8pel7z.o
+ .bss           0x0000eef0     0x25a0 C:\Users\A01169~1\AppData\Local\Temp\cckT5DVO.o
                 0x0000eef0                LOG_ERROR
  *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
  *(COMMON)
- COMMON         0x00011490      0x1f4 C:\Users\A01169~1\AppData\Local\Temp\ccMXYCww.o
+ COMMON         0x00011490      0x1f4 C:\Users\A01169~1\AppData\Local\Temp\ccoHf1Zb.o
                 0x00011490                buffer
  COMMON         0x00011684        0x4 c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libc.a(lib_a-reent.o)
                 0x00011684                errno
@@ -370,20 +387,20 @@ Linker script and memory map
                 0x00011688                . = ALIGN (0x4)
                 0x00011688                __rodata_start__ = .
  *(.rodata .rodata.*)
- .rodata        0x00011688       0x30 C:\Users\A01169~1\AppData\Local\Temp\ccMXYCww.o
+ .rodata        0x00011688       0x30 C:\Users\A01169~1\AppData\Local\Temp\ccoHf1Zb.o
  .rodata.str1.4
-                0x000116b8       0xdc C:\Users\A01169~1\AppData\Local\Temp\ccMXYCww.o
+                0x000116b8       0xdc C:\Users\A01169~1\AppData\Local\Temp\ccoHf1Zb.o
                                  0xe0 (size before relaxing)
- .rodata.cpuid  0x00011794       0x36 C:\Users\A01169~1\AppData\Local\Temp\cc4JWiQO.o
+ .rodata.cpuid  0x00011794       0x36 C:\Users\A01169~1\AppData\Local\Temp\ccMrilcU.o
  *fill*         0x000117ca        0x2 
- .rodata        0x000117cc     0x1004 C:\Users\A01169~1\AppData\Local\Temp\ccCKbk7J.o
+ .rodata        0x000117cc     0x1004 C:\Users\A01169~1\AppData\Local\Temp\ccRbWBA9.o
                 0x000127cc                BitFontEnd
  .rodata.str1.4
-                0x000127d0       0xd0 C:\Users\A01169~1\AppData\Local\Temp\ccCKbk7J.o
- .rodata        0x000128a0       0x10 C:\Users\A01169~1\AppData\Local\Temp\cc5BvP9K.o
- .rodata        0x000128b0       0x14 C:\Users\A01169~1\AppData\Local\Temp\cc8pel7z.o
+                0x000127d0       0xd0 C:\Users\A01169~1\AppData\Local\Temp\ccRbWBA9.o
+ .rodata        0x000128a0       0x10 C:\Users\A01169~1\AppData\Local\Temp\ccqhpZjG.o
+ .rodata        0x000128b0       0x14 C:\Users\A01169~1\AppData\Local\Temp\cckT5DVO.o
  .rodata.str1.4
-                0x000128c4      0x36a C:\Users\A01169~1\AppData\Local\Temp\cc8pel7z.o
+                0x000128c4      0x36a C:\Users\A01169~1\AppData\Local\Temp\cckT5DVO.o
  *fill*         0x00012c2e        0x2 
  .rodata._ctype_
                 0x00012c30      0x101 c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libc.a(lib_a-ctype_.o)
@@ -401,26 +418,26 @@ Linker script and memory map
                 0x00012d40                __rodata_end__ = .
 
 .rel.dyn        0x00012d40        0x0
- .rel.iplt      0x00012d40        0x0 C:\Users\A01169~1\AppData\Local\Temp\ccMXYCww.o
+ .rel.iplt      0x00012d40        0x0 C:\Users\A01169~1\AppData\Local\Temp\ccoHf1Zb.o
 
 .data           0x00012d40      0x96c
                 0x00012d40                . = ALIGN (0x4)
                 0x00012d40                __data_start__ = .
  *(.data .data.* .gnu.linkonce.d.*)
  .data.smartstart
-                0x00012d40        0xc C:\Users\A01169~1\AppData\Local\Temp\cc4JWiQO.o
+                0x00012d40        0xc C:\Users\A01169~1\AppData\Local\Temp\ccMrilcU.o
                 0x00012d44                RPi_CPUCurrentMode
                 0x00012d48                RPi_Heap
  .data.smartstart32
-                0x00012d4c       0x18 C:\Users\A01169~1\AppData\Local\Temp\cc4JWiQO.o
+                0x00012d4c       0x18 C:\Users\A01169~1\AppData\Local\Temp\ccMrilcU.o
                 0x00012d4c                RPi_IO_Base_Addr
                 0x00012d50                RPi_BootAddr
                 0x00012d54                RPi_CoresReady
                 0x00012d58                RPi_CPUBootMode
                 0x00012d5c                RPi_CpuId
                 0x00012d60                RPi_CompileMode
- .data          0x00012d64        0x4 C:\Users\A01169~1\AppData\Local\Temp\ccCKbk7J.o
- .data          0x00012d68      0x3a8 C:\Users\A01169~1\AppData\Local\Temp\cc8pel7z.o
+ .data          0x00012d64        0x4 C:\Users\A01169~1\AppData\Local\Temp\ccRbWBA9.o
+ .data          0x00012d68      0x3a8 C:\Users\A01169~1\AppData\Local\Temp\cckT5DVO.o
  .data._impure_ptr
                 0x00013110        0x4 c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libc.a(lib_a-impure.o)
                 0x00013110                _impure_ptr
@@ -435,7 +452,7 @@ Linker script and memory map
                 0x000136ac                __data_end__ = .
 
 .igot.plt       0x000136ac        0x0
- .igot.plt      0x000136ac        0x0 C:\Users\A01169~1\AppData\Local\Temp\ccMXYCww.o
+ .igot.plt      0x000136ac        0x0 C:\Users\A01169~1\AppData\Local\Temp\ccoHf1Zb.o
 
 .data1          0x000136ac        0x4
                 0x000136b0                . = ALIGN (0x10)
@@ -522,15 +539,15 @@ Linker script and memory map
                 0x00000000       0x39
  *(.ARM.attributes)
  .ARM.attributes
-                0x00000000       0x39 C:\Users\A01169~1\AppData\Local\Temp\ccMXYCww.o
+                0x00000000       0x39 C:\Users\A01169~1\AppData\Local\Temp\ccoHf1Zb.o
  .ARM.attributes
-                0x00000039       0x27 C:\Users\A01169~1\AppData\Local\Temp\cc4JWiQO.o
+                0x00000039       0x27 C:\Users\A01169~1\AppData\Local\Temp\ccMrilcU.o
  .ARM.attributes
-                0x00000060       0x39 C:\Users\A01169~1\AppData\Local\Temp\ccCKbk7J.o
+                0x00000060       0x39 C:\Users\A01169~1\AppData\Local\Temp\ccRbWBA9.o
  .ARM.attributes
-                0x00000099       0x39 C:\Users\A01169~1\AppData\Local\Temp\cc5BvP9K.o
+                0x00000099       0x39 C:\Users\A01169~1\AppData\Local\Temp\ccqhpZjG.o
  .ARM.attributes
-                0x000000d2       0x39 C:\Users\A01169~1\AppData\Local\Temp\cc8pel7z.o
+                0x000000d2       0x39 C:\Users\A01169~1\AppData\Local\Temp\cckT5DVO.o
  .ARM.attributes
                 0x0000010b       0x2b c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libc.a(lib_a-ctype_.o)
  .ARM.attributes
@@ -576,11 +593,14 @@ Linker script and memory map
  *(.note.GNU-stack)
  *(.gnu_debuglink)
  *(.gnu.lto_*)
-LOAD C:\Users\A01169~1\AppData\Local\Temp\ccMXYCww.o
-LOAD C:\Users\A01169~1\AppData\Local\Temp\cc4JWiQO.o
-LOAD C:\Users\A01169~1\AppData\Local\Temp\ccCKbk7J.o
-LOAD C:\Users\A01169~1\AppData\Local\Temp\cc5BvP9K.o
-LOAD C:\Users\A01169~1\AppData\Local\Temp\cc8pel7z.o
+LOAD C:\Users\A01169~1\AppData\Local\Temp\ccoHf1Zb.o
+LOAD C:\Users\A01169~1\AppData\Local\Temp\ccMrilcU.o
+LOAD C:\Users\A01169~1\AppData\Local\Temp\ccRbWBA9.o
+LOAD C:\Users\A01169~1\AppData\Local\Temp\ccqhpZjG.o
+LOAD C:\Users\A01169~1\AppData\Local\Temp\cckT5DVO.o
+LOAD C:\Users\A01169~1\AppData\Local\Temp\cc2uVrMj.o
+LOAD C:\Users\A01169~1\AppData\Local\Temp\cc2B0v44.o
+LOAD C:\Users\A01169~1\AppData\Local\Temp\ccME9cKS.o
 LOAD c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libc.a
 LOAD c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libm.a
 LOAD c:/program files (x86)/gnu tools arm embedded/8 2018-q4-major/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7+fp/hard\libg.a

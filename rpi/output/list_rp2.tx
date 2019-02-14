@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 1
 
 
    1              		.arch armv7-a
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
   55 0068 022181E0 		add	r2, r1, r2, lsl #2
   56 006c E8A1DDE5 		ldrb	r10, [sp, #488]	@ zero_extendqisi2
   57 0070 B41112E5 		ldr	r1, [r2, #-436]
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 2
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 2
 
 
   58 0074 E791DDE5 		ldrb	r9, [sp, #487]	@ zero_extendqisi2
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  112              		.type	kernel_main, %function
  113              	kernel_main:
  114              		@ args = 0, pretend = 0, frame = 8
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 3
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 3
 
 
  115              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  169 01f4 0050A0E3 		mov	r5, #0
  170 01f8 074040E3 		movt	r4, 7
  171              	.L14:
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 4
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 4
 
 
  172 01fc 0100A0E3 		mov	r0, #1
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  226 002c DC000000 		.word	.LC11
  227              		.section	.rodata.str1.4,"aMS",%progbits,1
  228              		.align	2
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 5
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 5
 
 
  229              	.LC14:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  257 00b0 4A616E00 		.ascii	"Jan\000"
  258              	.LC1:
  259 00b4 46656200 		.ascii	"Feb\000"
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 6
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 6
 
 
  260              	.LC2:
@@ -322,27 +322,27 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  278              	.LC11:
  279 00dc 44656300 		.ascii	"Dec\000"
  280              		.ident	"GCC: (GNU Tools for Arm Embedded Processors 8-2018-q4-major) 8.2.1 20181213 (release) [gcc
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 7
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 7
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.c
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:18     .text:00000000 $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:25     .text:00000000 DisplayDirectory
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:213    .rodata:00000000 .LANCHOR0
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:232    .rodata.str1.4:0000000c .LC15
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:229    .rodata.str1.4:00000000 .LC14
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:113    .text:00000124 kernel_main
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:236    .rodata.str1.4:0000004c .LC16
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:239    .rodata.str1.4:00000050 .LC17
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:242    .rodata.str1.4:00000064 .LC18
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:245    .rodata.str1.4:0000006c .LC19
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:247    .rodata.str1.4:00000080 .LC20
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:18     .text:00000000 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:25     .text:00000000 DisplayDirectory
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:213    .rodata:00000000 .LANCHOR0
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:232    .rodata.str1.4:0000000c .LC15
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:229    .rodata.str1.4:00000000 .LC14
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:113    .text:00000124 kernel_main
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:236    .rodata.str1.4:0000004c .LC16
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:239    .rodata.str1.4:00000050 .LC17
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:242    .rodata.str1.4:00000064 .LC18
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:245    .rodata.str1.4:0000006c .LC19
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:247    .rodata.str1.4:00000080 .LC20
                             *COM*:000001f4 buffer
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:250    .rodata.str1.4:0000008c .LC21
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:253    .rodata.str1.4:000000a0 .LC22
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:212    .rodata:00000000 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:228    .rodata.str1.4:00000000 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:250    .rodata.str1.4:0000008c .LC21
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:253    .rodata.str1.4:000000a0 .LC22
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:212    .rodata:00000000 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:228    .rodata.str1.4:00000000 $d
 
 UNDEFINED SYMBOLS
 sdFindFirstFile
@@ -358,7 +358,7 @@ set_Activity_LED
 timer_wait
 sdReadFile
 sdCloseHandle
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 1
 
 
    1              	# 1 "src/boot/SmartStart32.S"
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
   52              	;@"========================================================================="
   53              	#define I_Bit  (1 << 7)							// Irq flag bit in cpsr (CPUMODE register)
   54              	#define F_Bit  (1 << 6)							// Fiq flag bit in cpsr (CPUMODE register)
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 2
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 2
 
 
   55              	
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  109              	.NotInHypMode:
  110              	;@"================================================================"
  111              	;@  Setup stack pointers for each core and each CPU operation mode
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 3
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 3
 
 
  112              	;@"================================================================"
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  166 00e0 500F01EE 		mcr p15,0,r0,c1,c0, #2					;@ Access Control Register = R0
  167 00e4 0101A0E3 		mov r0, #0x40000000						;@ R0 = Enable VFP
  168 00e8 100AE8EE 		vmsr fpexc, r0							;@ FPEXC = R0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 4
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 4
 
 
  169              	;@"================================================================"
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  223 0154 1F2002E2 		and r2, r2, #0x1F						;@ Clear all but CPU mode bits in register r2
  224 0158 68119FE5 		ldr r1, =RPi_CPUCurrentMode
  225 015c 002081E5 		str r2, [r1]							;@ Hold the changed CPU mode
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 5
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 5
 
 
  226              	;@"================================================================"
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  280 01c0 FEFFFFEA 	    b .pi_detect_fail
  281              	;@"================================================================"
  282              	;@  Raspberry PI IO base address was detected as 0x3f000000
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 6
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 6
 
 
  283              	;@  RPi_IO_Base_Addr => 0x3f000000
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  337 0254 0111A0E3 	 	mov	r1, #1073741824						;@ 0x40000000
  338 0258 94209FE5 	    ldr r2, =multicore_start				;@ Address of CoreSetup call
  339 025c AC2081E5 		str	r2, [r1, #172]						;@ Write ExtraCoreSetup to 0x400000AC which signals core2 to jump
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 7
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 7
 
 
  340              	.WaitCore2ACK:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  390 034c 405085E2 		add	r5, #(0x400000CC-0x4000008C)	@ mbox
  391              	SecondarySpinLoop:
  392 0350 004295E7 		ldr	r4, [r5, r0, lsl #4]
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 8
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 8
 
 
  393 0354 030054E1 		cmp	r4, r3
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  440 0400 1EFF2FE1 		bx  lr									;@ Return
  441              	
  442              	
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 9
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 9
 
 
  443              	.globl CoreExecute
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  496              	;@ C Function: uint32_t GPUaddrToARMaddr (uint32_t BUSaddress);
  497              	;@ Entry: R0 will have GPUAddress value
  498              	;@"================================================================"
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 10
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 10
 
 
  499              	GPUaddrToARMaddr:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  553 000c 000053E3 	        cmp     r3, #0
  554 0010 0130A001 	        moveq   r3, r1
  555 0014 000083E0 	        add     r0, r3, r0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 11
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 11
 
 
  556 0018 000082E5 	        str     r0, [r2]
@@ -1013,7 +1013,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  593              	
  594              	.globl RPi_CompileMode;					// Make sure RPi_CompileMode label is global
  595 0014 00000000 	RPi_CompileMode : .4byte 0;				// Compile mode is 4 byte variable in 32bit mode
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 12
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 12
 
 
 DEFINED SYMBOLS
@@ -1073,7 +1073,7 @@ src/boot/SmartStart32.S:375    .text.startup:0000032c _unused_handler_h
 src/boot/SmartStart32.S:376    .text.startup:00000330 _interrupt_vector_h
 src/boot/SmartStart32.S:377    .text.startup:00000334 _fast_interrupt_vector_h
 src/boot/SmartStart32.S:370    .text.startup:00000318 $d
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 13
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 13
 
 
 src/boot/SmartStart32.S:520    .text.GPUaddrToARMaddr:0000001c _irq_handler_stub
@@ -1130,7 +1130,7 @@ __bss_start__
 __bss_end__
 kernel_main
 _end
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 1
 
 
    1              		.arch armv7-a
@@ -1190,7 +1190,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
   55 0068 FAFFFF1A 		bne	.L3
   56 006c 071083E0 		add	r1, r3, r7
   57 0070 015085E2 		add	r5, r5, #1
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 2
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 2
 
 
   58 0074 050056E1 		cmp	r6, r5
@@ -1250,7 +1250,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  112 0118 14B090E5 		ldr	fp, [r0, #20]
  113 011c 8660A0E1 		lsl	r6, r6, #1
  114 0120 8C3083E0 		add	r3, r3, ip, lsl #1
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 3
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 3
 
 
  115 0124 2290D0E5 		ldrb	r9, [r0, #34]	@ zero_extendqisi2
@@ -1310,7 +1310,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  169 01e8 141080E5 		str	r1, [r0, #20]
  170 01ec F08FBDE8 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
  171              	.L40:
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 4
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 4
 
 
  172 01f0 0850A0E1 		mov	r5, r8
@@ -1370,7 +1370,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  226 0298 2180D0E5 		ldrb	r8, [r0, #33]	@ zero_extendqisi2
  227 029c 2060D0E5 		ldrb	r6, [r0, #32]	@ zero_extendqisi2
  228 02a0 834084E0 		add	r4, r4, r3, lsl #1
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 5
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 5
 
 
  229 02a4 2800000A 		beq	.L50
@@ -1430,7 +1430,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  283              		.fpu neon
  284              		.type	DiagLine16, %function
  285              	DiagLine16:
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 6
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 6
 
 
  286              		@ args = 4, pretend = 0, frame = 16
@@ -1490,7 +1490,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  340 0420 0CC09DE5 		ldr	ip, [sp, #12]
  341 0424 101080E5 		str	r1, [r0, #16]
  342 0428 92C322E0 		mla	r2, r2, r3, ip
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 7
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 7
 
 
  343 042c 142080E5 		str	r2, [r0, #20]
@@ -1550,7 +1550,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  397 04d4 0800A0E1 		mov	r0, r8
  398 04d8 0A00A0B1 		movlt	r0, r10
  399 04dc 0730A0E1 		mov	r3, r7
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 8
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 8
 
 
  400 04e0 076000E2 		and	r6, r0, #7
@@ -1610,7 +1610,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  454 0590 04208DE5 		str	r2, [sp, #4]
  455 0594 1400000A 		beq	.L73
  456 0598 0160A0E1 		mov	r6, r1
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 9
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 9
 
 
  457 059c 0340A0E1 		mov	r4, r3
@@ -1670,7 +1670,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  511              	.L92:
  512 063c 0320A0E3 		mov	r2, #3
  513 0640 0400A0E1 		mov	r0, r4
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 10
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 10
 
 
  514 0644 024084E0 		add	r4, r4, r2
@@ -1730,7 +1730,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  568 06ec F08FBDE8 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
  569              	.L103:
  570 06f0 0400A0E1 		mov	r0, r4
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 11
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 11
 
 
  571 06f4 015085E2 		add	r5, r5, #1
@@ -1790,7 +1790,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  625              		@ frame_needed = 0, uses_anonymous_args = 0
  626 0780 F04F2DE9 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}
  627 0784 00B0A0E1 		mov	fp, r0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 12
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 12
 
 
  628 0788 140090E5 		ldr	r0, [r0, #20]
@@ -1850,7 +1850,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  682              		@ sp needed
  683 0858 F08FBDE8 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
  684              		.size	DiagLine24, .-DiagLine24
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 13
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 13
 
 
  685              		.align	2
@@ -1910,7 +1910,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  739 090c 0CD08DE2 		add	sp, sp, #12
  740              		@ sp needed
  741 0910 F08FBDE8 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 14
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 14
 
 
  742              		.size	WriteChar24, .-WriteChar24
@@ -1970,7 +1970,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  796              		.arm
  797              		.fpu neon
  798              		.type	ClearArea32, %function
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 15
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 15
 
 
  799              	ClearArea32:
@@ -2030,7 +2030,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  853 0a48 00E083E5 		str	lr, [r3]
  854 0a4c 04E090E5 		ldr	lr, [r0, #4]
  855 0a50 0E3143E0 		sub	r3, r3, lr, lsl #2
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 16
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 16
 
 
  856 0a54 F8FFFF1A 		bne	.L168
@@ -2090,7 +2090,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  910 0ad4 107090E5 		ldr	r7, [r0, #16]
  911 0ad8 148090E5 		ldr	r8, [r0, #20]
  912 0adc 020051E1 		cmp	r1, r2
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 17
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 17
 
 
  913 0ae0 9E782CE0 		mla	ip, lr, r8, r7
@@ -2150,7 +2150,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  967              	.L195:
  968 0b88 000052E3 		cmp	r2, #0
  969 0b8c 071003E2 		and	r1, r3, #7
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 18
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 18
 
 
  970 0b90 8220A0E1 		lsl	r2, r2, #1
@@ -2210,7 +2210,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1024 0c38 0C404410 		subne	r4, r4, ip
  1025 0c3c 0C408400 		addeq	r4, r4, ip
  1026 0c40 060052E1 		cmp	r2, r6
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 19
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 19
 
 
  1027 0c44 F0FFFF1A 		bne	.L203
@@ -2270,7 +2270,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1081 0cf0 F8FFFF1A 		bne	.L218
  1082 0cf4 040094E5 		ldr	r0, [r4, #4]
  1083 0cf8 020140E2 		sub	r0, r0, #-2147483648
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 20
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 20
 
 
  1084 0cfc 100F6FE1 		clz	r0, r0
@@ -2330,7 +2330,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1138 0da0 003092E5 		ldr	r3, [r2]
  1139 0da4 0F3003E2 		and	r3, r3, #15
  1140 0da8 080053E3 		cmp	r3, #8
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 21
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 21
 
 
  1141 0dac F8FFFF1A 		bne	.L227
@@ -2390,7 +2390,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1195 0e4c 183085E5 		str	r3, [r5, #24]
  1196 0e50 1C2085E5 		str	r2, [r5, #28]
  1197 0e54 042085E5 		str	r2, [r5, #4]
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 22
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 22
 
 
  1198 0e58 0CE085E5 		str	lr, [r5, #12]
@@ -2450,7 +2450,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1252              		@ args = 4, pretend = 12, frame = 144
  1253              		@ frame_needed = 0, uses_anonymous_args = 1
  1254 0efc 0E002DE9 		push	{r1, r2, r3}
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 23
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 23
 
 
  1255 0f00 70402DE9 		push	{r4, r5, r6, lr}
@@ -2510,7 +2510,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1309 0fc8 08C09515 		ldrne	ip, [r5, #8]
  1310 0fcc 0100A003 		moveq	r0, #1
  1311 0fd0 0E009118 		ldmne	r1, {r1, r2, r3}
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 24
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 24
 
 
  1312 0fd4 00C08415 		strne	ip, [r4]
@@ -2570,7 +2570,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1366 1054 1100008A 		bhi	.L277
  1367 1058 003000E3 		movw	r3, #:lower16:RPi_IO_Base_Addr
  1368 105c 000051E3 		cmp	r1, #0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 25
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 25
 
 
  1369 1060 003040E3 		movt	r3, #:upper16:RPi_IO_Base_Addr
@@ -2630,7 +2630,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1423              		.fpu neon
  1424              		.type	gpio_checkEvent, %function
  1425              	gpio_checkEvent:
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 26
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 26
 
 
  1426              		@ args = 0, pretend = 0, frame = 0
@@ -2690,7 +2690,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1480              		.fpu neon
  1481              		.type	gpio_edgeDetect, %function
  1482              	gpio_edgeDetect:
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 27
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 27
 
 
  1483              		@ args = 0, pretend = 0, frame = 0
@@ -2750,7 +2750,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1537 1210 003093E5 		ldr	r3, [r3]
  1538 1214 022683E2 		add	r2, r3, #2097152
  1539 1218 033A83E2 		add	r3, r3, #12288
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 28
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 28
 
 
  1540 121c 941082E5 		str	r1, [r2, #148]
@@ -2810,7 +2810,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1594 12e4 F08FBDE8 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
  1595              		.size	gpio_fixResistor, .-gpio_fixResistor
  1596              		.align	2
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 29
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 29
 
 
  1597              		.global	timer_getTickCount
@@ -2870,7 +2870,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1651 1368 02B0A7E0 		adc	fp, r7, r2
  1652              	.L327:
  1653 136c 082093E5 		ldr	r2, [r3, #8]
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 30
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 30
 
 
  1654 1370 040093E5 		ldr	r0, [r3, #4]
@@ -2930,7 +2930,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1708 13e8 1EFF2FE1 		bx	lr
  1709              		.size	mailbox_write, .-mailbox_write
  1710              		.align	2
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 31
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 31
 
 
  1711              		.global	mailbox_read
@@ -2990,7 +2990,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1765 1470 04308DE5 		str	r3, [sp, #4]
  1766 1474 0C1185E7 		str	r1, [r5, ip, lsl #2]
  1767 1478 041085E5 		str	r1, [r5, #4]
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 32
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 32
 
 
  1768 147c 0500000A 		beq	.L347
@@ -3050,7 +3050,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1822 1534 94D08DE2 		add	sp, sp, #148
  1823              		@ sp needed
  1824 1538 7040BDE8 		pop	{r4, r5, r6, lr}
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 33
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 33
 
 
  1825 153c 0CD08DE2 		add	sp, sp, #12
@@ -3110,7 +3110,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1879 15d8 360053E3 		cmp	r3, #54
  1880 15dc 0100A083 		movhi	r0, #1
  1881 15e0 E8FFFF8A 		bhi	.L373
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 34
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 34
 
 
  1882              	.L378:
@@ -3170,7 +3170,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1936 16a8 0130A0E1 		mov	r3, r1
  1937 16ac CCFFFFEA 		b	.L378
  1938              		.size	set_Activity_LED, .-set_Activity_LED
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 35
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 35
 
 
  1939              		.align	2
@@ -3230,7 +3230,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1993              		.align	2
  1994              		.global	displaySmartStart
  1995              		.syntax unified
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 36
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 36
 
 
  1996              		.arm
@@ -3290,7 +3290,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2050 17e8 004040E3 		movt	r4, #:upper16:.LANCHOR0
  2051 17ec 0010A0E1 		mov	r1, r0
  2052 17f0 040084E2 		add	r0, r4, #4
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 37
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 37
 
 
  2053 17f4 1C2094E5 		ldr	r2, [r4, #28]
@@ -3350,7 +3350,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2107 1898 004040E3 		movt	r4, #:upper16:.LANCHOR0
  2108 189c 0500A0E1 		mov	r0, r5
  2109 18a0 1C3084E5 		str	r3, [r4, #28]
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 38
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 38
 
 
  2110 18a4 201084E5 		str	r1, [r4, #32]
@@ -3410,7 +3410,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2164              		.size	WriteText, .-WriteText
  2165              		.align	2
  2166              		.global	SetDCPenColor
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 39
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 39
 
 
  2167              		.syntax unified
@@ -3470,7 +3470,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2221              		.size	MoveToEx, .-MoveToEx
  2222              		.align	2
  2223              		.global	LineTo
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 40
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 40
 
 
  2224              		.syntax unified
@@ -3530,7 +3530,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2278 1a6c 031042E0 		sub	r1, r2, r3
  2279 1a70 0030E0E3 		mvn	r3, #0
  2280              	.L457:
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 41
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 41
 
 
  2281 1a74 000051E3 		cmp	r1, #0
@@ -3590,7 +3590,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2335              		.size	TextOut, .-TextOut
  2336              		.align	2
  2337              		.global	BmpOut
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 42
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 42
 
 
  2338              		.syntax unified
@@ -3650,7 +3650,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2392 1b98 011A8DE2 		add	r1, sp, #4096
  2393 1b9c 0CE090E5 		ldr	lr, [r0, #12]
  2394 1ba0 201081E2 		add	r1, r1, #32
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 43
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 43
 
 
  2395 1ba4 142080E5 		str	r2, [r0, #20]
@@ -3710,7 +3710,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2449 1c64 9462CAE7 		bfi	r6, r4, #5, #6
  2450 1c68 B060C5E1 		strh	r6, [r5]	@ movhi
  2451 1c6c 0E50A0E1 		mov	r5, lr
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 44
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 44
 
 
  2452 1c70 F5FFFF1A 		bne	.L496
@@ -3770,7 +3770,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2506 1d34 0310C2E4 		strb	r1, [r2], #3
  2507 1d38 02105CE5 		ldrb	r1, [ip, #-2]	@ zero_extendqisi2
  2508 1d3c 040052E1 		cmp	r2, r4
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 45
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 45
 
 
  2509 1d40 02E042E5 		strb	lr, [r2, #-2]
@@ -3830,7 +3830,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2563              	.L500:
  2564 1e04 0210D2E4 		ldrb	r1, [r2], #2	@ zero_extendqisi2
  2565 1e08 8111A0E1 		lsl	r1, r1, #3
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 46
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 46
 
 
  2566 1e0c 0310C4E4 		strb	r1, [r4], #3
@@ -3890,7 +3890,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2620 1ecc A62282E1 		orr	r2, r2, r6, lsr #5
  2621 1ed0 0221A0E1 		lsl	r2, r2, #2
  2622 1ed4 0120C5E5 		strb	r2, [r5, #1]
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 47
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 47
 
 
  2623 1ed8 F2FFFF1A 		bne	.L507
@@ -3950,7 +3950,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2677 1f54 0240A0E1 		mov	r4, r2
  2678 1f58 0380A0E1 		mov	r8, r3
  2679 1f5c 0050A0E1 		mov	r5, r0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 48
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 48
 
 
  2680 1f60 0160A0E1 		mov	r6, r1
@@ -4010,7 +4010,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2734              	.L549:
  2735 202c 0900A0E1 		mov	r0, r9
  2736 2030 9CD08DE2 		add	sp, sp, #156
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 49
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 49
 
 
  2737              		@ sp needed
@@ -4070,7 +4070,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2791              	.L550:
  2792 20f8 5C609DE5 		ldr	r6, [sp, #92]
  2793 20fc 99FFFFEA 		b	.L547
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 50
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 50
 
 
  2794              	.L571:
@@ -4130,7 +4130,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2848 21cc 002040E3 		movt	r2, #:upper16:PutImage24
  2849 21d0 38C083E5 		str	ip, [r3, #56]
  2850 21d4 3C0083E5 		str	r0, [r3, #60]
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 51
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 51
 
 
  2851 21d8 401083E5 		str	r1, [r3, #64]
@@ -4190,7 +4190,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2905              		.arm
  2906              		.fpu neon
  2907              		.type	GetConsole_Height, %function
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 52
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 52
 
 
  2908              	GetConsole_Height:
@@ -4250,7 +4250,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2962              	_getpid:
  2963              		@ args = 0, pretend = 0, frame = 0
  2964              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 53
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 53
 
 
  2965              		@ link register save eliminated.
@@ -4310,7 +4310,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3019 2288 1EFF2FE1 		bx	lr
  3020              		.size	_isatty, .-_isatty
  3021              		.align	2
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 54
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 54
 
 
  3022              		.weak	_fstat
@@ -4370,7 +4370,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3076 22e4 33FF2FE1 		blx	r3
  3077 22e8 1C3094E5 		ldr	r3, [r4, #28]
  3078 22ec 013083E2 		add	r3, r3, #1
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 55
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 55
 
 
  3079 22f0 1C3084E5 		str	r3, [r4, #28]
@@ -4430,7 +4430,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3133 0030 00000000 		.word	0
  3134 0034 FEFEFE6C 		.word	1828650750
  3135 0038 10387CFE 		.word	-25413616
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 56
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 56
 
 
  3136 003c 00000000 		.word	0
@@ -4490,7 +4490,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3190 0114 3EFE3E1E 		.word	507444798
  3191 0118 02060E1E 		.word	504235522
  3192 011c 00000000 		.word	0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 57
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 57
 
 
  3193 0120 3C180000 		.word	6204
@@ -4550,7 +4550,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3247 01f8 00103838 		.word	943198208
  3248 01fc 00000000 		.word	0
  3249 0200 00000000 		.word	0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 58
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 58
 
 
  3250 0204 00000000 		.word	0
@@ -4610,7 +4610,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3304 02dc 00000000 		.word	0
  3305 02e0 00000000 		.word	0
  3306 02e4 00000000 		.word	0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 59
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 59
 
 
  3307 02e8 18180000 		.word	6168
@@ -4670,7 +4670,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3361 03c0 06000000 		.word	6
  3362 03c4 6030180C 		.word	202911840
  3363 03c8 060C1830 		.word	806882310
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 60
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 60
 
 
  3364 03cc 00000000 		.word	0
@@ -4730,7 +4730,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3418 04a4 0C0C0C0C 		.word	202116108
  3419 04a8 78CCCCCC 		.word	-858993544
  3420 04ac 00000000 		.word	0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 61
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 61
 
 
  3421 04b0 66E60000 		.word	58982
@@ -4790,7 +4790,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3475 0588 C6C66C7C 		.word	2087503558
  3476 058c 00000000 		.word	0
  3477 0590 66660000 		.word	26214
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 62
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 62
 
 
  3478 0594 183C6666 		.word	1717976088
@@ -4850,7 +4850,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3532 066c 00000000 		.word	0
  3533 0670 00000000 		.word	0
  3534 0674 CCCC7600 		.word	7785676
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 63
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 63
 
 
  3535 0678 7CCCCCCC 		.word	-858993540
@@ -4910,7 +4910,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3589 0750 00000000 		.word	0
  3590 0754 CCCCCC00 		.word	13421772
  3591 0758 76CCCCCC 		.word	-858993546
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 64
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 64
 
 
  3592 075c 00000000 		.word	0
@@ -4970,7 +4970,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3646 0834 7C0C7800 		.word	7867516
  3647 0838 76CCCCCC 		.word	-858993546
  3648 083c 00000000 		.word	0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 65
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 65
 
 
  3649 0840 00CC0000 		.word	52224
@@ -5030,7 +5030,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3703 0918 6ED8D87E 		.word	2128140398
  3704 091c 00000000 		.word	0
  3705 0920 6C3E0000 		.word	15980
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 66
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 66
 
 
  3706 0924 CCFECCCC 		.word	-858980660
@@ -5090,7 +5090,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3760 09fc 000070D8 		.word	-663748608
  3761 0a00 60301800 		.word	1585248
  3762 0a04 7C0C7800 		.word	7867516
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 67
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 67
 
 
  3763 0a08 76CCCCCC 		.word	-858993546
@@ -5150,7 +5150,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3817 0ae0 00000000 		.word	0
  3818 0ae4 D86C3600 		.word	3566808
  3819 0ae8 0000366C 		.word	1815478272
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 68
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 68
 
 
  3820 0aec 00000000 		.word	0
@@ -5210,7 +5210,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3874 0bc4 FE06F636 		.word	922093310
  3875 0bc8 00000000 		.word	0
  3876 0bcc 00000000 		.word	0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 69
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 69
 
 
  3877 0bd0 36363636 		.word	909522486
@@ -5270,7 +5270,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3931 0ca8 00000000 		.word	0
  3932 0cac 00000000 		.word	0
  3933 0cb0 00000000 		.word	0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 70
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 70
 
 
  3934 0cb4 F700FF00 		.word	16711927
@@ -5330,7 +5330,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3988 0d8c 18181818 		.word	404232216
  3989 0d90 18181818 		.word	404232216
  3990 0d94 F8181818 		.word	404232440
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 71
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 71
 
 
  3991 0d98 00000000 		.word	0
@@ -5390,7 +5390,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  4045 0e70 00000000 		.word	0
  4046 0e74 1818DC76 		.word	1994135576
  4047 0e78 18181818 		.word	404232216
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 72
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 72
 
 
  4048 0e7c 00000000 		.word	0
@@ -5450,7 +5450,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  4102 0f54 18181818 		.word	404232216
  4103 0f58 70D8D8D8 		.word	-656877456
  4104 0f5c 00000000 		.word	0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 73
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 73
 
 
  4105 0f60 00000000 		.word	0
@@ -5510,7 +5510,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  4159 0001 000000   		.space	3
  4160              		.type	console, %object
  4161              		.size	console, 68
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 74
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 74
 
 
  4162              	console:
@@ -5566,96 +5566,96 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  4186      7574696F 
  4186      6E202569 
  4187              		.ident	"GCC: (GNU Tools for Arm Embedded Processors 8-2018-q4-major) 8.2.1 20181213 (release) [gcc
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 75
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 75
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 rpi-SmartStart.c
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:18     .text:00000000 $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:24     .text:00000000 ClearArea16
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:104    .text:00000104 VertLine16
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:216    .text:0000027c HorzLine16
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:285    .text:00000358 DiagLine16
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:353    .text:00000438 WriteChar16
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:3120   .rodata:00000000 BitFont
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:436    .text:00000554 PutImage16
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:489    .text:000005f4 ClearArea24
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:530    .text:0000066c VertLine24
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:585    .text:00000714 HorzLine24
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:623    .text:00000780 DiagLine24
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:690    .text:0000085c WriteChar24
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:748    .text:00000914 PutImage24
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:799    .text:000009ac ClearArea32
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:833    .text:00000a08 VertLine32
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:876    .text:00000a84 HorzLine32
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:905    .text:00000acc DiagLine32
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:947    .text:00000b48 WriteChar32
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:994    .text:00000bd4 PutImage32
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1035   .text:00000c4c mailbox_tag_message.constprop.4
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1097   .text:00000d14 mailbox_tag_message.constprop.7
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1174   .text:00000e04 mailbox_tag_message.constprop.5
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1251   .text:00000efc mailbox_tag_message.constprop.6
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1326   .text:00000fec gpio_setup
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1362   .text:00001050 gpio_output
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1395   .text:000010a8 gpio_input
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1425   .text:000010f0 gpio_checkEvent
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1454   .text:00001134 gpio_clearEvent
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1482   .text:00001174 gpio_edgeDetect
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1525   .text:000011f0 gpio_fixResistor
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1602   .text:000012e8 timer_getTickCount
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1631   .text:0000132c timer_wait
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1672   .text:0000139c tick_difference
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1686   .text:000013a8 mailbox_write
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1716   .text:000013ec mailbox_read
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1748   .text:00001438 mailbox_tag_message
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1834   .text:00001544 set_Activity_LED
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4154   .bss:00000000 .LANCHOR0
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4147   .data:00000000 .LANCHOR1
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1945   .text:000016b0 ARM_setmaxspeed
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4176   .rodata.str1.4:00000000 .LC0
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1999   .text:00001750 displaySmartStart
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4178   .rodata.str1.4:0000001c .LC1
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4182   .rodata.str1.4:00000064 .LC2
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2039   .text:000017c8 Embedded_Console_WriteChar
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2099   .text:00001884 WriteText
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2171   .text:0000196c SetDCPenColor
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2187   .text:00001980 SetDCBrushColor
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2203   .text:00001994 MoveToEx
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2228   .text:000019cc LineTo
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2302   .text:00001aa4 TextOut
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2342   .text:00001b14 BmpOut
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2375   .text:00001b68 CvtBmpLine
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2644   .text:00001f0c Rectangle
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 76
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:18     .text:00000000 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:24     .text:00000000 ClearArea16
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:104    .text:00000104 VertLine16
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:216    .text:0000027c HorzLine16
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:285    .text:00000358 DiagLine16
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:353    .text:00000438 WriteChar16
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:3120   .rodata:00000000 BitFont
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:436    .text:00000554 PutImage16
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:489    .text:000005f4 ClearArea24
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:530    .text:0000066c VertLine24
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:585    .text:00000714 HorzLine24
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:623    .text:00000780 DiagLine24
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:690    .text:0000085c WriteChar24
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:748    .text:00000914 PutImage24
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:799    .text:000009ac ClearArea32
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:833    .text:00000a08 VertLine32
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:876    .text:00000a84 HorzLine32
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:905    .text:00000acc DiagLine32
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:947    .text:00000b48 WriteChar32
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:994    .text:00000bd4 PutImage32
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1035   .text:00000c4c mailbox_tag_message.constprop.4
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1097   .text:00000d14 mailbox_tag_message.constprop.7
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1174   .text:00000e04 mailbox_tag_message.constprop.5
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1251   .text:00000efc mailbox_tag_message.constprop.6
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1326   .text:00000fec gpio_setup
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1362   .text:00001050 gpio_output
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1395   .text:000010a8 gpio_input
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1425   .text:000010f0 gpio_checkEvent
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1454   .text:00001134 gpio_clearEvent
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1482   .text:00001174 gpio_edgeDetect
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1525   .text:000011f0 gpio_fixResistor
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1602   .text:000012e8 timer_getTickCount
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1631   .text:0000132c timer_wait
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1672   .text:0000139c tick_difference
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1686   .text:000013a8 mailbox_write
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1716   .text:000013ec mailbox_read
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1748   .text:00001438 mailbox_tag_message
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1834   .text:00001544 set_Activity_LED
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4154   .bss:00000000 .LANCHOR0
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4147   .data:00000000 .LANCHOR1
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1945   .text:000016b0 ARM_setmaxspeed
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4176   .rodata.str1.4:00000000 .LC0
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1999   .text:00001750 displaySmartStart
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4178   .rodata.str1.4:0000001c .LC1
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4182   .rodata.str1.4:00000064 .LC2
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2039   .text:000017c8 Embedded_Console_WriteChar
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2099   .text:00001884 WriteText
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2171   .text:0000196c SetDCPenColor
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2187   .text:00001980 SetDCBrushColor
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2203   .text:00001994 MoveToEx
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2228   .text:000019cc LineTo
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2302   .text:00001aa4 TextOut
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2342   .text:00001b14 BmpOut
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2375   .text:00001b68 CvtBmpLine
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2644   .text:00001f0c Rectangle
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 76
 
 
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2669   .text:00001f40 PiConsole_Init
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4185   .rodata.str1.4:000000a4 .LC3
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2861   .text:000021e4 GetConsoleDC
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2870   .text:000021ec $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2872   .text:000021f0 $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2878   .text:000021f0 GetConsole_FrameBuffer
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2893   .text:00002200 GetConsole_Width
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2908   .text:00002210 GetConsole_Height
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2923   .text:00002220 _sbrk
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2945   .text:0000224c _kill
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2962   .text:00002264 _getpid
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2975   .text:0000226c _read
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2988   .text:00002274 _close
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:3001   .text:0000227c _lseek
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:3014   .text:00002284 _isatty
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:3027   .text:0000228c _fstat
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:3042   .text:0000229c _exit
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:3055   .text:000022a0 _write
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4162   .bss:00000004 console
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4172   .rodata:00001000 BitFontEnd
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:3117   .rodata:00000000 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4146   .data:00000000 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4150   .data:00000000 ActivityGPIOPort
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4153   .bss:00000000 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4157   .bss:00000000 ModelCheckHasRun
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4166   .bss:00000048 heap_end.6794
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4175   .rodata.str1.4:00000000 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2669   .text:00001f40 PiConsole_Init
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4185   .rodata.str1.4:000000a4 .LC3
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2861   .text:000021e4 GetConsoleDC
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2870   .text:000021ec $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2872   .text:000021f0 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2878   .text:000021f0 GetConsole_FrameBuffer
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2893   .text:00002200 GetConsole_Width
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2908   .text:00002210 GetConsole_Height
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2923   .text:00002220 _sbrk
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2945   .text:0000224c _kill
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2962   .text:00002264 _getpid
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2975   .text:0000226c _read
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2988   .text:00002274 _close
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:3001   .text:0000227c _lseek
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:3014   .text:00002284 _isatty
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:3027   .text:0000228c _fstat
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:3042   .text:0000229c _exit
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:3055   .text:000022a0 _write
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4162   .bss:00000004 console
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4172   .rodata:00001000 BitFontEnd
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:3117   .rodata:00000000 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4146   .data:00000000 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4150   .data:00000000 ActivityGPIOPort
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4153   .bss:00000000 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4157   .bss:00000000 ModelCheckHasRun
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4166   .bss:00000048 heap_end.6794
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4175   .rodata.str1.4:00000000 $d
 
 UNDEFINED SYMBOLS
 memcpy
@@ -5669,7 +5669,7 @@ strlen
 GPUaddrToARMaddr
 _end
 errno
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 1
 
 
    1              		.arch armv7-a
@@ -5729,7 +5729,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
   55 0060 0150A0E3 		mov	r5, #1
   56 0064 30C0A0E3 		mov	ip, #48
   57 0068 14C0CDE5 		strb	ip, [sp, #20]
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 2
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 2
 
 
   58 006c 0540A0E1 		mov	r4, r5
@@ -5789,7 +5789,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  112 0130 013046E2 		sub	r3, r6, #1
  113 0134 023043E0 		sub	r3, r3, r2
  114 0138 012082E2 		add	r2, r2, #1
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 3
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 3
 
 
  115 013c 020080E0 		add	r0, r0, r2
@@ -5849,7 +5849,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  169 01ec 000051E3 		cmp	r1, #0
  170 01f0 070000BA 		blt	.L55
  171 01f4 04001CE3 		tst	ip, #4
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 4
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 4
 
 
  172 01f8 1E00001A 		bne	.L56
@@ -5909,7 +5909,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  226              		.global	vsprintf
  227              		.syntax unified
  228              		.arm
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 5
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 5
 
 
  229              		.fpu neon
@@ -5969,7 +5969,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  283              	.L68:
  284 0358 0210A0E1 		mov	r1, r2
  285 035c E5FFFFEA 		b	.L59
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 6
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 6
 
 
  286              	.L64:
@@ -6029,7 +6029,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  340 0414 3C050000 		.word	.L77
  341 0418 3C050000 		.word	.L77
  342 041c 3C050000 		.word	.L77
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 7
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 7
 
 
  343 0420 3C050000 		.word	.L77
@@ -6089,7 +6089,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  397 04f8 B0070000 		.word	.L85
  398 04fc 3C050000 		.word	.L77
  399 0500 3C050000 		.word	.L77
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 8
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 8
 
 
  400 0504 3C050000 		.word	.L77
@@ -6149,7 +6149,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  454 05c0 38050000 		.word	.L124
  455 05c4 38050000 		.word	.L124
  456 05c8 38050000 		.word	.L124
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 9
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 9
 
 
  457 05cc 38050000 		.word	.L124
@@ -6209,7 +6209,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  511 06a4 38050000 		.word	.L124
  512 06a8 38050000 		.word	.L124
  513 06ac BC070000 		.word	.L127
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 10
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 10
 
 
  514 06b0 A8070000 		.word	.L128
@@ -6269,7 +6269,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  568 0764 0100DAE5 		ldrb	r0, [r10, #1]	@ zero_extendqisi2
  569 0768 DDFEFFEA 		b	.L60
  570              	.L131:
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 11
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 11
 
 
  571 076c 02A0A0E1 		mov	r10, r2
@@ -6329,7 +6329,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  625 0814 0E10A0E1 		mov	r1, lr
  626 0818 0C308DE5 		str	r3, [sp, #12]
  627 081c 0B00A0E1 		mov	r0, fp
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 12
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 12
 
 
  628 0820 FEFFFFEB 		bl	strnlen
@@ -6389,7 +6389,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  682 08dc 9AFFFFEA 		b	.L109
  683              	.L149:
  684 08e0 00E0A0E3 		mov	lr, #0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 13
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 13
 
 
  685              	.L74:
@@ -6449,7 +6449,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  739 0994 022043D2 		suble	r2, r3, #2
  740 0998 0C30A0D1 		movle	r3, ip
  741 099c 02C0A0D1 		movle	ip, r2
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 14
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 14
 
 
  742 09a0 A3FFFFDA 		ble	.L95
@@ -6509,7 +6509,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  796              		@ args = 4, pretend = 12, frame = 8
  797              		@ frame_needed = 0, uses_anonymous_args = 1
  798 0a2c 0E002DE9 		push	{r1, r2, r3}
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 15
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 15
 
 
  799 0a30 04E02DE5 		str	lr, [sp, #-4]!
@@ -6569,36 +6569,36 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  851      38394142 
  851      43444546 
  852              		.ident	"GCC: (GNU Tools for Arm Embedded Processors 8-2018-q4-major) 8.2.1 20181213 (release) [gcc
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 16
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 16
 
 
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 17
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 17
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 emb-stdio.c
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:18     .text:00000000 $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:24     .text:00000000 number
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:847    .rodata:00000000 .LANCHOR0
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:231    .text:000002ac vsprintf
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:264    .text:00000310 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:282    .text:00000354 $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:329    .text:000003e8 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:414    .text:00000538 $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:451    .text:000005b4 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:536    .text:00000704 $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:787    .text:00000a28 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:789    .text:00000a2c $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:795    .text:00000a2c sprintf
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:817    .text:00000a58 printf
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:846    .rodata:00000000 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:850    .rodata:00000000 digits.6155
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:18     .text:00000000 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:24     .text:00000000 number
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:847    .rodata:00000000 .LANCHOR0
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:231    .text:000002ac vsprintf
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:264    .text:00000310 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:282    .text:00000354 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:329    .text:000003e8 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:414    .text:00000538 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:451    .text:000005b4 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:536    .text:00000704 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:787    .text:00000a28 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:789    .text:00000a2c $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:795    .text:00000a2c sprintf
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:817    .text:00000a58 printf
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:846    .rodata:00000000 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:850    .rodata:00000000 digits.6155
 
 UNDEFINED SYMBOLS
 strnlen
 _ctype_
 Embedded_Console_WriteChar
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 1
 
 
    1              		.arch armv7-a
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
   55 006c 0150A0E1 		mov	r5, r1
   56 0070 EDFFFFEA 		b	.L2
   57              	.L3:
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 2
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 2
 
 
   58 0074 FEFFFFEB 		bl	timer_getTickCount
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  112 0114 5F7780E3 		orr	r7, r0, #24903680
  113 0118 14D04DE2 		sub	sp, sp, #20
  114 011c 0030A0E1 		mov	r3, r0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 3
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 3
 
 
  115 0120 0A7987E3 		orr	r7, r7, #163840
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  169 01e4 000055E3 		cmp	r5, #0
  170 01e8 0800000A 		beq	.L31
  171 01ec 24109CE5 		ldr	r1, [ip, #36]
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 4
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 4
 
 
  172 01f0 000000E3 		movw	r0, #:lower16:.LC2
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  226 0284 0040A0E3 		mov	r4, #0
  227 0288 0050A0E3 		mov	r5, #0
  228 028c 006000E3 		movw	r6, #:lower16:RPi_IO_Base_Addr
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 5
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 5
 
 
  229 0290 006040E3 		movt	r6, #:upper16:RPi_IO_Base_Addr
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  283 0350 00005A01 		cmpeq	r10, r0
  284 0354 EFFFFF8A 		bhi	.L68
  285 0358 2C1093E5 		ldr	r1, [r3, #44]
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 6
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 6
 
 
  286 035c 0A00A0E3 		mov	r0, #10
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  340 0428 FEFFFFEB 		bl	timer_getTickCount
  341 042c 0020A0E1 		mov	r2, r0
  342 0430 0130A0E1 		mov	r3, r1
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 7
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 7
 
 
  343 0434 0400A0E1 		mov	r0, r4
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  397              		.fpu neon
  398              		.type	SetFindDataFromFATEntry.part.0, %function
  399              	SetFindDataFromFATEntry.part.0:
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 8
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 8
 
 
  400              		@ args = 0, pretend = 0, frame = 0
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  454 05b0 50E081E5 		str	lr, [r1, #80]
  455 05b4 3E3003E2 		and	r3, r3, #62
  456 05b8 4CC081E5 		str	ip, [r1, #76]
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 9
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 9
 
 
  457 05bc 483081E5 		str	r3, [r1, #72]
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  511 0670 8A9F8FE2 		adr	r9, .L114
  512 0674 D080C9E1 		ldrd	r8, [r9]
  513              	.L86:
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 10
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 10
 
 
  514 0678 00C094E5 		ldr	ip, [r4]
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  568 0748 0C2083E5 		str	r2, [r3, #12]
  569 074c 2A00001A 		bne	.L110
  570              	.L93:
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 11
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 11
 
 
  571 0750 0100A0E3 		mov	r0, #1
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  625 0810 080053E3 		cmp	r3, #8
  626 0814 1D00000A 		beq	.L99
  627 0818 290053E3 		cmp	r3, #41
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 12
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 12
 
 
  628 081c 1800000A 		beq	.L100
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  682 08d0 4E03A0E1 		asr	r0, lr, #6
  683 08d4 9030C1E7 		bfi	r3, r0, #1, #1
  684 08d8 2203A0E1 		lsr	r0, r2, #6
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 13
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 13
 
 
  685 08dc 1050C1E7 		bfi	r5, r0, #0, #2
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  739 09b4 0720A0E1 		mov	r2, r7
  740 09b8 BE51D6E1 		ldrh	r5, [r6, #30]
  741 09bc 1E02C6E7 		bfi	r0, lr, #4, #3
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 14
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 14
 
 
  742 09c0 1352CFE7 		bfi	r5, r3, #4, #12
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  796 0a94 2480C6E5 		strb	r8, [r6, #36]
  797 0a98 2B30C6E5 		strb	r3, [r6, #43]
  798 0a9c 2AC0C6E5 		strb	ip, [r6, #42]
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 15
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 15
 
 
  799 0aa0 44FFFFEA 		b	.L85
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  853 0b44 000053E3 		cmp	r3, #0
  854 0b48 330000BA 		blt	.L130
  855 0b4c 016056E2 		subs	r6, r6, #1
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 16
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 16
 
 
  856 0b50 2E00000A 		beq	.L149
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  910 0c0c F5FFFFEA 		b	.L133
  911              	.L149:
  912 0c10 0250A0E3 		mov	r5, #2
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 17
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 17
 
 
  913 0c14 0500A0E1 		mov	r0, r5
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  967 0cb0 2C2083E5 		str	r2, [r3, #44]
  968 0cb4 FEFFFFEB 		bl	timer_wait
  969              	.L153:
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 18
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 18
 
 
  970 0cb8 00309AE5 		ldr	r3, [r10]
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1024 0d80 002040E3 		movt	r2, #:upper16:.LANCHOR0
  1025 0d84 031681E2 		add	r1, r1, #3145728
  1026 0d88 000040E3 		movt	r0, #:upper16:.LANCHOR1
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 19
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 19
 
 
  1027 0d8c 38E081E5 		str	lr, [r1, #56]
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1081 0e34 1A00001A 		bne	.L187
  1082 0e38 4030D5E5 		ldrb	r3, [r5, #64]	@ zero_extendqisi2
  1083 0e3c 004000E3 		movw	r4, #:lower16:RPi_IO_Base_Addr
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 20
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 20
 
 
  1084 0e40 004040E3 		movt	r4, #:upper16:RPi_IO_Base_Addr
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1138              	.L170:
  1139 0f0c 000058E3 		cmp	r8, #0
  1140 0f10 042047E2 		sub	r2, r7, #4
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 21
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 21
 
 
  1141 0f14 2300001A 		bne	.L176
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1195 0fd0 B3FFFF0A 		beq	.L187
  1196 0fd4 000000E3 		movw	r0, #:lower16:.LC8
  1197 0fd8 000040E3 		movt	r0, #:upper16:.LC8
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 22
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 22
 
 
  1198 0fdc 33FF2FE1 		blx	r3
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1252 108c E90053E3 		cmp	r3, #233
  1253 1090 0900000A 		beq	.L233
  1254 1094 813F8DE2 		add	r3, sp, #516
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 23
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 23
 
 
  1255 1098 08508DE2 		add	r5, sp, #8
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1309 115c 2EC0DDE5 		ldrb	ip, [sp, #46]	@ zero_extendqisi2
  1310 1160 012042E0 		sub	r2, r2, r1
  1311 1164 010080E2 		add	r0, r0, #1
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 24
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 24
 
 
  1312 1168 011080E0 		add	r1, r0, r1
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1366 1224 003094E5 		ldr	r3, [r4]
  1367 1228 000053E3 		cmp	r3, #0
  1368 122c 9FFFFF0A 		beq	.L202
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 25
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 25
 
 
  1369 1230 000000E3 		movw	r0, #:lower16:.LC8
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1423 12c8 000000E3 		movw	r0, #:lower16:.LANCHOR1
  1424 12cc 002094E5 		ldr	r2, [r4]
  1425 12d0 029CA0E3 		mov	r9, #512
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 26
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 26
 
 
  1426 12d4 000040E3 		movt	r0, #:upper16:.LANCHOR1
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1480 1384 5DFBFFEB 		bl	sdWaitForInterrupt
  1481 1388 000050E3 		cmp	r0, #0
  1482 138c 4600001A 		bne	.L294
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 27
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 27
 
 
  1483 1390 023C4AE2 		sub	r3, r10, #512
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1537 1458 0C2C82E1 		orr	r2, r2, ip, lsl #24
  1538 145c 202081E5 		str	r2, [r1, #32]
  1539 1460 F2FFFF1A 		bne	.L247
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 28
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 28
 
 
  1540 1464 DAFFFFEA 		b	.L249
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1594 1518 003050E2 		subs	r3, r0, #0
  1595 151c B3FFFF0A 		beq	.L255
  1596 1520 002096E5 		ldr	r2, [r6]
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 29
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 29
 
 
  1597 1524 000052E3 		cmp	r2, #0
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1651 15c8 A4009FE5 		ldr	r0, .L315
  1652 15cc 011011E2 		ands	r1, r1, #1
  1653 15d0 44109515 		ldrne	r1, [r5, #68]
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 30
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 30
 
 
  1654 15d4 19FCFFEB 		bl	sdSendCommandP
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1708              		.fpu neon
  1709              		.type	getSetNextCluster, %function
  1710              	getSetNextCluster:
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 31
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 31
 
 
  1711              		@ args = 0, pretend = 0, frame = 512
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1765 1744 03005BE1 		cmp	fp, r3
  1766 1748 FBFFFF1A 		bne	.L323
  1767 174c 000059E3 		cmp	r9, #0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 32
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 32
 
 
  1768 1750 05009D07 		ldreq	r0, [sp, r5]
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1822 1814 003094E5 		ldr	r3, [r4]
  1823 1818 000053E3 		cmp	r3, #0
  1824 181c F9FFFF0A 		beq	.L351
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 33
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 33
 
 
  1825 1820 000000E3 		movw	r0, #:lower16:.LC8
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1879 18b0 0270A0E1 		mov	r7, r2
  1880 18b4 033003E2 		and	r3, r3, #3
  1881 18b8 020053E3 		cmp	r3, #2
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 34
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 34
 
 
  1882 18bc 20504C02 		subeq	r5, ip, #32
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1936 1974 00005CE3 		cmp	ip, #0
  1937 1978 011081E2 		add	r1, r1, #1
  1938 197c C5FFFF1A 		bne	.L360
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 35
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 35
 
 
  1939              	.L380:
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  1993 1a10 020058E1 		cmp	r8, r2
  1994 1a14 7501002A 		bcs	.L430
  1995 1a18 0C1094E5 		ldr	r1, [r4, #12]
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 36
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 36
 
 
  1996 1a1c 020C51E3 		cmp	r1, #512
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2050              	.L407:
  2051 1af0 04909DE5 		ldr	r9, [sp, #4]
  2052 1af4 000059E3 		cmp	r9, #0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 37
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 37
 
 
  2053 1af8 5400001A 		bne	.L442
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2107 1bb0 0C3084E5 		str	r3, [r4, #12]
  2108 1bb4 030052E1 		cmp	r2, r3
  2109 1bb8 1F01000A 		beq	.L428
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 38
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 38
 
 
  2110 1bbc 045094E5 		ldr	r5, [r4, #4]
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2164 1c84 04309DE5 		ldr	r3, [sp, #4]
  2165 1c88 072086E0 		add	r2, r6, r7
  2166 1c8c 03C08CE1 		orr	ip, ip, r3
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 39
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 39
 
 
  2167 1c90 FF001CE3 		tst	ip, #255
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2221              	.L401:
  2222 1d50 000058E3 		cmp	r8, #0
  2223 1d54 0030A0E3 		mov	r3, #0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 40
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 40
 
 
  2224 1d58 0030CCE5 		strb	r3, [ip]
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2278 1e30 0D0058E3 		cmp	r8, #13
  2279 1e34 0C00C1E5 		strb	r0, [r1, #12]
  2280 1e38 2500DD15 		ldrbne	r0, [sp, #37]	@ zero_extendqisi2
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 41
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 41
 
 
  2281 1e3c 0D00C115 		strbne	r0, [r1, #13]
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2335 1ef8 022086E2 		add	r2, r6, #2
  2336 1efc 0680A0E3 		mov	r8, #6
  2337 1f00 0310A0E3 		mov	r1, #3
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 42
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 42
 
 
  2338 1f04 05E0A0E3 		mov	lr, #5
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2392              	.L527:
  2393 1fc0 000057E3 		cmp	r7, #0
  2394 1fc4 0020A0E3 		mov	r2, #0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 43
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 43
 
 
  2395 1fc8 0030A013 		movne	r3, #0
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2449 2088 FEFFFFEB 		bl	wctob
  2450 208c 18308DE2 		add	r3, sp, #24
  2451 2090 7990EFE6 		uxtb	r9, r9
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 44
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 44
 
 
  2452 2094 09C083E0 		add	ip, r3, r9
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2506 2120 004000E3 		movw	r4, #:lower16:.LANCHOR0
  2507 2124 0030A0E3 		mov	r3, #0
  2508 2128 004040E3 		movt	r4, #:upper16:.LANCHOR0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 45
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 45
 
 
  2509 212c 0030C2E5 		strb	r3, [r2]
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2563 21fc 04C083E5 		str	ip, [r3, #4]
  2564 2200 04C093E5 		ldr	ip, [r3, #4]
  2565 2204 12C0C9E7 		bfi	ip, r2, #0, #10
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 46
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 46
 
 
  2566 2208 04C083E5 		str	ip, [r3, #4]
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2620 22d8 601094E5 		ldr	r1, [r4, #96]
  2621 22dc 4020D4E5 		ldrb	r2, [r4, #64]	@ zero_extendqisi2
  2622 22e0 901626E0 		mla	r6, r0, r6, r1
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 47
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 47
 
 
  2623 22e4 090052E1 		cmp	r2, r9
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2677 23b0 840084E5 		str	r0, [r4, #132]
  2678 23b4 49DF8DE2 		add	sp, sp, #292
  2679              		@ sp needed
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 48
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 48
 
 
  2680 23b8 F08FBDE8 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2734 2474 3BFFFFEA 		b	.L541
  2735              	.L589:
  2736              		.align	2
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 49
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 49
 
 
  2737              	.L588:
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2791 2518 000055E3 		cmp	r5, #0
  2792 251c 0400A001 		moveq	r0, r4
  2793 2520 E7FFFF0A 		beq	.L590
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 50
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 50
 
 
  2794 2524 0510A0E1 		mov	r1, r5
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2848 25a0 0130F0E5 		ldrb	r3, [r0, #1]!	@ zero_extendqisi2
  2849 25a4 000053E3 		cmp	r3, #0
  2850 25a8 FBFFFF1A 		bne	.L606
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 51
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 51
 
 
  2851              	.L605:
@@ -9658,7 +9658,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2905 2678 9C1727E0 		mla	r7, ip, r7, r1
  2906 267c 082083E5 		str	r2, [r3, #8]
  2907 2680 047083E5 		str	r7, [r3, #4]
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 52
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 52
 
 
  2908 2684 0C2083E5 		str	r2, [r3, #12]
@@ -9718,7 +9718,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  2962 2754 3F00000A 		beq	.L615
  2963 2758 08109DE5 		ldr	r1, [sp, #8]
  2964 275c 1C208DE2 		add	r2, sp, #28
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 53
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 53
 
 
  2965 2760 0040A0E3 		mov	r4, #0
@@ -9778,7 +9778,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3019 2838 033683E2 		add	r3, r3, #3145728
  3020 283c 203083E2 		add	r3, r3, #32
  3021              	.L618:
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 54
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 54
 
 
  3022 2840 001093E5 		ldr	r1, [r3]
@@ -9838,7 +9838,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3076 28f4 0C608DE5 		str	r6, [sp, #12]
  3077 28f8 1030A0E3 		mov	r3, #16
  3078 28fc 4DFFFFEA 		b	.L609
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 55
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 55
 
 
  3079              	.L623:
@@ -9898,7 +9898,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3133 29c4 18FFFFEA 		b	.L608
  3134              	.L653:
  3135              		.align	2
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 56
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 56
 
 
  3136              	.L652:
@@ -9958,7 +9958,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3190 2a68 18C394E5 		ldr	ip, [r4, #792]
  3191 2a6c 0C0052E1 		cmp	r2, ip
  3192 2a70 A300002A 		bcs	.L674
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 57
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 57
 
 
  3193 2a74 0C2094E5 		ldr	r2, [r4, #12]
@@ -10018,7 +10018,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3247 2b40 04E092E5 		ldr	lr, [r2, #4]
  3248 2b44 1CE0C9E7 		bfi	lr, ip, #0, #10
  3249 2b48 04E082E5 		str	lr, [r2, #4]
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 58
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 58
 
 
  3250 2b4c BBF6FFEB 		bl	sdSendCommandP
@@ -10078,7 +10078,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3304 2c0c 030051E3 		cmp	r1, #3
  3305 2c10 002099E5 		ldr	r2, [r9]
  3306 2c14 032682E2 		add	r2, r2, #3145728
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 59
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 59
 
 
  3307 2c18 1900000A 		beq	.L708
@@ -10138,7 +10138,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3361 2cd8 000040E3 		movt	r0, #:upper16:.LC8
  3362 2cdc 33FF2FE1 		blx	r3
  3363 2ce0 0000A0E3 		mov	r0, #0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 60
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 60
 
 
  3364 2ce4 0CD08DE2 		add	sp, sp, #12
@@ -10198,7 +10198,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3418              		.type	sdSetFilePointer, %function
  3419              	sdSetFilePointer:
  3420              		@ args = 0, pretend = 0, frame = 16
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 61
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 61
 
 
  3421              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -10258,7 +10258,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3475 2e2c 007000E3 		movw	r7, #:lower16:RPi_IO_Base_Addr
  3476 2e30 007040E3 		movt	r7, #:upper16:RPi_IO_Base_Addr
  3477 2e34 02CCA0E3 		mov	ip, #512
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 62
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 62
 
 
  3478 2e38 8C029FE5 		ldr	r0, .L775
@@ -10318,7 +10318,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3532 2f08 0B108AE0 		add	r1, r10, fp
  3533 2f0c B8019FE5 		ldr	r0, .L775
  3534 2f10 030053E3 		cmp	r3, #3
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 63
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 63
 
 
  3535 2f14 003097E5 		ldr	r3, [r7]
@@ -10378,7 +10378,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3589              	.L769:
  3590 2fdc 0000E0E3 		mvn	r0, #0
  3591              	.L716:
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 64
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 64
 
 
  3592 2fe0 14D08DE2 		add	sp, sp, #20
@@ -10438,7 +10438,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3646 30a8 B1FFFFEA 		b	.L735
  3647              	.L774:
  3648 30ac 012040E3 		movt	r2, 1
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 65
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 65
 
 
  3649 30b0 8B14A0E1 		lsl	r1, fp, #9
@@ -10498,7 +10498,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3703 3120 CCF6FFEB 		bl	sdResetCard
  3704 3124 005050E2 		subs	r5, r0, #0
  3705 3128 0200000A 		beq	.L850
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 66
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 66
 
 
  3706              	.L784:
@@ -10558,7 +10558,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3760 31f4 8C30D6E5 		ldrb	r3, [r6, #140]	@ zero_extendqisi2
  3761 31f8 88039FE5 		ldr	r0, .L853+16
  3762 31fc 011013E2 		ands	r1, r3, #1
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 67
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 67
 
 
  3763 3200 44109415 		ldrne	r1, [r4, #68]
@@ -10618,7 +10618,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3817 32cc 203093E5 		ldr	r3, [r3, #32]
  3818 32d0 000056E3 		cmp	r6, #0
  3819 32d4 016086E2 		add	r6, r6, #1
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 68
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 68
 
 
  3820 32d8 2C308405 		streq	r3, [r4, #44]
@@ -10678,7 +10678,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3874 33ac B6C4D4E1 		ldrh	ip, [r4, #70]
  3875 33b0 566AE3E7 		ubfx	r6, r6, #20, #4
  3876 33b4 0BA68AE1 		orr	r10, r10, fp, lsl #12
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 69
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 69
 
 
  3877 33b8 28208DE5 		str	r2, [sp, #40]
@@ -10738,7 +10738,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3931 3480 37FF2FE1 		blx	r7
  3932 3484 003094E5 		ldr	r3, [r4]
  3933 3488 000000E3 		movw	r0, #:lower16:.LC15
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 70
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 70
 
 
  3934 348c 000040E3 		movt	r0, #:upper16:.LC15
@@ -10798,7 +10798,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  3988 3548 200013E3 		tst	r3, #32
  3989 354c E4FFFF1A 		bne	.L809
  3990 3550 DBFFFFEA 		b	.L810
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 71
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 71
 
 
  3991              	.L851:
@@ -10858,7 +10858,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  4045 0010 60030000 		.word	.LC21
  4046              		.data
  4047              		.align	2
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 72
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 72
 
 
  4048              		.set	.LANCHOR1,. + 0
@@ -10918,7 +10918,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  4089 0074 00       		.byte	0
  4090 0075 00       		.space	1
  4091 0076 0000     		.short	0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 73
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 73
 
 
  4092 0078 43415244 		.ascii	"CARD_SELECT\000"
@@ -10978,7 +10978,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  4132      5F545241 
  4132      4E5300
  4133 00fb 00000000 		.space	5
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 74
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 74
 
 
  4133      00
@@ -11038,7 +11038,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  4175 0178 32       		.byte	50
  4176 0179 00       		.space	1
  4177 017a 22       		.byte	34
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 75
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 75
 
 
  4178 017b 12       		.byte	18
@@ -11098,7 +11098,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  4220 01f4 00       		.byte	0
  4221 01f5 00       		.space	1
  4222 01f6 0000     		.short	0
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 76
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 76
 
 
  4223 01f8 50524F47 		.ascii	"PROGRAM_CSD\000"
@@ -11158,7 +11158,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  4263      455F5752 
  4263      5F454E44 
  4263      00
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 77
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 77
 
 
  4264 027d 000000   		.space	3
@@ -11218,7 +11218,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  4307 02fb 38       		.byte	56
  4308 02fc 00       		.byte	0
  4309 02fd 00       		.space	1
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 78
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 78
 
 
  4310 02fe 0000     		.short	0
@@ -11278,7 +11278,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  4349 0375 00       		.space	1
  4350 0376 E803     		.short	1000
  4351 0378 5345545F 		.ascii	"SET_CLR_DET\000"
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 79
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 79
 
 
  4351      434C525F 
@@ -11338,7 +11338,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  4389              		.align	2
  4390              	.LC0:
  4391 0000 454D4D43 		.ascii	"EMMC: Wait for data aborted: %08x %08x %08x\012\000"
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 80
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 80
 
 
  4391      3A205761 
@@ -11398,7 +11398,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  4413      524F523A 
  4413      20666169 
  4413      6C656420 
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 81
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 81
 
 
  4414 0187 00       		.space	1
@@ -11458,7 +11458,7 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  4435      3A205265 
  4435      6164696E 
  4435      67205343 
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 82
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 82
 
 
  4435      522C206F 
@@ -11494,103 +11494,103 @@ ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 1
  4452      20322048 
  4452      4300
  4453              		.ident	"GCC: (GNU Tools for Arm Embedded Processors 8-2018-q4-major) 8.2.1 20181213 (release) [gcc
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 83
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 83
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 SDCard.c
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:18     .text:00000000 $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:24     .text:00000000 sdWaitForData
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4370   .bss:00000000 .LANCHOR0
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4390   .rodata.str1.4:00000000 .LC0
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:96     .text:000000f8 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:99     .text:00000100 $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:104    .text:00000100 sdWaitForInterrupt
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4397   .rodata.str1.4:00000068 .LC2
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4393   .rodata.str1.4:00000030 .LC1
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:214    .text:00000278 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:217    .text:00000280 $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:222    .text:00000280 sdSetClock
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4401   .rodata.str1.4:0000009c .LC3
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4405   .rodata.str1.4:000000e0 .LC4
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:391    .text:000004d8 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:394    .text:000004e0 $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:399    .text:000004e0 SetFindDataFromFATEntry.part.0
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:496    .text:00000640 sdSendCommandP
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4408   .rodata.str1.4:0000010c .LC5
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:669    .text:000008a0 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:672    .text:000008a8 $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:817    .text:00000acc sdAppSendOpCond
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4410   .rodata.str1.4:0000013c .LC6
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:933    .text:00000c4c $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:937    .text:00000c58 $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:942    .text:00000c58 sdResetCard
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4048   .data:00000000 .LANCHOR1
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4412   .rodata.str1.4:00000168 .LC7
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1057   .text:00000df8 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1060   .text:00000e00 $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1065   .text:00000e00 sdTransferBlocks.constprop.7
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4418   .rodata.str1.4:000001b4 .LC9
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4415   .rodata.str1.4:00000188 .LC8
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1206   .text:00000fe4 LoadDrivePartition
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4421   .rodata.str1.4:000001dc .LC10
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4427   .rodata.str1.4:0000022c .LC12
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4424   .rodata.str1.4:00000200 .LC11
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1379   .text:00001248 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1381   .text:0000124c $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1387   .text:0000124c sdTransferBlocks
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1607   .text:00001540 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1610   .text:00001548 $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1616   .text:00001548 sdClearBlocks
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4430   .rodata.str1.4:00000278 .LC13
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1702   .text:00001674 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1704   .text:00001678 $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1710   .text:00001678 getSetNextCluster
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1835   .text:00001838 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1838   .text:00001840 $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1844   .text:00001840 WildcardMatch
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1960   .text:000019b8 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1962   .text:000019bc $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:1967   .text:000019bc LocateFATEntry
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2470   .text:000020d0 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2472   .text:000020d4 $a
-ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s 			page 84
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:18     .text:00000000 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:24     .text:00000000 sdWaitForData
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4370   .bss:00000000 .LANCHOR0
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4390   .rodata.str1.4:00000000 .LC0
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:96     .text:000000f8 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:99     .text:00000100 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:104    .text:00000100 sdWaitForInterrupt
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4397   .rodata.str1.4:00000068 .LC2
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4393   .rodata.str1.4:00000030 .LC1
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:214    .text:00000278 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:217    .text:00000280 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:222    .text:00000280 sdSetClock
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4401   .rodata.str1.4:0000009c .LC3
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4405   .rodata.str1.4:000000e0 .LC4
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:391    .text:000004d8 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:394    .text:000004e0 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:399    .text:000004e0 SetFindDataFromFATEntry.part.0
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:496    .text:00000640 sdSendCommandP
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4408   .rodata.str1.4:0000010c .LC5
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:669    .text:000008a0 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:672    .text:000008a8 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:817    .text:00000acc sdAppSendOpCond
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4410   .rodata.str1.4:0000013c .LC6
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:933    .text:00000c4c $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:937    .text:00000c58 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:942    .text:00000c58 sdResetCard
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4048   .data:00000000 .LANCHOR1
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4412   .rodata.str1.4:00000168 .LC7
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1057   .text:00000df8 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1060   .text:00000e00 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1065   .text:00000e00 sdTransferBlocks.constprop.7
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4418   .rodata.str1.4:000001b4 .LC9
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4415   .rodata.str1.4:00000188 .LC8
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1206   .text:00000fe4 LoadDrivePartition
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4421   .rodata.str1.4:000001dc .LC10
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4427   .rodata.str1.4:0000022c .LC12
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4424   .rodata.str1.4:00000200 .LC11
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1379   .text:00001248 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1381   .text:0000124c $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1387   .text:0000124c sdTransferBlocks
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1607   .text:00001540 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1610   .text:00001548 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1616   .text:00001548 sdClearBlocks
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4430   .rodata.str1.4:00000278 .LC13
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1702   .text:00001674 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1704   .text:00001678 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1710   .text:00001678 getSetNextCluster
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1835   .text:00001838 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1838   .text:00001840 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1844   .text:00001840 WildcardMatch
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1960   .text:000019b8 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1962   .text:000019bc $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:1967   .text:000019bc LocateFATEntry
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2470   .text:000020d0 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2472   .text:000020d4 $a
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 84
 
 
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2478   .text:000020d4 sdFindFirstFile
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2738   .text:00002478 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2741   .text:00002480 $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2747   .text:00002480 sdFindNextFile
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2805   .text:00002534 sdFindClose
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:2832   .text:00002570 sdCreateFile
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4386   .bss:00000cc0 intFileIORecord
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:3137   .text:000029c8 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:3139   .text:000029cc $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:3145   .text:000029cc sdReadFile
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:3384   .text:00002d1c $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:3386   .text:00002d20 $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:3392   .text:00002d20 sdCloseHandle
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:3419   .text:00002d5c sdSetFilePointer
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:3660   .text:000030cc $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:3662   .text:000030d0 $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:3668   .text:000030d0 sdGetFileSize
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:3693   .text:00003104 sdInitCard
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4037   .rodata:00000000 .LANCHOR2
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4437   .rodata.str1.4:000002f0 .LC16
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4432   .rodata.str1.4:000002a4 .LC14
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4434   .rodata.str1.4:000002c8 .LC15
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4005   .text:00003578 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4016   .text:000035a0 $a
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4022   .text:000035a0 sdCardCSD
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4373   .bss:00000000 LOG_ERROR
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4036   .rodata:00000000 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4040   .rodata:00000000 SD_TYPE_NAME
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4047   .data:00000000 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4051   .data:00000000 sdCommandTable
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4369   .bss:00000000 $d
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4378   .bss:00000008 sdCard
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4382   .bss:00000080 intSearchRecord
-C:\Users\A01169~1\AppData\Local\Temp\ccc4zuVi.s:4389   .rodata.str1.4:00000000 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2478   .text:000020d4 sdFindFirstFile
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2738   .text:00002478 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2741   .text:00002480 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2747   .text:00002480 sdFindNextFile
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2805   .text:00002534 sdFindClose
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:2832   .text:00002570 sdCreateFile
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4386   .bss:00000cc0 intFileIORecord
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:3137   .text:000029c8 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:3139   .text:000029cc $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:3145   .text:000029cc sdReadFile
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:3384   .text:00002d1c $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:3386   .text:00002d20 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:3392   .text:00002d20 sdCloseHandle
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:3419   .text:00002d5c sdSetFilePointer
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:3660   .text:000030cc $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:3662   .text:000030d0 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:3668   .text:000030d0 sdGetFileSize
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:3693   .text:00003104 sdInitCard
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4037   .rodata:00000000 .LANCHOR2
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4437   .rodata.str1.4:000002f0 .LC16
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4432   .rodata.str1.4:000002a4 .LC14
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4434   .rodata.str1.4:000002c8 .LC15
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4005   .text:00003578 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4016   .text:000035a0 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4022   .text:000035a0 sdCardCSD
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4373   .bss:00000000 LOG_ERROR
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4036   .rodata:00000000 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4040   .rodata:00000000 SD_TYPE_NAME
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4047   .data:00000000 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4051   .data:00000000 sdCommandTable
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4369   .bss:00000000 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4378   .bss:00000008 sdCard
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4382   .bss:00000080 intSearchRecord
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:4389   .rodata.str1.4:00000000 $d
 
 UNDEFINED SYMBOLS
 RPi_IO_Base_Addr
@@ -11600,3 +11600,1669 @@ timer_wait
 _ctype_
 wctob
 strchr
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 1
+
+
+   1              		.arch armv7-a
+   2              		.arch_extension virt
+   3              		.arch_extension idiv
+   4              		.arch_extension sec
+   5              		.arch_extension mp
+   6              		.eabi_attribute 28, 1
+   7              		.eabi_attribute 20, 1
+   8              		.eabi_attribute 21, 1
+   9              		.eabi_attribute 23, 3
+  10              		.eabi_attribute 24, 1
+  11              		.eabi_attribute 25, 1
+  12              		.eabi_attribute 26, 1
+  13              		.eabi_attribute 30, 2
+  14              		.eabi_attribute 34, 0
+  15              		.eabi_attribute 18, 4
+  16              		.file	"fonts.c"
+  17              		.text
+  18              		.align	2
+  19              		.global	fonts_is_implemented
+  20              		.arch armv7ve
+  21              		.syntax unified
+  22              		.arm
+  23              		.fpu neon
+  24              		.type	fonts_is_implemented, %function
+  25              	fonts_is_implemented:
+  26              		@ args = 0, pretend = 0, frame = 0
+  27              		@ frame_needed = 0, uses_anonymous_args = 0
+  28              		@ link register save eliminated.
+  29 0000 003000E3 		movw	r3, #:lower16:.LANCHOR0
+  30 0004 003040E3 		movt	r3, #:upper16:.LANCHOR0
+  31 0008 0000D3E7 		ldrb	r0, [r3, r0]	@ zero_extendqisi2
+  32 000c 1EFF2FE1 		bx	lr
+  33              		.size	fonts_is_implemented, .-fonts_is_implemented
+  34              		.align	2
+  35              		.global	fonts_char_to_font
+  36              		.syntax unified
+  37              		.arm
+  38              		.fpu neon
+  39              		.type	fonts_char_to_font, %function
+  40              	fonts_char_to_font:
+  41              		@ args = 0, pretend = 0, frame = 0
+  42              		@ frame_needed = 0, uses_anonymous_args = 0
+  43              		@ link register save eliminated.
+  44 0010 003000E3 		movw	r3, #:lower16:.LANCHOR0
+  45 0014 003040E3 		movt	r3, #:upper16:.LANCHOR0
+  46 0018 000183E0 		add	r0, r3, r0, lsl #2
+  47 001c 800090E5 		ldr	r0, [r0, #128]
+  48 0020 1EFF2FE1 		bx	lr
+  49              		.size	fonts_char_to_font, .-fonts_char_to_font
+  50              		.align	2
+  51              		.global	fonts_init
+  52              		.syntax unified
+  53              		.arm
+  54              		.fpu neon
+  55              		.type	fonts_init, %function
+  56              	fonts_init:
+  57              		@ args = 0, pretend = 0, frame = 16
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 2
+
+
+  58              		@ frame_needed = 0, uses_anonymous_args = 0
+  59 0024 003000E3 		movw	r3, #:lower16:.LANCHOR0
+  60 0028 0720A0E3 		mov	r2, #7
+  61 002c 003040E3 		movt	r3, #:upper16:.LANCHOR0
+  62 0030 0A00A0E3 		mov	r0, #10
+  63 0034 F04F2DE9 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}
+  64 0038 537E83E2 		add	r7, r3, #1328
+  65 003c A82283E5 		str	r2, [r3, #680]
+  66 0040 14D04DE2 		sub	sp, sp, #20
+  67 0044 980283E5 		str	r0, [r3, #664]
+  68 0048 087087E2 		add	r7, r7, #8
+  69 004c 04708DE5 		str	r7, [sp, #4]
+  70 0050 9F1F83E2 		add	r1, r3, #636
+  71 0054 841183E5 		str	r1, [r3, #388]
+  72 0058 2E2E83E2 		add	r2, r3, #736
+  73 005c 8C2183E5 		str	r2, [r3, #396]
+  74 0060 597E83E2 		add	r7, r3, #1424
+  75 0064 EC0283E5 		str	r0, [r3, #748]
+  76 0068 0020A0E3 		mov	r2, #0
+  77 006c 802283E5 		str	r2, [r3, #640]
+  78 0070 0F10E0E3 		mvn	r1, #15
+  79 0074 842283E5 		str	r2, [r3, #644]
+  80 0078 05C0A0E3 		mov	ip, #5
+  81 007c 9C2283E5 		str	r2, [r3, #668]
+  82 0080 0340A0E3 		mov	r4, #3
+  83 0084 7C4283E5 		str	r4, [r3, #636]
+  84 0088 04E0E0E3 		mvn	lr, #4
+  85 008c A04283E5 		str	r4, [r3, #672]
+  86 0090 0150A0E3 		mov	r5, #1
+  87 0094 E04283E5 		str	r4, [r3, #736]
+  88 0098 D1BF83E2 		add	fp, r3, #836
+  89 009c E42283E5 		str	r2, [r3, #740]
+  90 00a0 EAAF83E2 		add	r10, r3, #936
+  91 00a4 E82283E5 		str	r2, [r3, #744]
+  92 00a8 0C7087E2 		add	r7, r7, #12
+  93 00ac 08708DE5 		str	r7, [sp, #8]
+  94 00b0 018B83E2 		add	r8, r3, #1024
+  95 00b4 F02283E5 		str	r2, [r3, #752]
+  96 00b8 0470A0E3 		mov	r7, #4
+  97 00bc F42283E5 		str	r2, [r3, #756]
+  98 00c0 4D6E83E2 		add	r6, r3, #1232
+  99 00c4 042383E5 		str	r2, [r3, #772]
+ 100 00c8 0C8088E2 		add	r8, r8, #12
+ 101 00cc 0C2383E5 		str	r2, [r3, #780]
+ 102 00d0 046086E2 		add	r6, r6, #4
+ 103 00d4 102383E5 		str	r2, [r3, #784]
+ 104 00d8 019100E3 		movw	r9, #257
+ 105 00dc 482383E5 		str	r2, [r3, #840]
+ 106 00e0 88C283E5 		str	ip, [r3, #648]
+ 107 00e4 90C283E5 		str	ip, [r3, #656]
+ 108 00e8 8C1283E5 		str	r1, [r3, #652]
+ 109 00ec 941283E5 		str	r1, [r3, #660]
+ 110 00f0 F81283E5 		str	r1, [r3, #760]
+ 111 00f4 001383E5 		str	r1, [r3, #768]
+ 112 00f8 081383E5 		str	r1, [r3, #776]
+ 113 00fc FC0283E5 		str	r0, [r3, #764]
+ 114 0100 A4E283E5 		str	lr, [r3, #676]
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 3
+
+
+ 115 0104 ACE283E5 		str	lr, [r3, #684]
+ 116 0108 4150C3E5 		strb	r5, [r3, #65]
+ 117 010c 94B183E5 		str	fp, [r3, #404]
+ 118 0110 47BE83E2 		add	fp, r3, #1136
+ 119 0114 A0A183E5 		str	r10, [r3, #416]
+ 120 0118 07A0E0E3 		mvn	r10, #7
+ 121 011c 447383E5 		str	r7, [r3, #836]
+ 122 0120 6CA383E5 		str	r10, [r3, #876]
+ 123 0124 4350C3E5 		strb	r5, [r3, #67]
+ 124 0128 4C2383E5 		str	r2, [r3, #844]
+ 125 012c 500383E5 		str	r0, [r3, #848]
+ 126 0130 542383E5 		str	r2, [r3, #852]
+ 127 0134 582383E5 		str	r2, [r3, #856]
+ 128 0138 5C1383E5 		str	r1, [r3, #860]
+ 129 013c 600383E5 		str	r0, [r3, #864]
+ 130 0140 641383E5 		str	r1, [r3, #868]
+ 131 0144 682383E5 		str	r2, [r3, #872]
+ 132 0148 700383E5 		str	r0, [r3, #880]
+ 133 014c 782383E5 		str	r2, [r3, #888]
+ 134 0150 7C1383E5 		str	r1, [r3, #892]
+ 135 0154 802383E5 		str	r2, [r3, #896]
+ 136 0158 842383E5 		str	r2, [r3, #900]
+ 137 015c 4550C3E5 		strb	r5, [r3, #69]
+ 138 0160 A84383E5 		str	r4, [r3, #936]
+ 139 0164 AC2383E5 		str	r2, [r3, #940]
+ 140 0168 B02383E5 		str	r2, [r3, #944]
+ 141 016c B42383E5 		str	r2, [r3, #948]
+ 142 0170 B81383E5 		str	r1, [r3, #952]
+ 143 0174 BC0383E5 		str	r0, [r3, #956]
+ 144 0178 C01383E5 		str	r1, [r3, #960]
+ 145 017c C40383E5 		str	r0, [r3, #964]
+ 146 0180 C82383E5 		str	r2, [r3, #968]
+ 147 0184 CC2383E5 		str	r2, [r3, #972]
+ 148 0188 D40383E5 		str	r0, [r3, #980]
+ 149 018c 0C4483E5 		str	r4, [r3, #1036]
+ 150 0190 102483E5 		str	r2, [r3, #1040]
+ 151 0194 74A383E5 		str	r10, [r3, #884]
+ 152 0198 B0B183E5 		str	fp, [r3, #432]
+ 153 019c 01B100E3 		movw	fp, 257	@ movhi
+ 154 01a0 D0A383E5 		str	r10, [r3, #976]
+ 155 01a4 D8A383E5 		str	r10, [r3, #984]
+ 156 01a8 03A0E0E3 		mvn	r10, #3
+ 157 01ac A48183E5 		str	r8, [r3, #420]
+ 158 01b0 0280A0E3 		mov	r8, #2
+ 159 01b4 D47483E5 		str	r7, [r3, #1236]
+ 160 01b8 0B70A0E1 		mov	r7, fp	@ movhi
+ 161 01bc 142483E5 		str	r2, [r3, #1044]
+ 162 01c0 180483E5 		str	r0, [r3, #1048]
+ 163 01c4 1C2483E5 		str	r2, [r3, #1052]
+ 164 01c8 202483E5 		str	r2, [r3, #1056]
+ 165 01cc 241483E5 		str	r1, [r3, #1060]
+ 166 01d0 280483E5 		str	r0, [r3, #1064]
+ 167 01d4 2C1483E5 		str	r1, [r3, #1068]
+ 168 01d8 30C483E5 		str	ip, [r3, #1072]
+ 169 01dc 341483E5 		str	r1, [r3, #1076]
+ 170 01e0 38C483E5 		str	ip, [r3, #1080]
+ 171 01e4 3C2483E5 		str	r2, [r3, #1084]
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 4
+
+
+ 172 01e8 742483E5 		str	r2, [r3, #1140]
+ 173 01ec 782483E5 		str	r2, [r3, #1144]
+ 174 01f0 7C0483E5 		str	r0, [r3, #1148]
+ 175 01f4 802483E5 		str	r2, [r3, #1152]
+ 176 01f8 842483E5 		str	r2, [r3, #1156]
+ 177 01fc 881483E5 		str	r1, [r3, #1160]
+ 178 0200 8C2483E5 		str	r2, [r3, #1164]
+ 179 0204 902483E5 		str	r2, [r3, #1168]
+ 180 0208 D82483E5 		str	r2, [r3, #1240]
+ 181 020c DC1483E5 		str	r1, [r3, #1244]
+ 182 0210 E02483E5 		str	r2, [r3, #1248]
+ 183 0214 E42483E5 		str	r2, [r3, #1252]
+ 184 0218 E82483E5 		str	r2, [r3, #1256]
+ 185 021c EC1483E5 		str	r1, [r3, #1260]
+ 186 0220 F0C483E5 		str	ip, [r3, #1264]
+ 187 0224 F8C483E5 		str	ip, [r3, #1272]
+ 188 0228 B8B4C3E1 		strh	fp, [r3, #72]	@ movhi
+ 189 022c 66BE83E2 		add	fp, r3, #1632
+ 190 0230 B46183E5 		str	r6, [r3, #436]
+ 191 0234 1B6D83E2 		add	r6, r3, #1728
+ 192 0238 708483E5 		str	r8, [r3, #1136]
+ 193 023c 086086E2 		add	r6, r6, #8
+ 194 0240 0C608DE5 		str	r6, [sp, #12]
+ 195 0244 0460A0E3 		mov	r6, #4
+ 196 0248 F4A483E5 		str	r10, [r3, #1268]
+ 197 024c 04B08BE2 		add	fp, fp, #4
+ 198 0250 FCA483E5 		str	r10, [r3, #1276]
+ 199 0254 9C6583E5 		str	r6, [r3, #1436]
+ 200 0258 000583E5 		str	r0, [r3, #1280]
+ 201 025c 041583E5 		str	r1, [r3, #1284]
+ 202 0260 080583E5 		str	r0, [r3, #1288]
+ 203 0264 0C1583E5 		str	r1, [r3, #1292]
+ 204 0268 100583E5 		str	r0, [r3, #1296]
+ 205 026c 142583E5 		str	r2, [r3, #1300]
+ 206 0270 384583E5 		str	r4, [r3, #1336]
+ 207 0274 3C2583E5 		str	r2, [r3, #1340]
+ 208 0278 401583E5 		str	r1, [r3, #1344]
+ 209 027c 442583E5 		str	r2, [r3, #1348]
+ 210 0280 482583E5 		str	r2, [r3, #1352]
+ 211 0284 4C2583E5 		str	r2, [r3, #1356]
+ 212 0288 501583E5 		str	r1, [r3, #1360]
+ 213 028c 540583E5 		str	r0, [r3, #1364]
+ 214 0290 582583E5 		str	r2, [r3, #1368]
+ 215 0294 5C0583E5 		str	r0, [r3, #1372]
+ 216 0298 602583E5 		str	r2, [r3, #1376]
+ 217 029c 640583E5 		str	r0, [r3, #1380]
+ 218 02a0 681583E5 		str	r1, [r3, #1384]
+ 219 02a4 A02583E5 		str	r2, [r3, #1440]
+ 220 02a8 A42583E5 		str	r2, [r3, #1444]
+ 221 02ac A80583E5 		str	r0, [r3, #1448]
+ 222 02b0 AC2583E5 		str	r2, [r3, #1452]
+ 223 02b4 B02583E5 		str	r2, [r3, #1456]
+ 224 02b8 B41583E5 		str	r1, [r3, #1460]
+ 225 02bc B82583E5 		str	r2, [r3, #1464]
+ 226 02c0 BC2583E5 		str	r2, [r3, #1468]
+ 227 02c4 04A09DE5 		ldr	r10, [sp, #4]
+ 228 02c8 646683E5 		str	r6, [r3, #1636]
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 5
+
+
+ 229 02cc 066C83E2 		add	r6, r3, #1536
+ 230 02d0 B8A183E5 		str	r10, [r3, #440]
+ 231 02d4 72AE83E2 		add	r10, r3, #1824
+ 232 02d8 C02583E5 		str	r2, [r3, #1472]
+ 233 02dc 0CA08AE2 		add	r10, r10, #12
+ 234 02e0 C41583E5 		str	r1, [r3, #1476]
+ 235 02e4 C80583E5 		str	r0, [r3, #1480]
+ 236 02e8 04A08DE5 		str	r10, [sp, #4]
+ 237 02ec CC1583E5 		str	r1, [r3, #1484]
+ 238 02f0 D00583E5 		str	r0, [r3, #1488]
+ 239 02f4 D41583E5 		str	r1, [r3, #1492]
+ 240 02f8 D80583E5 		str	r0, [r3, #1496]
+ 241 02fc DC2583E5 		str	r2, [r3, #1500]
+ 242 0300 004683E5 		str	r4, [r3, #1536]
+ 243 0304 042683E5 		str	r2, [r3, #1540]
+ 244 0308 081683E5 		str	r1, [r3, #1544]
+ 245 030c 0C2683E5 		str	r2, [r3, #1548]
+ 246 0310 102683E5 		str	r2, [r3, #1552]
+ 247 0314 142683E5 		str	r2, [r3, #1556]
+ 248 0318 181683E5 		str	r1, [r3, #1560]
+ 249 031c 1C0683E5 		str	r0, [r3, #1564]
+ 250 0320 240683E5 		str	r0, [r3, #1572]
+ 251 0324 2C2683E5 		str	r2, [r3, #1580]
+ 252 0328 30E683E5 		str	lr, [r3, #1584]
+ 253 032c 5050C3E5 		strb	r5, [r3, #80]
+ 254 0330 682683E5 		str	r2, [r3, #1640]
+ 255 0334 6C1683E5 		str	r1, [r3, #1644]
+ 256 0338 702683E5 		str	r2, [r3, #1648]
+ 257 033c 742683E5 		str	r2, [r3, #1652]
+ 258 0340 782683E5 		str	r2, [r3, #1656]
+ 259 0344 7C1683E5 		str	r1, [r3, #1660]
+ 260 0348 800683E5 		str	r0, [r3, #1664]
+ 261 034c 880683E5 		str	r0, [r3, #1672]
+ 262 0350 08A09DE5 		ldr	r10, [sp, #8]
+ 263 0354 019140E3 		movt	r9, 257
+ 264 0358 C06183E5 		str	r6, [r3, #448]
+ 265 035c 0960E0E3 		mvn	r6, #9
+ 266 0360 BCA183E5 		str	r10, [r3, #444]
+ 267 0364 7FAE83E2 		add	r10, r3, #2032
+ 268 0368 4C9083E5 		str	r9, [r3, #76]
+ 269 036c 859E83E2 		add	r9, r3, #2128
+ 270 0370 C8B183E5 		str	fp, [r3, #456]
+ 271 0374 04A08AE2 		add	r10, r10, #4
+ 272 0378 2C8783E5 		str	r8, [r3, #1836]
+ 273 037c 089089E2 		add	r9, r9, #8
+ 274 0380 206683E5 		str	r6, [r3, #1568]
+ 275 0384 286683E5 		str	r6, [r3, #1576]
+ 276 0388 846683E5 		str	r6, [r3, #1668]
+ 277 038c 8C6683E5 		str	r6, [r3, #1676]
+ 278 0390 902683E5 		str	r2, [r3, #1680]
+ 279 0394 94E683E5 		str	lr, [r3, #1684]
+ 280 0398 982683E5 		str	r2, [r3, #1688]
+ 281 039c 9CE683E5 		str	lr, [r3, #1692]
+ 282 03a0 A00683E5 		str	r0, [r3, #1696]
+ 283 03a4 A42683E5 		str	r2, [r3, #1700]
+ 284 03a8 C84683E5 		str	r4, [r3, #1736]
+ 285 03ac CC2683E5 		str	r2, [r3, #1740]
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 6
+
+
+ 286 03b0 D02683E5 		str	r2, [r3, #1744]
+ 287 03b4 D40683E5 		str	r0, [r3, #1748]
+ 288 03b8 D8E683E5 		str	lr, [r3, #1752]
+ 289 03bc DC0683E5 		str	r0, [r3, #1756]
+ 290 03c0 E0E683E5 		str	lr, [r3, #1760]
+ 291 03c4 E42683E5 		str	r2, [r3, #1764]
+ 292 03c8 E86683E5 		str	r6, [r3, #1768]
+ 293 03cc EC2683E5 		str	r2, [r3, #1772]
+ 294 03d0 F06683E5 		str	r6, [r3, #1776]
+ 295 03d4 F40683E5 		str	r0, [r3, #1780]
+ 296 03d8 F81683E5 		str	r1, [r3, #1784]
+ 297 03dc 302783E5 		str	r2, [r3, #1840]
+ 298 03e0 341783E5 		str	r1, [r3, #1844]
+ 299 03e4 380783E5 		str	r0, [r3, #1848]
+ 300 03e8 3C1783E5 		str	r1, [r3, #1852]
+ 301 03ec 0CB09DE5 		ldr	fp, [sp, #12]
+ 302 03f0 B275C3E1 		strh	r7, [r3, #82]	@ movhi
+ 303 03f4 04709DE5 		ldr	r7, [sp, #4]
+ 304 03f8 CCB183E5 		str	fp, [r3, #460]
+ 305 03fc 79BE83E2 		add	fp, r3, #1936
+ 306 0400 D07183E5 		str	r7, [r3, #464]
+ 307 0404 0470A0E3 		mov	r7, #4
+ 308 0408 9C8783E5 		str	r8, [r3, #1948]
+ 309 040c A48783E5 		str	r8, [r3, #1956]
+ 310 0410 0780E0E3 		mvn	r8, #7
+ 311 0414 40C783E5 		str	ip, [r3, #1856]
+ 312 0418 441783E5 		str	r1, [r3, #1860]
+ 313 041c 48C783E5 		str	ip, [r3, #1864]
+ 314 0420 4C2783E5 		str	r2, [r3, #1868]
+ 315 0424 5450C3E5 		strb	r5, [r3, #84]
+ 316 0428 907783E5 		str	r7, [r3, #1936]
+ 317 042c 942783E5 		str	r2, [r3, #1940]
+ 318 0430 981783E5 		str	r1, [r3, #1944]
+ 319 0434 A02783E5 		str	r2, [r3, #1952]
+ 320 0438 A82783E5 		str	r2, [r3, #1960]
+ 321 043c ACC783E5 		str	ip, [r3, #1964]
+ 322 0440 B08783E5 		str	r8, [r3, #1968]
+ 323 0444 B4C783E5 		str	ip, [r3, #1972]
+ 324 0448 B88783E5 		str	r8, [r3, #1976]
+ 325 044c BC0783E5 		str	r0, [r3, #1980]
+ 326 0450 C02783E5 		str	r2, [r3, #1984]
+ 327 0454 C40783E5 		str	r0, [r3, #1988]
+ 328 0458 C81783E5 		str	r1, [r3, #1992]
+ 329 045c CC0783E5 		str	r0, [r3, #1996]
+ 330 0460 D02783E5 		str	r2, [r3, #2000]
+ 331 0464 5750C3E5 		strb	r5, [r3, #87]
+ 332 0468 F44783E5 		str	r4, [r3, #2036]
+ 333 046c F82783E5 		str	r2, [r3, #2040]
+ 334 0470 FC1783E5 		str	r1, [r3, #2044]
+ 335 0474 000883E5 		str	r0, [r3, #2048]
+ 336 0478 041883E5 		str	r1, [r3, #2052]
+ 337 047c 080883E5 		str	r0, [r3, #2056]
+ 338 0480 0C1883E5 		str	r1, [r3, #2060]
+ 339 0484 102883E5 		str	r2, [r3, #2064]
+ 340 0488 142883E5 		str	r2, [r3, #2068]
+ 341 048c 182883E5 		str	r2, [r3, #2072]
+ 342 0490 1C2883E5 		str	r2, [r3, #2076]
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 7
+
+
+ 343 0494 200883E5 		str	r0, [r3, #2080]
+ 344 0498 242883E5 		str	r2, [r3, #2084]
+ 345 049c DCB183E5 		str	fp, [r3, #476]
+ 346 04a0 E8A183E5 		str	r10, [r3, #488]
+ 347 04a4 5A50C3E5 		strb	r5, [r3, #90]
+ 348 04a8 587883E5 		str	r7, [r3, #2136]
+ 349 04ac 5C2883E5 		str	r2, [r3, #2140]
+ 350 04b0 602883E5 		str	r2, [r3, #2144]
+ 351 04b4 640883E5 		str	r0, [r3, #2148]
+ 352 04b8 68E883E5 		str	lr, [r3, #2152]
+ 353 04bc 6C0883E5 		str	r0, [r3, #2156]
+ 354 04c0 70E883E5 		str	lr, [r3, #2160]
+ 355 04c4 742883E5 		str	r2, [r3, #2164]
+ 356 04c8 786883E5 		str	r6, [r3, #2168]
+ 357 04cc 7C2883E5 		str	r2, [r3, #2172]
+ 358 04d0 806883E5 		str	r6, [r3, #2176]
+ 359 04d4 840883E5 		str	r0, [r3, #2180]
+ 360 04d8 881883E5 		str	r1, [r3, #2184]
+ 361 04dc 8CC883E5 		str	ip, [r3, #2188]
+ 362 04e0 901883E5 		str	r1, [r3, #2192]
+ 363 04e4 94C883E5 		str	ip, [r3, #2196]
+ 364 04e8 982883E5 		str	r2, [r3, #2200]
+ 365 04ec 2450C3E5 		strb	r5, [r3, #36]
+ 366 04f0 109183E5 		str	r9, [r3, #272]
+ 367 04f4 14D08DE2 		add	sp, sp, #20
+ 368              		@ sp needed
+ 369 04f8 F08FBDE8 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
+ 370              		.size	fonts_init, .-fonts_init
+ 371              		.bss
+ 372              		.align	2
+ 373              		.set	.LANCHOR0,. + 0
+ 374              		.type	char_is_implemented, %object
+ 375              		.size	char_is_implemented, 127
+ 376              	char_is_implemented:
+ 377 0000 00000000 		.space	127
+ 377      00000000 
+ 377      00000000 
+ 377      00000000 
+ 377      00000000 
+ 378 007f 00       		.space	1
+ 379              		.type	char_font_map, %object
+ 380              		.size	char_font_map, 508
+ 381              	char_font_map:
+ 382 0080 00000000 		.space	508
+ 382      00000000 
+ 382      00000000 
+ 382      00000000 
+ 382      00000000 
+ 383              		.type	A, %object
+ 384              		.size	A, 100
+ 385              	A:
+ 386 027c 00000000 		.space	100
+ 386      00000000 
+ 386      00000000 
+ 386      00000000 
+ 386      00000000 
+ 387              		.type	C, %object
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 8
+
+
+ 388              		.size	C, 100
+ 389              	C:
+ 390 02e0 00000000 		.space	100
+ 390      00000000 
+ 390      00000000 
+ 390      00000000 
+ 390      00000000 
+ 391              		.type	E, %object
+ 392              		.size	E, 100
+ 393              	E:
+ 394 0344 00000000 		.space	100
+ 394      00000000 
+ 394      00000000 
+ 394      00000000 
+ 394      00000000 
+ 395              		.type	H, %object
+ 396              		.size	H, 100
+ 397              	H:
+ 398 03a8 00000000 		.space	100
+ 398      00000000 
+ 398      00000000 
+ 398      00000000 
+ 398      00000000 
+ 399              		.type	I, %object
+ 400              		.size	I, 100
+ 401              	I:
+ 402 040c 00000000 		.space	100
+ 402      00000000 
+ 402      00000000 
+ 402      00000000 
+ 402      00000000 
+ 403              		.type	L, %object
+ 404              		.size	L, 100
+ 405              	L:
+ 406 0470 00000000 		.space	100
+ 406      00000000 
+ 406      00000000 
+ 406      00000000 
+ 406      00000000 
+ 407              		.type	M, %object
+ 408              		.size	M, 100
+ 409              	M:
+ 410 04d4 00000000 		.space	100
+ 410      00000000 
+ 410      00000000 
+ 410      00000000 
+ 410      00000000 
+ 411              		.type	N, %object
+ 412              		.size	N, 100
+ 413              	N:
+ 414 0538 00000000 		.space	100
+ 414      00000000 
+ 414      00000000 
+ 414      00000000 
+ 414      00000000 
+ 415              		.type	O, %object
+ 416              		.size	O, 100
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 9
+
+
+ 417              	O:
+ 418 059c 00000000 		.space	100
+ 418      00000000 
+ 418      00000000 
+ 418      00000000 
+ 418      00000000 
+ 419              		.type	P, %object
+ 420              		.size	P, 100
+ 421              	P:
+ 422 0600 00000000 		.space	100
+ 422      00000000 
+ 422      00000000 
+ 422      00000000 
+ 422      00000000 
+ 423              		.type	R, %object
+ 424              		.size	R, 100
+ 425              	R:
+ 426 0664 00000000 		.space	100
+ 426      00000000 
+ 426      00000000 
+ 426      00000000 
+ 426      00000000 
+ 427              		.type	S, %object
+ 428              		.size	S, 100
+ 429              	S:
+ 430 06c8 00000000 		.space	100
+ 430      00000000 
+ 430      00000000 
+ 430      00000000 
+ 430      00000000 
+ 431              		.type	T, %object
+ 432              		.size	T, 100
+ 433              	T:
+ 434 072c 00000000 		.space	100
+ 434      00000000 
+ 434      00000000 
+ 434      00000000 
+ 434      00000000 
+ 435              		.type	W, %object
+ 436              		.size	W, 100
+ 437              	W:
+ 438 0790 00000000 		.space	100
+ 438      00000000 
+ 438      00000000 
+ 438      00000000 
+ 438      00000000 
+ 439              		.type	Z, %object
+ 440              		.size	Z, 100
+ 441              	Z:
+ 442 07f4 00000000 		.space	100
+ 442      00000000 
+ 442      00000000 
+ 442      00000000 
+ 442      00000000 
+ 443              		.type	DOLLAR_SIGN, %object
+ 444              		.size	DOLLAR_SIGN, 100
+ 445              	DOLLAR_SIGN:
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 10
+
+
+ 446 0858 00000000 		.space	100
+ 446      00000000 
+ 446      00000000 
+ 446      00000000 
+ 446      00000000 
+ 447              		.ident	"GCC: (GNU Tools for Arm Embedded Processors 8-2018-q4-major) 8.2.1 20181213 (release) [gcc
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 11
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 fonts.c
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:18     .text:00000000 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:25     .text:00000000 fonts_is_implemented
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:373    .bss:00000000 .LANCHOR0
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:40     .text:00000010 fonts_char_to_font
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:56     .text:00000024 fonts_init
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:372    .bss:00000000 $d
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:376    .bss:00000000 char_is_implemented
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:381    .bss:00000080 char_font_map
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:385    .bss:0000027c A
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:389    .bss:000002e0 C
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:393    .bss:00000344 E
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:397    .bss:000003a8 H
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:401    .bss:0000040c I
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:405    .bss:00000470 L
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:409    .bss:000004d4 M
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:413    .bss:00000538 N
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:417    .bss:0000059c O
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:421    .bss:00000600 P
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:425    .bss:00000664 R
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:429    .bss:000006c8 S
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:433    .bss:0000072c T
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:437    .bss:00000790 W
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:441    .bss:000007f4 Z
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:445    .bss:00000858 DOLLAR_SIGN
+
+NO UNDEFINED SYMBOLS
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 1
+
+
+   1              		.arch armv7-a
+   2              		.arch_extension virt
+   3              		.arch_extension idiv
+   4              		.arch_extension sec
+   5              		.arch_extension mp
+   6              		.eabi_attribute 28, 1
+   7              		.eabi_attribute 20, 1
+   8              		.eabi_attribute 21, 1
+   9              		.eabi_attribute 23, 3
+  10              		.eabi_attribute 24, 1
+  11              		.eabi_attribute 25, 1
+  12              		.eabi_attribute 26, 1
+  13              		.eabi_attribute 30, 2
+  14              		.eabi_attribute 34, 0
+  15              		.eabi_attribute 18, 4
+  16              		.file	"hal_io.c"
+  17              		.text
+  18              		.align	2
+  19              		.global	hal_io_init
+  20              		.arch armv7ve
+  21              		.syntax unified
+  22              		.arm
+  23              		.fpu neon
+  24              		.type	hal_io_init, %function
+  25              	hal_io_init:
+  26              		@ args = 0, pretend = 0, frame = 0
+  27              		@ frame_needed = 0, uses_anonymous_args = 0
+  28              		@ link register save eliminated.
+  29 0000 FEFFFFEA 		b	fonts_init
+  30              		.size	hal_io_init, .-hal_io_init
+  31              		.align	2
+  32              		.global	hal_io_video_init
+  33              		.syntax unified
+  34              		.arm
+  35              		.fpu neon
+  36              		.type	hal_io_video_init, %function
+  37              	hal_io_video_init:
+  38              		@ args = 0, pretend = 0, frame = 0
+  39              		@ frame_needed = 0, uses_anonymous_args = 0
+  40              		@ link register save eliminated.
+  41 0004 FEFFFFEA 		b	_hal_io_video_init
+  42              		.size	hal_io_video_init, .-hal_io_video_init
+  43              		.align	2
+  44              		.global	hal_io_video_line
+  45              		.syntax unified
+  46              		.arm
+  47              		.fpu neon
+  48              		.type	hal_io_video_line, %function
+  49              	hal_io_video_line:
+  50              		@ args = 0, pretend = 0, frame = 16
+  51              		@ frame_needed = 0, uses_anonymous_args = 0
+  52 0008 F04F2DE9 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}
+  53 000c 14D04DE2 		sub	sp, sp, #20
+  54 0010 00B090E5 		ldr	fp, [r0]
+  55 0014 0280A0E1 		mov	r8, r2
+  56 0018 006091E5 		ldr	r6, [r1]
+  57 001c 04A090E5 		ldr	r10, [r0, #4]
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 2
+
+
+  58 0020 0B3056E0 		subs	r3, r6, fp
+  59 0024 04308DE5 		str	r3, [sp, #4]
+  60 0028 047091E5 		ldr	r7, [r1, #4]
+  61 002c 06304B40 		submi	r3, fp, r6
+  62 0030 04308D45 		strmi	r3, [sp, #4]
+  63 0034 06005BE1 		cmp	fp, r6
+  64 0038 0130A0B3 		movlt	r3, #1
+  65 003c 0030E0A3 		mvnge	r3, #0
+  66 0040 0A5057E0 		subs	r5, r7, r10
+  67 0044 07504A40 		submi	r5, r10, r7
+  68 0048 07005AE1 		cmp	r10, r7
+  69 004c 08308DE5 		str	r3, [sp, #8]
+  70 0050 0130A0B3 		movlt	r3, #1
+  71 0054 0030E0A3 		mvnge	r3, #0
+  72 0058 0C308DE5 		str	r3, [sp, #12]
+  73 005c 04309DE5 		ldr	r3, [sp, #4]
+  74 0060 050053E1 		cmp	r3, r5
+  75 0064 1B0000CA 		bgt	.L9
+  76 0068 004065E2 		rsb	r4, r5, #0
+  77 006c A44F84E0 		add	r4, r4, r4, lsr #31
+  78 0070 C440A0E1 		asr	r4, r4, #1
+  79              	.L11:
+  80 0074 003063E2 		rsb	r3, r3, #0
+  81 0078 0A9DA0E3 		mov	r9, #640
+  82 007c 00308DE5 		str	r3, [sp]
+  83 0080 0A0000EA 		b	.L10
+  84              	.L19:
+  85 0084 00309DE5 		ldr	r3, [sp]
+  86 0088 040053E1 		cmp	r3, r4
+  87 008c 051044B0 		sublt	r1, r4, r5
+  88 0090 08309DB5 		ldrlt	r3, [sp, #8]
+  89 0094 03B08BB0 		addlt	fp, fp, r3
+  90 0098 050054E1 		cmp	r4, r5
+  91 009c 04309DB5 		ldrlt	r3, [sp, #4]
+  92 00a0 031081B0 		addlt	r1, r1, r3
+  93 00a4 0C309DB5 		ldrlt	r3, [sp, #12]
+  94 00a8 03A08AB0 		addlt	r10, r10, r3
+  95              	.L14:
+  96 00ac 0140A0E1 		mov	r4, r1
+  97              	.L10:
+  98 00b0 99BA20E0 		mla	r0, r9, r10, fp
+  99 00b4 0810A0E1 		mov	r1, r8
+ 100 00b8 8000A0E1 		lsl	r0, r0, #1
+ 101 00bc FEFFFFEB 		bl	_hal_io_video_put_pixel_raw
+ 102 00c0 06005BE1 		cmp	fp, r6
+ 103 00c4 07005A01 		cmpeq	r10, r7
+ 104 00c8 0410A0E1 		mov	r1, r4
+ 105 00cc ECFFFF1A 		bne	.L19
+ 106 00d0 14D08DE2 		add	sp, sp, #20
+ 107              		@ sp needed
+ 108 00d4 F08FBDE8 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
+ 109              	.L9:
+ 110 00d8 A34F83E0 		add	r4, r3, r3, lsr #31
+ 111 00dc C440A0E1 		asr	r4, r4, #1
+ 112 00e0 E3FFFFEA 		b	.L11
+ 113              		.size	hal_io_video_line, .-hal_io_video_line
+ 114              		.align	2
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 3
+
+
+ 115              		.global	hal_io_video_putc
+ 116              		.syntax unified
+ 117              		.arm
+ 118              		.fpu neon
+ 119              		.type	hal_io_video_putc, %function
+ 120              	hal_io_video_putc:
+ 121              		@ args = 0, pretend = 0, frame = 64
+ 122              		@ frame_needed = 0, uses_anonymous_args = 0
+ 123 00e4 0A0050E3 		cmp	r0, #10
+ 124 00e8 9600000A 		beq	.L52
+ 125 00ec 0D0050E3 		cmp	r0, #13
+ 126 00f0 8F00000A 		beq	.L53
+ 127 00f4 F04F2DE9 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}
+ 128 00f8 00B000E3 		movw	fp, #:lower16:.LANCHOR0
+ 129 00fc 00B040E3 		movt	fp, #:upper16:.LANCHOR0
+ 130 0100 44D04DE2 		sub	sp, sp, #68
+ 131 0104 0190A0E1 		mov	r9, r1
+ 132 0108 0040A0E1 		mov	r4, r0
+ 133 010c 04309BE5 		ldr	r3, [fp, #4]
+ 134 0110 20208DE5 		str	r2, [sp, #32]
+ 135 0114 18308DE5 		str	r3, [sp, #24]
+ 136 0118 00309BE5 		ldr	r3, [fp]
+ 137 011c 28008DE5 		str	r0, [sp, #40]
+ 138 0120 1C308DE5 		str	r3, [sp, #28]
+ 139 0124 FEFFFFEB 		bl	fonts_is_implemented
+ 140 0128 000050E3 		cmp	r0, #0
+ 141 012c 0C00001A 		bne	.L54
+ 142              	.L24:
+ 143 0130 04109BE5 		ldr	r1, [fp, #4]
+ 144 0134 0D30A0E3 		mov	r3, #13
+ 145 0138 D120A0E3 		mov	r2, #209
+ 146 013c 760200E3 		movw	r0, #630
+ 147 0140 931921E0 		mla	r1, r3, r9, r1
+ 148 0144 0D204DE3 		movt	r2, 53261
+ 149 0148 A130A0E1 		lsr	r3, r1, #1
+ 150 014c 922383E0 		umull	r2, r3, r2, r3
+ 151 0150 2334A0E1 		lsr	r3, r3, #8
+ 152 0154 901361E0 		mls	r1, r0, r3, r1
+ 153 0158 04108BE5 		str	r1, [fp, #4]
+ 154 015c 44D08DE2 		add	sp, sp, #68
+ 155              		@ sp needed
+ 156 0160 F08FBDE8 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
+ 157              	.L54:
+ 158 0164 0400A0E1 		mov	r0, r4
+ 159 0168 FEFFFFEB 		bl	fonts_char_to_font
+ 160 016c 003090E5 		ldr	r3, [r0]
+ 161 0170 24008DE5 		str	r0, [sp, #36]
+ 162 0174 000053E3 		cmp	r3, #0
+ 163 0178 4800000A 		beq	.L39
+ 164 017c 24A09DE5 		ldr	r10, [sp, #36]
+ 165 0180 0030A0E3 		mov	r3, #0
+ 166 0184 08308DE5 		str	r3, [sp, #8]
+ 167 0188 2CB08DE5 		str	fp, [sp, #44]
+ 168              	.L38:
+ 169 018c 04209AE5 		ldr	r2, [r10, #4]
+ 170 0190 0C009AE5 		ldr	r0, [r10, #12]
+ 171 0194 18C09DE5 		ldr	ip, [sp, #24]
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 4
+
+
+ 172 0198 026040E0 		sub	r6, r0, r2
+ 173 019c 990606E0 		mul	r6, r9, r6
+ 174 01a0 92C927E0 		mla	r7, r2, r9, ip
+ 175 01a4 90C92CE0 		mla	ip, r0, r9, ip
+ 176 01a8 08309AE5 		ldr	r3, [r10, #8]
+ 177 01ac 000056E3 		cmp	r6, #0
+ 178 01b0 10109AE5 		ldr	r1, [r10, #16]
+ 179 01b4 04C08DE5 		str	ip, [sp, #4]
+ 180 01b8 006042B0 		sublt	r6, r2, r0
+ 181 01bc 035041E0 		sub	r5, r1, r3
+ 182 01c0 04209DE5 		ldr	r2, [sp, #4]
+ 183 01c4 990505E0 		mul	r5, r9, r5
+ 184 01c8 1CC09DE5 		ldr	ip, [sp, #28]
+ 185 01cc 990606B0 		mullt	r6, r9, r6
+ 186 01d0 020057E1 		cmp	r7, r2
+ 187 01d4 0120A0B3 		movlt	r2, #1
+ 188 01d8 0020E0A3 		mvnge	r2, #0
+ 189 01dc 0C208DE5 		str	r2, [sp, #12]
+ 190 01e0 000055E3 		cmp	r5, #0
+ 191 01e4 015043B0 		sublt	r5, r3, r1
+ 192 01e8 93C928E0 		mla	r8, r3, r9, ip
+ 193 01ec 91C92BE0 		mla	fp, r1, r9, ip
+ 194 01f0 990505B0 		mullt	r5, r9, r5
+ 195 01f4 0B0058E1 		cmp	r8, fp
+ 196 01f8 0130A0B3 		movlt	r3, #1
+ 197 01fc 0030E0A3 		mvnge	r3, #0
+ 198 0200 050056E1 		cmp	r6, r5
+ 199 0204 470000CA 		bgt	.L32
+ 200 0208 004065E2 		rsb	r4, r5, #0
+ 201 020c A44F84E0 		add	r4, r4, r4, lsr #31
+ 202 0210 C440A0E1 		asr	r4, r4, #1
+ 203              	.L34:
+ 204 0214 002066E2 		rsb	r2, r6, #0
+ 205 0218 10A08DE5 		str	r10, [sp, #16]
+ 206 021c 02A0A0E1 		mov	r10, r2
+ 207 0220 14908DE5 		str	r9, [sp, #20]
+ 208 0224 0390A0E1 		mov	r9, r3
+ 209 0228 070000EA 		b	.L33
+ 210              	.L55:
+ 211 022c 04005AE1 		cmp	r10, r4
+ 212 0230 051044B0 		sublt	r1, r4, r5
+ 213 0234 0C309DB5 		ldrlt	r3, [sp, #12]
+ 214 0238 037087B0 		addlt	r7, r7, r3
+ 215 023c 040055E1 		cmp	r5, r4
+ 216 0240 061081C0 		addgt	r1, r1, r6
+ 217 0244 098088C0 		addgt	r8, r8, r9
+ 218 0248 0140A0E1 		mov	r4, r1
+ 219              	.L33:
+ 220 024c 20109DE5 		ldr	r1, [sp, #32]
+ 221 0250 0A3DA0E3 		mov	r3, #640
+ 222 0254 937820E0 		mla	r0, r3, r8, r7
+ 223 0258 8000A0E1 		lsl	r0, r0, #1
+ 224 025c FEFFFFEB 		bl	_hal_io_video_put_pixel_raw
+ 225 0260 04309DE5 		ldr	r3, [sp, #4]
+ 226 0264 0410A0E1 		mov	r1, r4
+ 227 0268 070053E1 		cmp	r3, r7
+ 228 026c 08005B01 		cmpeq	fp, r8
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 5
+
+
+ 229 0270 EDFFFF1A 		bne	.L55
+ 230 0274 24309DE5 		ldr	r3, [sp, #36]
+ 231 0278 08209DE5 		ldr	r2, [sp, #8]
+ 232 027c 003093E5 		ldr	r3, [r3]
+ 233 0280 10A09DE5 		ldr	r10, [sp, #16]
+ 234 0284 012082E2 		add	r2, r2, #1
+ 235 0288 020053E1 		cmp	r3, r2
+ 236 028c 14909DE5 		ldr	r9, [sp, #20]
+ 237 0290 10A08AE2 		add	r10, r10, #16
+ 238 0294 08208DE5 		str	r2, [sp, #8]
+ 239 0298 BBFFFF8A 		bhi	.L38
+ 240 029c 2CB09DE5 		ldr	fp, [sp, #44]
+ 241              	.L39:
+ 242 02a0 18309DE5 		ldr	r3, [sp, #24]
+ 243 02a4 28009DE5 		ldr	r0, [sp, #40]
+ 244 02a8 016083E2 		add	r6, r3, #1
+ 245 02ac FEFFFFEB 		bl	fonts_char_to_font
+ 246 02b0 1C309DE5 		ldr	r3, [sp, #28]
+ 247 02b4 0070A0E1 		mov	r7, r0
+ 248 02b8 018083E2 		add	r8, r3, #1
+ 249 02bc 003090E5 		ldr	r3, [r0]
+ 250 02c0 000053E3 		cmp	r3, #0
+ 251 02c4 99FFFF0A 		beq	.L24
+ 252 02c8 20A09DE5 		ldr	r10, [sp, #32]
+ 253 02cc 0040A0E1 		mov	r4, r0
+ 254 02d0 0050A0E3 		mov	r5, #0
+ 255              	.L40:
+ 256 02d4 043094E5 		ldr	r3, [r4, #4]
+ 257 02d8 0A20A0E1 		mov	r2, r10
+ 258 02dc 38108DE2 		add	r1, sp, #56
+ 259 02e0 30008DE2 		add	r0, sp, #48
+ 260 02e4 936923E0 		mla	r3, r3, r9, r6
+ 261 02e8 015085E2 		add	r5, r5, #1
+ 262 02ec 30308DE5 		str	r3, [sp, #48]
+ 263 02f0 083094E5 		ldr	r3, [r4, #8]
+ 264 02f4 938923E0 		mla	r3, r3, r9, r8
+ 265 02f8 34308DE5 		str	r3, [sp, #52]
+ 266 02fc 0C3094E5 		ldr	r3, [r4, #12]
+ 267 0300 936923E0 		mla	r3, r3, r9, r6
+ 268 0304 38308DE5 		str	r3, [sp, #56]
+ 269 0308 1030B4E5 		ldr	r3, [r4, #16]!
+ 270 030c 938923E0 		mla	r3, r3, r9, r8
+ 271 0310 3C308DE5 		str	r3, [sp, #60]
+ 272 0314 FEFFFFEB 		bl	hal_io_video_line
+ 273 0318 003097E5 		ldr	r3, [r7]
+ 274 031c 050053E1 		cmp	r3, r5
+ 275 0320 EBFFFF8A 		bhi	.L40
+ 276 0324 81FFFFEA 		b	.L24
+ 277              	.L32:
+ 278 0328 A64F86E0 		add	r4, r6, r6, lsr #31
+ 279 032c C440A0E1 		asr	r4, r4, #1
+ 280 0330 B7FFFFEA 		b	.L34
+ 281              	.L53:
+ 282 0334 003000E3 		movw	r3, #:lower16:.LANCHOR0
+ 283 0338 0A20A0E3 		mov	r2, #10
+ 284 033c 003040E3 		movt	r3, #:upper16:.LANCHOR0
+ 285 0340 042083E5 		str	r2, [r3, #4]
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 6
+
+
+ 286 0344 1EFF2FE1 		bx	lr
+ 287              	.L52:
+ 288 0348 000000E3 		movw	r0, #:lower16:.LANCHOR0
+ 289 034c 093B0CE3 		movw	r3, #51977
+ 290 0350 000040E3 		movt	r0, #:upper16:.LANCHOR0
+ 291 0354 1DCEA0E3 		mov	ip, #464
+ 292 0358 3D3D48E3 		movt	r3, 36157
+ 293 035c 002090E5 		ldr	r2, [r0]
+ 294 0360 092082E2 		add	r2, r2, #9
+ 295 0364 011282E0 		add	r1, r2, r1, lsl #4
+ 296 0368 932183E0 		umull	r2, r3, r3, r1
+ 297 036c 2334A0E1 		lsr	r3, r3, #8
+ 298 0370 9C1363E0 		mls	r3, ip, r3, r1
+ 299 0374 003080E5 		str	r3, [r0]
+ 300 0378 1EFF2FE1 		bx	lr
+ 301              		.size	hal_io_video_putc, .-hal_io_video_putc
+ 302              		.align	2
+ 303              		.global	hal_io_video_putc_x_y
+ 304              		.syntax unified
+ 305              		.arm
+ 306              		.fpu neon
+ 307              		.type	hal_io_video_putc_x_y, %function
+ 308              	hal_io_video_putc_x_y:
+ 309              		@ args = 4, pretend = 0, frame = 48
+ 310              		@ frame_needed = 0, uses_anonymous_args = 0
+ 311 037c F04F2DE9 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}
+ 312 0380 0050A0E1 		mov	r5, r0
+ 313 0384 34D04DE2 		sub	sp, sp, #52
+ 314 0388 0200A0E1 		mov	r0, r2
+ 315 038c 0280A0E1 		mov	r8, r2
+ 316 0390 0160A0E1 		mov	r6, r1
+ 317 0394 03B0A0E1 		mov	fp, r3
+ 318 0398 FEFFFFEB 		bl	fonts_is_implemented
+ 319 039c 000050E3 		cmp	r0, #0
+ 320 03a0 0100001A 		bne	.L83
+ 321              	.L56:
+ 322 03a4 34D08DE2 		add	sp, sp, #52
+ 323              		@ sp needed
+ 324 03a8 F08FBDE8 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
+ 325              	.L83:
+ 326 03ac 0800A0E1 		mov	r0, r8
+ 327 03b0 FEFFFFEB 		bl	fonts_char_to_font
+ 328 03b4 003090E5 		ldr	r3, [r0]
+ 329 03b8 0090A0E1 		mov	r9, r0
+ 330 03bc 000053E3 		cmp	r3, #0
+ 331 03c0 0040A011 		movne	r4, r0
+ 332 03c4 0070A013 		movne	r7, #0
+ 333 03c8 1300000A 		beq	.L62
+ 334              	.L61:
+ 335 03cc 043094E5 		ldr	r3, [r4, #4]
+ 336 03d0 28108DE2 		add	r1, sp, #40
+ 337 03d4 58209DE5 		ldr	r2, [sp, #88]
+ 338 03d8 20008DE2 		add	r0, sp, #32
+ 339 03dc 935B23E0 		mla	r3, r3, fp, r5
+ 340 03e0 017087E2 		add	r7, r7, #1
+ 341 03e4 20308DE5 		str	r3, [sp, #32]
+ 342 03e8 083094E5 		ldr	r3, [r4, #8]
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 7
+
+
+ 343 03ec 936B23E0 		mla	r3, r3, fp, r6
+ 344 03f0 24308DE5 		str	r3, [sp, #36]
+ 345 03f4 0C3094E5 		ldr	r3, [r4, #12]
+ 346 03f8 935B23E0 		mla	r3, r3, fp, r5
+ 347 03fc 28308DE5 		str	r3, [sp, #40]
+ 348 0400 1030B4E5 		ldr	r3, [r4, #16]!
+ 349 0404 936B23E0 		mla	r3, r3, fp, r6
+ 350 0408 2C308DE5 		str	r3, [sp, #44]
+ 351 040c FEFFFFEB 		bl	hal_io_video_line
+ 352 0410 003099E5 		ldr	r3, [r9]
+ 353 0414 070053E1 		cmp	r3, r7
+ 354 0418 EBFFFF8A 		bhi	.L61
+ 355              	.L62:
+ 356 041c 013085E2 		add	r3, r5, #1
+ 357 0420 0800A0E1 		mov	r0, r8
+ 358 0424 14308DE5 		str	r3, [sp, #20]
+ 359 0428 FEFFFFEB 		bl	fonts_char_to_font
+ 360 042c 013086E2 		add	r3, r6, #1
+ 361 0430 18308DE5 		str	r3, [sp, #24]
+ 362 0434 003090E5 		ldr	r3, [r0]
+ 363 0438 000053E3 		cmp	r3, #0
+ 364 043c D8FFFF0A 		beq	.L56
+ 365 0440 1C008DE5 		str	r0, [sp, #28]
+ 366 0444 0090A0E1 		mov	r9, r0
+ 367 0448 0030A0E3 		mov	r3, #0
+ 368 044c 00308DE5 		str	r3, [sp]
+ 369              	.L73:
+ 370 0450 061099E9 		ldmib	r9, {r1, r2, ip}
+ 371 0454 100099E5 		ldr	r0, [r9, #16]
+ 372 0458 01604CE0 		sub	r6, ip, r1
+ 373 045c 9B0606E0 		mul	r6, fp, r6
+ 374 0460 14309DE5 		ldr	r3, [sp, #20]
+ 375 0464 025040E0 		sub	r5, r0, r2
+ 376 0468 000056E3 		cmp	r6, #0
+ 377 046c 913B27E0 		mla	r7, r1, fp, r3
+ 378 0470 9C3B2AE0 		mla	r10, ip, fp, r3
+ 379 0474 0C6041B0 		sublt	r6, r1, ip
+ 380 0478 9B0505E0 		mul	r5, fp, r5
+ 381 047c 18309DE5 		ldr	r3, [sp, #24]
+ 382 0480 9B0606B0 		mullt	r6, fp, r6
+ 383 0484 0A0057E1 		cmp	r7, r10
+ 384 0488 0110A0B3 		movlt	r1, #1
+ 385 048c 0010E0A3 		mvnge	r1, #0
+ 386 0490 04108DE5 		str	r1, [sp, #4]
+ 387 0494 000055E3 		cmp	r5, #0
+ 388 0498 923B28E0 		mla	r8, r2, fp, r3
+ 389 049c 005042B0 		sublt	r5, r2, r0
+ 390 04a0 903B23E0 		mla	r3, r0, fp, r3
+ 391 04a4 9B0505B0 		mullt	r5, fp, r5
+ 392 04a8 030058E1 		cmp	r8, r3
+ 393 04ac 0120A0B3 		movlt	r2, #1
+ 394 04b0 0020E0A3 		mvnge	r2, #0
+ 395 04b4 050056E1 		cmp	r6, r5
+ 396 04b8 08208DE5 		str	r2, [sp, #8]
+ 397 04bc 260000CA 		bgt	.L67
+ 398 04c0 004065E2 		rsb	r4, r5, #0
+ 399 04c4 A44F84E0 		add	r4, r4, r4, lsr #31
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 8
+
+
+ 400 04c8 C440A0E1 		asr	r4, r4, #1
+ 401              	.L69:
+ 402 04cc 002066E2 		rsb	r2, r6, #0
+ 403 04d0 0C908DE5 		str	r9, [sp, #12]
+ 404 04d4 0690A0E1 		mov	r9, r6
+ 405 04d8 10B08DE5 		str	fp, [sp, #16]
+ 406 04dc 0360A0E1 		mov	r6, r3
+ 407 04e0 02B0A0E1 		mov	fp, r2
+ 408 04e4 080000EA 		b	.L68
+ 409              	.L84:
+ 410 04e8 04005BE1 		cmp	fp, r4
+ 411 04ec 051044B0 		sublt	r1, r4, r5
+ 412 04f0 04309DB5 		ldrlt	r3, [sp, #4]
+ 413 04f4 037087B0 		addlt	r7, r7, r3
+ 414 04f8 040055E1 		cmp	r5, r4
+ 415 04fc 08309DC5 		ldrgt	r3, [sp, #8]
+ 416 0500 091081C0 		addgt	r1, r1, r9
+ 417 0504 038088C0 		addgt	r8, r8, r3
+ 418              	.L72:
+ 419 0508 0140A0E1 		mov	r4, r1
+ 420              	.L68:
+ 421 050c 58109DE5 		ldr	r1, [sp, #88]
+ 422 0510 0A3DA0E3 		mov	r3, #640
+ 423 0514 937820E0 		mla	r0, r3, r8, r7
+ 424 0518 8000A0E1 		lsl	r0, r0, #1
+ 425 051c FEFFFFEB 		bl	_hal_io_video_put_pixel_raw
+ 426 0520 07005AE1 		cmp	r10, r7
+ 427 0524 08005601 		cmpeq	r6, r8
+ 428 0528 0410A0E1 		mov	r1, r4
+ 429 052c EDFFFF1A 		bne	.L84
+ 430 0530 1C309DE5 		ldr	r3, [sp, #28]
+ 431 0534 00209DE5 		ldr	r2, [sp]
+ 432 0538 003093E5 		ldr	r3, [r3]
+ 433 053c 0C909DE5 		ldr	r9, [sp, #12]
+ 434 0540 012082E2 		add	r2, r2, #1
+ 435 0544 020053E1 		cmp	r3, r2
+ 436 0548 10B09DE5 		ldr	fp, [sp, #16]
+ 437 054c 109089E2 		add	r9, r9, #16
+ 438 0550 00208DE5 		str	r2, [sp]
+ 439 0554 BDFFFF8A 		bhi	.L73
+ 440 0558 91FFFFEA 		b	.L56
+ 441              	.L67:
+ 442 055c A64F86E0 		add	r4, r6, r6, lsr #31
+ 443 0560 C440A0E1 		asr	r4, r4, #1
+ 444 0564 D8FFFFEA 		b	.L69
+ 445              		.size	hal_io_video_putc_x_y, .-hal_io_video_putc_x_y
+ 446              		.align	2
+ 447              		.global	hal_io_video_puts
+ 448              		.syntax unified
+ 449              		.arm
+ 450              		.fpu neon
+ 451              		.type	hal_io_video_puts, %function
+ 452              	hal_io_video_puts:
+ 453              		@ args = 0, pretend = 0, frame = 80
+ 454              		@ frame_needed = 0, uses_anonymous_args = 0
+ 455 0568 F04F2DE9 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}
+ 456 056c 0D30A0E3 		mov	r3, #13
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 9
+
+
+ 457 0570 01B0A0E1 		mov	fp, r1
+ 458 0574 54D04DE2 		sub	sp, sp, #84
+ 459 0578 930B03E0 		mul	r3, r3, fp
+ 460 057c 20208DE5 		str	r2, [sp, #32]
+ 461 0580 00A000E3 		movw	r10, #:lower16:.LANCHOR0
+ 462 0584 00A040E3 		movt	r10, #:upper16:.LANCHOR0
+ 463 0588 D110A0E3 		mov	r1, #209
+ 464 058c 0D104DE3 		movt	r1, 53261
+ 465 0590 09CB0CE3 		movw	ip, #51977
+ 466 0594 3DCD48E3 		movt	ip, 36157
+ 467 0598 012040E2 		sub	r2, r0, #1
+ 468 059c 2C308DE5 		str	r3, [sp, #44]
+ 469 05a0 0B32A0E1 		lsl	r3, fp, #4
+ 470 05a4 30108DE5 		str	r1, [sp, #48]
+ 471 05a8 3CC08DE5 		str	ip, [sp, #60]
+ 472 05ac 0C208DE5 		str	r2, [sp, #12]
+ 473 05b0 38308DE5 		str	r3, [sp, #56]
+ 474              	.L86:
+ 475 05b4 0C309DE5 		ldr	r3, [sp, #12]
+ 476 05b8 0150F3E5 		ldrb	r5, [r3, #1]!	@ zero_extendqisi2
+ 477 05bc 0C308DE5 		str	r3, [sp, #12]
+ 478 05c0 000055E3 		cmp	r5, #0
+ 479 05c4 9600000A 		beq	.L117
+ 480 05c8 0A0055E3 		cmp	r5, #10
+ 481 05cc 8900000A 		beq	.L118
+ 482 05d0 0D0055E3 		cmp	r5, #13
+ 483 05d4 0A30A003 		moveq	r3, #10
+ 484 05d8 04308A05 		streq	r3, [r10, #4]
+ 485 05dc F4FFFF0A 		beq	.L86
+ 486 05e0 04809AE5 		ldr	r8, [r10, #4]
+ 487 05e4 0500A0E1 		mov	r0, r5
+ 488 05e8 00609AE5 		ldr	r6, [r10]
+ 489 05ec FEFFFFEB 		bl	fonts_is_implemented
+ 490 05f0 000050E3 		cmp	r0, #0
+ 491 05f4 7100000A 		beq	.L90
+ 492 05f8 0500A0E1 		mov	r0, r5
+ 493 05fc FEFFFFEB 		bl	fonts_char_to_font
+ 494 0600 003090E5 		ldr	r3, [r0]
+ 495 0604 000053E3 		cmp	r3, #0
+ 496 0608 1900000A 		beq	.L95
+ 497 060c 04508DE5 		str	r5, [sp, #4]
+ 498 0610 0040A0E1 		mov	r4, r0
+ 499 0614 20909DE5 		ldr	r9, [sp, #32]
+ 500 0618 0070A0E3 		mov	r7, #0
+ 501 061c 0050A0E1 		mov	r5, r0
+ 502              	.L94:
+ 503 0620 040094E5 		ldr	r0, [r4, #4]
+ 504 0624 0920A0E1 		mov	r2, r9
+ 505 0628 48108DE2 		add	r1, sp, #72
+ 506 062c 017087E2 		add	r7, r7, #1
+ 507 0630 908B20E0 		mla	r0, r0, fp, r8
+ 508 0634 40008DE5 		str	r0, [sp, #64]
+ 509 0638 40008DE2 		add	r0, sp, #64
+ 510 063c 08C094E5 		ldr	ip, [r4, #8]
+ 511 0640 9C6B2CE0 		mla	ip, ip, fp, r6
+ 512 0644 44C08DE5 		str	ip, [sp, #68]
+ 513 0648 0CC094E5 		ldr	ip, [r4, #12]
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 10
+
+
+ 514 064c 9C8B2CE0 		mla	ip, ip, fp, r8
+ 515 0650 48C08DE5 		str	ip, [sp, #72]
+ 516 0654 10C0B4E5 		ldr	ip, [r4, #16]!
+ 517 0658 9C6B2CE0 		mla	ip, ip, fp, r6
+ 518 065c 4CC08DE5 		str	ip, [sp, #76]
+ 519 0660 FEFFFFEB 		bl	hal_io_video_line
+ 520 0664 002095E5 		ldr	r2, [r5]
+ 521 0668 070052E1 		cmp	r2, r7
+ 522 066c EBFFFF8A 		bhi	.L94
+ 523 0670 04509DE5 		ldr	r5, [sp, #4]
+ 524              	.L95:
+ 525 0674 013088E2 		add	r3, r8, #1
+ 526 0678 0500A0E1 		mov	r0, r5
+ 527 067c 24308DE5 		str	r3, [sp, #36]
+ 528 0680 FEFFFFEB 		bl	fonts_char_to_font
+ 529 0684 1C008DE5 		str	r0, [sp, #28]
+ 530 0688 013086E2 		add	r3, r6, #1
+ 531 068c 28308DE5 		str	r3, [sp, #40]
+ 532 0690 003090E5 		ldr	r3, [r0]
+ 533 0694 000053E3 		cmp	r3, #0
+ 534 0698 4800000A 		beq	.L90
+ 535 069c 34A08DE5 		str	r10, [sp, #52]
+ 536 06a0 0090A0E1 		mov	r9, r0
+ 537 06a4 0030A0E3 		mov	r3, #0
+ 538 06a8 08308DE5 		str	r3, [sp, #8]
+ 539              	.L106:
+ 540 06ac 042099E5 		ldr	r2, [r9, #4]
+ 541 06b0 0C0099E5 		ldr	r0, [r9, #12]
+ 542 06b4 24C09DE5 		ldr	ip, [sp, #36]
+ 543 06b8 026040E0 		sub	r6, r0, r2
+ 544 06bc 9B0606E0 		mul	r6, fp, r6
+ 545 06c0 92CB27E0 		mla	r7, r2, fp, ip
+ 546 06c4 90CB2CE0 		mla	ip, r0, fp, ip
+ 547 06c8 083099E5 		ldr	r3, [r9, #8]
+ 548 06cc 000056E3 		cmp	r6, #0
+ 549 06d0 101099E5 		ldr	r1, [r9, #16]
+ 550 06d4 04C08DE5 		str	ip, [sp, #4]
+ 551 06d8 006042B0 		sublt	r6, r2, r0
+ 552 06dc 035041E0 		sub	r5, r1, r3
+ 553 06e0 04209DE5 		ldr	r2, [sp, #4]
+ 554 06e4 9B0505E0 		mul	r5, fp, r5
+ 555 06e8 28C09DE5 		ldr	ip, [sp, #40]
+ 556 06ec 9B0606B0 		mullt	r6, fp, r6
+ 557 06f0 020057E1 		cmp	r7, r2
+ 558 06f4 0120A0B3 		movlt	r2, #1
+ 559 06f8 0020E0A3 		mvnge	r2, #0
+ 560 06fc 10208DE5 		str	r2, [sp, #16]
+ 561 0700 000055E3 		cmp	r5, #0
+ 562 0704 015043B0 		sublt	r5, r3, r1
+ 563 0708 93CB28E0 		mla	r8, r3, fp, ip
+ 564 070c 91CB2AE0 		mla	r10, r1, fp, ip
+ 565 0710 9B0505B0 		mullt	r5, fp, r5
+ 566 0714 0A0058E1 		cmp	r8, r10
+ 567 0718 0130A0B3 		movlt	r3, #1
+ 568 071c 0030E0A3 		mvnge	r3, #0
+ 569 0720 050056E1 		cmp	r6, r5
+ 570 0724 300000CA 		bgt	.L100
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 11
+
+
+ 571 0728 004065E2 		rsb	r4, r5, #0
+ 572 072c A44F84E0 		add	r4, r4, r4, lsr #31
+ 573 0730 C440A0E1 		asr	r4, r4, #1
+ 574              	.L102:
+ 575 0734 002066E2 		rsb	r2, r6, #0
+ 576 0738 14908DE5 		str	r9, [sp, #20]
+ 577 073c 0390A0E1 		mov	r9, r3
+ 578 0740 18B08DE5 		str	fp, [sp, #24]
+ 579 0744 02B0A0E1 		mov	fp, r2
+ 580 0748 070000EA 		b	.L101
+ 581              	.L119:
+ 582 074c 04005BE1 		cmp	fp, r4
+ 583 0750 051044B0 		sublt	r1, r4, r5
+ 584 0754 10309DB5 		ldrlt	r3, [sp, #16]
+ 585 0758 037087B0 		addlt	r7, r7, r3
+ 586 075c 040055E1 		cmp	r5, r4
+ 587 0760 061081C0 		addgt	r1, r1, r6
+ 588 0764 098088C0 		addgt	r8, r8, r9
+ 589 0768 0140A0E1 		mov	r4, r1
+ 590              	.L101:
+ 591 076c 20109DE5 		ldr	r1, [sp, #32]
+ 592 0770 0A3DA0E3 		mov	r3, #640
+ 593 0774 937820E0 		mla	r0, r3, r8, r7
+ 594 0778 8000A0E1 		lsl	r0, r0, #1
+ 595 077c FEFFFFEB 		bl	_hal_io_video_put_pixel_raw
+ 596 0780 04309DE5 		ldr	r3, [sp, #4]
+ 597 0784 0410A0E1 		mov	r1, r4
+ 598 0788 070053E1 		cmp	r3, r7
+ 599 078c 08005A01 		cmpeq	r10, r8
+ 600 0790 EDFFFF1A 		bne	.L119
+ 601 0794 1C309DE5 		ldr	r3, [sp, #28]
+ 602 0798 08209DE5 		ldr	r2, [sp, #8]
+ 603 079c 003093E5 		ldr	r3, [r3]
+ 604 07a0 14909DE5 		ldr	r9, [sp, #20]
+ 605 07a4 012082E2 		add	r2, r2, #1
+ 606 07a8 020053E1 		cmp	r3, r2
+ 607 07ac 18B09DE5 		ldr	fp, [sp, #24]
+ 608 07b0 109089E2 		add	r9, r9, #16
+ 609 07b4 08208DE5 		str	r2, [sp, #8]
+ 610 07b8 BBFFFF8A 		bhi	.L106
+ 611 07bc 34A09DE5 		ldr	r10, [sp, #52]
+ 612              	.L90:
+ 613 07c0 04309AE5 		ldr	r3, [r10, #4]
+ 614 07c4 761200E3 		movw	r1, #630
+ 615 07c8 2C209DE5 		ldr	r2, [sp, #44]
+ 616 07cc 30009DE5 		ldr	r0, [sp, #48]
+ 617 07d0 032082E0 		add	r2, r2, r3
+ 618 07d4 A230A0E1 		lsr	r3, r2, #1
+ 619 07d8 900383E0 		umull	r0, r3, r0, r3
+ 620 07dc 2334A0E1 		lsr	r3, r3, #8
+ 621 07e0 912363E0 		mls	r3, r1, r3, r2
+ 622 07e4 04308AE5 		str	r3, [r10, #4]
+ 623 07e8 71FFFFEA 		b	.L86
+ 624              	.L100:
+ 625 07ec A64F86E0 		add	r4, r6, r6, lsr #31
+ 626 07f0 C440A0E1 		asr	r4, r4, #1
+ 627 07f4 CEFFFFEA 		b	.L102
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 12
+
+
+ 628              	.L118:
+ 629 07f8 00309AE5 		ldr	r3, [r10]
+ 630 07fc 1D1EA0E3 		mov	r1, #464
+ 631 0800 38209DE5 		ldr	r2, [sp, #56]
+ 632 0804 093083E2 		add	r3, r3, #9
+ 633 0808 023083E0 		add	r3, r3, r2
+ 634 080c 3C209DE5 		ldr	r2, [sp, #60]
+ 635 0810 920382E0 		umull	r0, r2, r2, r3
+ 636 0814 2224A0E1 		lsr	r2, r2, #8
+ 637 0818 913263E0 		mls	r3, r1, r2, r3
+ 638 081c 00308AE5 		str	r3, [r10]
+ 639 0820 63FFFFEA 		b	.L86
+ 640              	.L117:
+ 641 0824 54D08DE2 		add	sp, sp, #84
+ 642              		@ sp needed
+ 643 0828 F08FBDE8 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
+ 644              		.size	hal_io_video_puts, .-hal_io_video_puts
+ 645              		.align	2
+ 646              		.global	hal_io_video_put_pixel
+ 647              		.syntax unified
+ 648              		.arm
+ 649              		.fpu neon
+ 650              		.type	hal_io_video_put_pixel, %function
+ 651              	hal_io_video_put_pixel:
+ 652              		@ args = 0, pretend = 0, frame = 0
+ 653              		@ frame_needed = 0, uses_anonymous_args = 0
+ 654              		@ link register save eliminated.
+ 655 082c 090090E8 		ldm	r0, {r0, r3}
+ 656 0830 0A2DA0E3 		mov	r2, #640
+ 657 0834 920320E0 		mla	r0, r2, r3, r0
+ 658 0838 8000A0E1 		lsl	r0, r0, #1
+ 659 083c FEFFFFEA 		b	_hal_io_video_put_pixel_raw
+ 660              		.size	hal_io_video_put_pixel, .-hal_io_video_put_pixel
+ 661              		.align	2
+ 662              		.global	hal_io_serial_init
+ 663              		.syntax unified
+ 664              		.arm
+ 665              		.fpu neon
+ 666              		.type	hal_io_serial_init, %function
+ 667              	hal_io_serial_init:
+ 668              		@ args = 0, pretend = 0, frame = 0
+ 669              		@ frame_needed = 0, uses_anonymous_args = 0
+ 670              		@ link register save eliminated.
+ 671 0840 0010A0E3 		mov	r1, #0
+ 672 0844 013AA0E3 		mov	r3, #4096
+ 673 0848 203F43E3 		movt	r3, 16160
+ 674 084c 0100A0E1 		mov	r0, r1
+ 675 0850 201F43E3 		movt	r1, 16160
+ 676 0854 9620A0E3 		mov	r2, #150
+ 677 0858 300083E5 		str	r0, [r3, #48]
+ 678 085c 02C0A0E1 		mov	ip, r2
+ 679 0860 940081E5 		str	r0, [r1, #148]
+ 680              		.syntax divided
+ 681              	@ 304 "src/hal/hal_io.c" 1
+ 682 0864 01C05CE2 		__delay_802: subs ip, ip, #1; bne __delay_802
+ 682      FDFFFF1A 
+ 683              	
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 13
+
+
+ 684              	@ 0 "" 2
+ 685              		.arm
+ 686              		.syntax unified
+ 687 086c 03C9A0E3 		mov	ip, #49152
+ 688 0870 98C081E5 		str	ip, [r1, #152]
+ 689              		.syntax divided
+ 690              	@ 304 "src/hal/hal_io.c" 1
+ 691 0874 012052E2 		__delay_805: subs r2, r2, #1; bne __delay_805
+ 691      FDFFFF1A 
+ 692              	
+ 693              	@ 0 "" 2
+ 694              		.arm
+ 695              		.syntax unified
+ 696 087c 980081E5 		str	r0, [r1, #152]
+ 697 0880 FF2700E3 		movw	r2, #2047
+ 698 0884 442083E5 		str	r2, [r3, #68]
+ 699 0888 0120A0E3 		mov	r2, #1
+ 700 088c 242083E5 		str	r2, [r3, #36]
+ 701 0890 2820A0E3 		mov	r2, #40
+ 702 0894 282083E5 		str	r2, [r3, #40]
+ 703 0898 7020A0E3 		mov	r2, #112
+ 704 089c 2C2083E5 		str	r2, [r3, #44]
+ 705 08a0 F22700E3 		movw	r2, #2034
+ 706 08a4 382083E5 		str	r2, [r3, #56]
+ 707 08a8 012300E3 		movw	r2, #769
+ 708 08ac 302083E5 		str	r2, [r3, #48]
+ 709 08b0 1EFF2FE1 		bx	lr
+ 710              		.size	hal_io_serial_init, .-hal_io_serial_init
+ 711              		.align	2
+ 712              		.global	hal_io_serial_puts
+ 713              		.syntax unified
+ 714              		.arm
+ 715              		.fpu neon
+ 716              		.type	hal_io_serial_puts, %function
+ 717              	hal_io_serial_puts:
+ 718              		@ args = 0, pretend = 0, frame = 0
+ 719              		@ frame_needed = 0, uses_anonymous_args = 0
+ 720              		@ link register save eliminated.
+ 721 08b4 01CAA0E3 		mov	ip, #4096
+ 722 08b8 011041E2 		sub	r1, r1, #1
+ 723 08bc 20CF43E3 		movt	ip, 16160
+ 724              	.L123:
+ 725 08c0 0130F1E5 		ldrb	r3, [r1, #1]!	@ zero_extendqisi2
+ 726 08c4 000053E3 		cmp	r3, #0
+ 727 08c8 1EFF2F01 		bxeq	lr
+ 728 08cc 000050E3 		cmp	r0, #0
+ 729 08d0 FAFFFF1A 		bne	.L123
+ 730              	.L125:
+ 731 08d4 18209CE5 		ldr	r2, [ip, #24]
+ 732 08d8 200012E3 		tst	r2, #32
+ 733 08dc FCFFFF1A 		bne	.L125
+ 734 08e0 00308CE5 		str	r3, [ip]
+ 735 08e4 F5FFFFEA 		b	.L123
+ 736              		.size	hal_io_serial_puts, .-hal_io_serial_puts
+ 737              		.align	2
+ 738              		.global	hal_io_serial_putc
+ 739              		.syntax unified
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 14
+
+
+ 740              		.arm
+ 741              		.fpu neon
+ 742              		.type	hal_io_serial_putc, %function
+ 743              	hal_io_serial_putc:
+ 744              		@ args = 0, pretend = 0, frame = 0
+ 745              		@ frame_needed = 0, uses_anonymous_args = 0
+ 746              		@ link register save eliminated.
+ 747 08e8 000050E3 		cmp	r0, #0
+ 748 08ec 1EFF2F11 		bxne	lr
+ 749 08f0 012AA0E3 		mov	r2, #4096
+ 750 08f4 202F43E3 		movt	r2, 16160
+ 751              	.L131:
+ 752 08f8 183092E5 		ldr	r3, [r2, #24]
+ 753 08fc 200013E3 		tst	r3, #32
+ 754 0900 FCFFFF1A 		bne	.L131
+ 755 0904 001082E5 		str	r1, [r2]
+ 756 0908 1EFF2FE1 		bx	lr
+ 757              		.size	hal_io_serial_putc, .-hal_io_serial_putc
+ 758              		.align	2
+ 759              		.global	hal_io_serial_getc
+ 760              		.syntax unified
+ 761              		.arm
+ 762              		.fpu neon
+ 763              		.type	hal_io_serial_getc, %function
+ 764              	hal_io_serial_getc:
+ 765              		@ args = 0, pretend = 0, frame = 0
+ 766              		@ frame_needed = 0, uses_anonymous_args = 0
+ 767              		@ link register save eliminated.
+ 768 090c 000050E3 		cmp	r0, #0
+ 769 0910 012AA003 		moveq	r2, #4096
+ 770 0914 202F4303 		movteq	r2, 16160
+ 771 0918 0300000A 		beq	.L134
+ 772 091c 010050E3 		cmp	r0, #1
+ 773 0920 1EFF2F11 		bxne	lr
+ 774 0924 0000A0E3 		mov	r0, #0
+ 775 0928 1EFF2FE1 		bx	lr
+ 776              	.L134:
+ 777 092c 183092E5 		ldr	r3, [r2, #24]
+ 778 0930 100013E3 		tst	r3, #16
+ 779 0934 FCFFFF1A 		bne	.L134
+ 780 0938 000092E5 		ldr	r0, [r2]
+ 781 093c 7000EFE6 		uxtb	r0, r0
+ 782 0940 1EFF2FE1 		bx	lr
+ 783              		.size	hal_io_serial_getc, .-hal_io_serial_getc
+ 784              		.global	curr_y
+ 785              		.global	curr_x
+ 786              		.data
+ 787              		.align	2
+ 788              		.set	.LANCHOR0,. + 0
+ 789              		.type	curr_y, %object
+ 790              		.size	curr_y, 4
+ 791              	curr_y:
+ 792 0000 20000000 		.word	32
+ 793              		.type	curr_x, %object
+ 794              		.size	curr_x, 4
+ 795              	curr_x:
+ 796 0004 0A000000 		.word	10
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 15
+
+
+ 797              		.ident	"GCC: (GNU Tools for Arm Embedded Processors 8-2018-q4-major) 8.2.1 20181213 (release) [gcc
+ARM GAS  C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s 			page 16
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 hal_io.c
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:18     .text:00000000 $a
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:25     .text:00000000 hal_io_init
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:37     .text:00000004 hal_io_video_init
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:49     .text:00000008 hal_io_video_line
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:120    .text:000000e4 hal_io_video_putc
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:788    .data:00000000 .LANCHOR0
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:308    .text:0000037c hal_io_video_putc_x_y
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:452    .text:00000568 hal_io_video_puts
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:651    .text:0000082c hal_io_video_put_pixel
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:667    .text:00000840 hal_io_serial_init
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:682    .text:00000864 __delay_802
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:691    .text:00000874 __delay_805
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:717    .text:000008b4 hal_io_serial_puts
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:743    .text:000008e8 hal_io_serial_putc
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:764    .text:0000090c hal_io_serial_getc
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:791    .data:00000000 curr_y
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:795    .data:00000004 curr_x
+C:\Users\A01169~1\AppData\Local\Temp\cc27hRaB.s:787    .data:00000000 $d
+
+UNDEFINED SYMBOLS
+fonts_init
+_hal_io_video_init
+_hal_io_video_put_pixel_raw
+fonts_is_implemented
+fonts_char_to_font
+ARM GAS  src/hal/hal_io_asm.s 			page 1
+
+
+   1              	/*
+   2              	* HAL IO (assembly)
+   3              	*
+   4              	* Adapted From:
+   5              	*     https://github.com/mmuszkow/NoOsBootstrap/tree/master/arm
+   6              	*/
+   7              	
+   8              	.section .text
+   9              	.align 2
+  10              	
+  11              	.equ INIT_FAILED, 1
+  12              	.equ INIT_SUCCESS, 0
+  13              	
+  14              	/*
+  15              	*   HAL IO Video Init
+  16              	*
+  17              	*   void _hal_io_video_init(void)
+  18              	*/
+  19              	.globl _hal_io_video_init
+  20              	_hal_io_video_init:
+  21 0000 F0432DE9 		push {r4-r9, lr}
+  22              	
+  23 0004 0740A0E3 		mov r4, #7
+  24              		@ set Video Controller resolution to 640x480x16bit
+  25              		@ 16-bit, cause the 8-bit depth needs a palette
+  26              		@ and I'm too lazy to set it up
+  27 0008 24119FE5 		ldr r1, =vc_set_res
+  28 000c 170000EB 		bl  mb0_c8_write
+  29 0010 1E0000EB 		bl  mb0_c8_read
+  30 0014 020110E3 		tst r0, #0x80000000
+  31 0018 0B00000A 		beq _video_init_failed
+  32              	
+  33              		@ get VC framebuffer address
+  34 001c 14119FE5 		ldr r1, =vc_alloc_fb
+  35 0020 120000EB 		bl  mb0_c8_write
+  36 0024 190000EB 		bl  mb0_c8_read
+  37 0028 220110E3 		tst r0, #0x80000008
+  38 002c 0600000A 		beq _video_init_failed
+  39              	
+  40              		@ check if the address is correct
+  41 0030 140091E5 		ldr r0, [r1, #20]
+  42 0034 000050E3 		cmp r0, #0
+  43 0038 0300000A 		beq _video_init_failed
+  44              	
+  45              		@Store framebuffer pointer
+  46 003c F8409FE5 		ldr r4, =frame_buffer_ptr
+  47 0040 000084E5 		str r0, [r4]
+  48              	
+  49 0044 0000A0E3 		mov r0, #INIT_SUCCESS
+  50 0048 000000EA 	  b	_video_init_success
+  51              	
+  52              	_video_init_failed:
+  53 004c 0100A0E3 		mov r0, #INIT_FAILED
+  54              	_video_init_success:
+  55 0050 F083BDE8 		pop {r4-r9, pc}
+  56              	
+  57              	
+ARM GAS  src/hal/hal_io_asm.s 			page 2
+
+
+  58              	/*
+  59              	*   HAL IO Video Put Pixel
+  60              	*
+  61              	*   void _hal_io_video_put_pixel_raw(uint32_t raw_linear_position, Color)
+  62              	*/
+  63              	.globl _hal_io_video_put_pixel_raw
+  64              	_hal_io_video_put_pixel_raw:
+  65              		fb    		.req r4
+  66              		position 	.req r0
+  67              		color 		.req r1
+  68              	
+  69 0054 70402DE9 		push {r4-r6, lr}
+  70              	
+  71              		@Set up the frame buffer ptr
+  72 0058 DC509FE5 		ldr r5, =frame_buffer_ptr
+  73 005c 004095E5 		ldr fb, [r5]
+  74              	
+  75              		@Set up position
+  76 0060 004084E0 		add fb, position
+  77              	
+  78              		@Draw Pixel
+  79 0064 001084E5 		str color, [fb, #0]
+  80 0068 021084E5 		str color, [fb, #2]   @This is so that letters look BOLD
+  81              	
+  82 006c 7080BDE8 		pop {r4-r6, pc}
+  83              	
+  84              	
+  85              	
+  86              	@@@@@@@@@@@@@@@ VC @@@@@@@@@@@@@@
+  87              	
+  88              	.equ MBOX0, 0x3f00b880
+  89              	
+  90              	@ writes to mailbox #0, channel 8
+  91              	@ r1 - message
+  92              	mb0_c8_write:
+  93              	    message .req r1
+  94              	    mailbox .req r3
+  95              	    status  .req r6
+  96              	
+  97 0070 C8309FE5 	    ldr mailbox, =MBOX0
+  98              	.mb0_full:
+  99 0074 186093E5 	    ldr status, [mailbox, #0x18]
+ 100 0078 020116E3 	    tst status, #0x80000000  @ mailbox full flag
+ 101 007c FCFFFF1A 	    bne .mb0_full
+ 102 0080 081081E2 	    add message, #8          @ channel 8
+ 103 0084 201083E5 	    str message, [mailbox, #0x20] @ write addr
+ 104 0088 081041E2 	    sub message, #8
+ 105              	
+ 106              	    .unreq mailbox
+ 107              	    .unreq message
+ 108              	    .unreq status
+ 109 008c 0EF0A0E1 	    mov pc, lr
+ 110              	
+ 111              	@ reads from mailbox #0, channel 8
+ 112              	@ r1 - message
+ 113              	@ returns status in r0
+ 114              	mb0_c8_read:
+ARM GAS  src/hal/hal_io_asm.s 			page 3
+
+
+ 115              	    message .req r1
+ 116              	    mailbox .req r6
+ 117              	    status  .req r3
+ 118              	    value   .req r4
+ 119              	
+ 120 0090 A8609FE5 	    ldr mailbox, =MBOX0
+ 121              	.mb0_empty:
+ 122 0094 183096E5 	    ldr status, [mailbox, #0x18]
+ 123 0098 010113E3 	    tst status, #0x40000000  @ mailbox empty flag
+ 124 009c FCFFFF1A 	    bne .mb0_empty
+ 125              	
+ 126 00a0 004096E5 	    ldr value, [mailbox] @ check if the message channel is 8
+ 127 00a4 0F0004E2 	    and r0, value, #0xf
+ 128 00a8 080030E3 	    teq r0, #8
+ 129 00ac F8FFFF1A 	    bne .mb0_empty
+ 130              	
+ 131 00b0 040091E5 	    ldr r0, [message, #4]
+ 132              	    .unreq message
+ 133              	    .unreq mailbox
+ 134              	    .unreq status
+ 135              	    .unreq value
+ 136 00b4 0EF0A0E1 	    mov pc, lr
+ 137              	
+ 138              	@ raspi mailbox requests, must be padded to 16 bytes
+ 139 00b8 00F020E3 	.align 4
+ 139      00F020E3 
+ 140 00c0 50000000 	vc_set_res:  .word 80, 0                      @ total size, code (0=req)
+ 140      00000000 
+ 141 00c8 03800400 	             .word 0x00048003, 8, 8, 640, 480 @ set physical size (640x480)
+ 141      08000000 
+ 141      08000000 
+ 141      80020000 
+ 141      E0010000 
+ 142 00dc 04800400 	             .word 0x00048004, 8, 8, 640, 480 @ set virtual size (640x480)
+ 142      08000000 
+ 142      08000000 
+ 142      80020000 
+ 142      E0010000 
+ 143 00f0 05800400 	             .word 0x00048005, 4, 4, 16       @ set depth (16-bit)
+ 143      04000000 
+ 143      04000000 
+ 143      10000000 
+ 144 0100 00000000 	             .word 0, 0, 0, 0                 @ end tag & padding
+ 144      00000000 
+ 144      00000000 
+ 144      00000000 
+ 145              	
+ 146 0110 20000000 	vc_alloc_fb: .word 32, 0                      @ total size, code (0=req)
+ 146      00000000 
+ 147 0118 01000400 	             .word 0x00040001, 8, 4, 16, 0    @ allocate framebuffer
+ 147      08000000 
+ 147      04000000 
+ 147      10000000 
+ 147      00000000 
+ 148 012c 00000000 	             .word 0                          @ end tag & padding
+ 149              	
+ 150              	
+ARM GAS  src/hal/hal_io_asm.s 			page 4
+
+
+ 151              	
+ 152 0130 00000000 	frame_buffer_ptr:  .word 0
+ 152      C0000000 
+ 152      10010000 
+ 152      30010000 
+ 152      80B8003F 
+ARM GAS  src/hal/hal_io_asm.s 			page 5
+
+
+DEFINED SYMBOLS
+src/hal/hal_io_asm.s:9      .text:00000000 $a
+src/hal/hal_io_asm.s:11     *ABS*:00000001 INIT_FAILED
+src/hal/hal_io_asm.s:12     *ABS*:00000000 INIT_SUCCESS
+src/hal/hal_io_asm.s:20     .text:00000000 _hal_io_video_init
+src/hal/hal_io_asm.s:140    .text:000000c0 vc_set_res
+src/hal/hal_io_asm.s:92     .text:00000070 mb0_c8_write
+src/hal/hal_io_asm.s:114    .text:00000090 mb0_c8_read
+src/hal/hal_io_asm.s:52     .text:0000004c _video_init_failed
+src/hal/hal_io_asm.s:146    .text:00000110 vc_alloc_fb
+src/hal/hal_io_asm.s:152    .text:00000130 frame_buffer_ptr
+src/hal/hal_io_asm.s:54     .text:00000050 _video_init_success
+src/hal/hal_io_asm.s:64     .text:00000054 _hal_io_video_put_pixel_raw
+src/hal/hal_io_asm.s:88     *ABS*:3f00b880 MBOX0
+src/hal/hal_io_asm.s:98     .text:00000074 .mb0_full
+src/hal/hal_io_asm.s:121    .text:00000094 .mb0_empty
+src/hal/hal_io_asm.s:140    .text:000000c0 $d
+src/hal/hal_io_asm.s:152    .text:00000134 $d
+
+NO UNDEFINED SYMBOLS

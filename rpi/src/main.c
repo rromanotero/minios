@@ -12,6 +12,7 @@
 #include "drivers/stdio/emb-stdio.h"			// Needed for printf
 #include "boot/rpi-smartstart.h"		// Needed for smart start API
 #include "drivers/sdcard/SDCard.h"
+#include "hal/hal.h"
 
 char buffer[500];
 
@@ -35,6 +36,7 @@ int main (void) {
 	printf("\n");
   printf("Opening Alice.txt \n");
 
+	/*
 	HANDLE fHandle = sdCreateFile("Alice.txt", GENERIC_READ, 0, 0, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, 0);
 	if (fHandle != 0) {
 		uint32_t bytesRead;
@@ -49,6 +51,19 @@ int main (void) {
 
 		// Close the file
 		sdCloseHandle(fHandle);
+
+	}*/
+
+	//Typewriter
+	hal_io_serial_init();
+	hal_io_serial_puts( SerialA, "Typewriter:" );
+
+	uint8_t c;
+
+	while(1){
+		c = hal_io_serial_getc( SerialA );
+		hal_io_serial_putc( SerialA, c );
+		printf( "%c", c );
 	}
 
 	/* display bitmap on screen */

@@ -13,7 +13,17 @@ set "linkerflags=-Wl,-gc-sections -Wl,--build-id=none -Wl,-Bdynamic -Wl,-Map,out
 set "outflags=-o output/kernel_rp2.elf"
 set "libflags=-lc -lm -lg -lgcc"
 @echo on
-"%bindir%arm-none-eabi-gcc" %cpuflags% %asmflags% %linkerflags% -Wl,-T,linker/rpi32.ld src/main.c src/boot/SmartStart32.S src/boot/rpi-SmartStart.c src/drivers/stdio/emb-stdio.c src/drivers/sdcard/SDCard.c %outflags% %libflags%
+"%bindir%arm-none-eabi-gcc" %cpuflags% %asmflags% %linkerflags% -Wl,-T,linker/rpi32.ld ^
+   src/main.c ^
+   src/boot/SmartStart32.S ^
+   src/boot/rpi-SmartStart.c ^
+   src/drivers/stdio/emb-stdio.c ^
+   src/drivers/sdcard/SDCard.c ^
+   src/hal/fonts.c ^
+   src/hal/hal_io.c ^
+   src/hal/hal_io_asm.s ^
+   %outflags% %libflags%
+
 @echo off
 if %errorlevel% EQU 1 (goto build_fail)
 

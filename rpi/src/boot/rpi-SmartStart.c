@@ -29,8 +29,8 @@
 #include <stdbool.h>							// Needed for bool and true/false
 #include <stdint.h>								// Needed for uint8_t, uint32_t, uint64_t etc
 #include <stdarg.h>								// Needed for variadic arguments
-#include <string.h>								// Needed for strlen			
-#include "Font8x16.h"							// Provides the 8x16 bitmap font for console 
+#include <string.h>								// Needed for strlen
+#include "Font8x16.h"							// Provides the 8x16 bitmap font for console
 #include "rpi-SmartStart.h"						// This units header
 
 /***************************************************************************}
@@ -49,9 +49,9 @@ struct __attribute__((__packed__, aligned(4))) GPIORegisters {
 	uint32_t reserved3;												// 0x30  reserved
 	const volatile uint32_t GPLEV[2];								// 0x34  GPLEV0 - GPLEV1   ** Read only hence const
 	uint32_t reserved4;												// 0x3C  reserved
-	volatile uint32_t GPEDS[2];										// 0x40  GPEDS0 - GPEDS1 
+	volatile uint32_t GPEDS[2];										// 0x40  GPEDS0 - GPEDS1
 	uint32_t reserved5;												// 0x48  reserved
-	volatile uint32_t GPREN[2];										// 0x4C  GPREN0 - GPREN1;	 
+	volatile uint32_t GPREN[2];										// 0x4C  GPREN0 - GPREN1;
 	uint32_t reserved6;												// 0x54  reserved
 	volatile uint32_t GPFEN[2];										// 0x58  GPFEN0 - GPFEN1;
 	uint32_t reserved7;												// 0x60  reserved
@@ -63,7 +63,7 @@ struct __attribute__((__packed__, aligned(4))) GPIORegisters {
 	uint32_t reserved10;											// 0x84  reserved
 	volatile uint32_t GPAFEN[2]; 									// 0x88  GPAFEN0 - GPAFEN1;
 	uint32_t reserved11;											// 0x90  reserved
-	volatile uint32_t GPPUD; 										// 0x94  GPPUD 
+	volatile uint32_t GPPUD; 										// 0x94  GPPUD
 	volatile uint32_t GPPUDCLK[2]; 									// 0x98  GPPUDCLK0 - GPPUDCLK1;
 };
 
@@ -88,7 +88,7 @@ struct __attribute__((__packed__, aligned(4))) TimerControlReg {
 		struct __attribute__((__packed__, aligned(1))) {
 			unsigned unused : 1;									// @0 Unused bit
 			volatile unsigned Counter32Bit : 1;						// @1 Counter32 bit (16bit if false)
-			volatile TIMER_PRESCALE Prescale : 2;					// @2-3 Prescale  
+			volatile TIMER_PRESCALE Prescale : 2;					// @2-3 Prescale
 			unsigned unused1 : 1;									// @4 Unused bit
 			volatile unsigned TimerIrqEnable : 1;					// @5 Timer irq enable
 			unsigned unused2 : 1;									// @6 Unused bit
@@ -224,13 +224,13 @@ struct __attribute__((__packed__, aligned(4))) MailBoxRegisters {
 	volatile uint32_t Peek0;										// 0x10
 	volatile uint32_t Sender0;										// 0x14
 	volatile uint32_t Status0;										// 0x18         Status of VC to ARM
-	volatile uint32_t Config0;										// 0x1C        
+	volatile uint32_t Config0;										// 0x1C
 	volatile uint32_t Write1;										// 0x20         Write data from ARM to VC
 	uint32_t Unused2[3];											// 0x24-0x2F
 	volatile uint32_t Peek1;										// 0x30
 	volatile uint32_t Sender1;										// 0x34
 	volatile uint32_t Status1;										// 0x38         Status of ARM to VC
-	volatile uint32_t Config1;										// 0x3C 
+	volatile uint32_t Config1;										// 0x3C
 };
 
 /***************************************************************************}
@@ -411,11 +411,11 @@ bool gpio_fixResistor (uint_fast8_t gpio, GPIO_FIX_RESISTOR resistor) {
 	if (gpio > 54) return false;									// Check GPIO pin number valid, return false if invalid
 	if (resistor < 0 || resistor > PULLDOWN) return false;			// Check requested resistor is valid, return false if invalid
 	GPIO->GPPUD = resistor;											// Set fixed resistor request to PUD register
-	endTime = timer_getTickCount() + 2;								// We want a 2 usec delay					
+	endTime = timer_getTickCount() + 2;								// We want a 2 usec delay
 	while (timer_getTickCount() < endTime) {}						// Wait for the timeout
 	uint_fast32_t bit = 1 << (gpio % 32);							// Create mask bit
 	GPIO->GPPUDCLK[gpio / 32] = bit;								// Set the PUD clock bit register
-	endTime = timer_getTickCount() + 2;								// We want a 2 usec delay					
+	endTime = timer_getTickCount() + 2;								// We want a 2 usec delay
 	while (timer_getTickCount() < endTime) {}						// Wait for the timeout
 	GPIO->GPPUD = 0;												// Clear GPIO resister setting
 	GPIO->GPPUDCLK[gpio / 32] = 0;									// Clear PUDCLK from GPIO
@@ -480,10 +480,10 @@ uint64_t tick_difference (uint64_t us1, uint64_t us2) {
 bool mailbox_write (MAILBOX_CHANNEL channel, uint32_t message) {
 	uint32_t value;													// Temporary read value
 	if (channel > MB_CHANNEL_GPU)  return false;					// Channel error
-	message &= ~(0xF);												// Make sure 4 low channel bits are clear 
-	message |= channel;												// OR the channel bits to the value							
+	message &= ~(0xF);												// Make sure 4 low channel bits are clear
+	message |= channel;												// OR the channel bits to the value
 	do {
-		value = MAILBOX->Status1;									// Read mailbox1 status from GPU	
+		value = MAILBOX->Status1;									// Read mailbox1 status from GPU
 	} while ((value & MAIL_FULL) != 0);								// Make sure arm mailbox is not full
 	MAILBOX->Write1 = message;										// Write value to mailbox
 	return true;													// Write success
@@ -501,7 +501,7 @@ uint32_t mailbox_read (MAILBOX_CHANNEL channel) {
 		do {
 			value = MAILBOX->Status0;								// Read mailbox0 status
 		} while ((value & MAIL_EMPTY) != 0);						// Wait for data in mailbox
-		value = MAILBOX->Read0;										// Read the mailbox	
+		value = MAILBOX->Read0;										// Read the mailbox
 	} while ((value & 0xF) != channel);								// We have response back
 	value &= ~(0xF);												// Lower 4 low channel bits are not part of message
 	return value;													// Return the value
@@ -517,7 +517,7 @@ uint32_t mailbox_read (MAILBOX_CHANNEL channel) {
 .         False for failure and the response buffer is untouched.
 . 04Jul17 LdB
 .--------------------------------------------------------------------------*/
-bool mailbox_tag_message (uint32_t* response_buf,					// Pointer to response buffer 
+bool mailbox_tag_message (uint32_t* response_buf,					// Pointer to response buffer
 						  uint8_t data_count,						// Number of uint32_t data following
 						  ...)										// Variadic uint32_t values for call
 {
@@ -530,9 +530,9 @@ bool mailbox_tag_message (uint32_t* response_buf,					// Pointer to response buf
 	for (int i = 0; i < data_count; i++) {
 		message[2 + i] = va_arg(list, uint32_t);					// Fetch next variadic
 	}
-	va_end(list);													// variadic cleanup								
+	va_end(list);													// variadic cleanup
 	mailbox_write(MB_CHANNEL_TAGS, ARMaddrToGPUaddr(&message[0]));	// Write message to mailbox
-	mailbox_read(MB_CHANNEL_TAGS);									// Wait for write response	
+	mailbox_read(MB_CHANNEL_TAGS);									// Wait for write response
 	if (message[1] == 0x80000000) {
 		if (response_buf) {											// If buffer NULL used then don't want response
 			for (int i = 0; i < data_count; i++)
@@ -546,7 +546,7 @@ bool mailbox_tag_message (uint32_t* response_buf,					// Pointer to response buf
 /*==========================================================================}
 {				     PUBLIC PI ACTIVITY LED ROUTINES						}
 {==========================================================================*/
-static bool ModelCheckHasRun = false;								// Flag set if model check has run					
+static bool ModelCheckHasRun = false;								// Flag set if model check has run
 static uint_fast8_t ActivityGPIOPort = 47;							// Default GPIO for activity led is 47
 
 /*-[set_Activity_LED]-------------------------------------------------------}
@@ -563,7 +563,7 @@ bool set_Activity_LED (bool on) {
 				ModelCheckHasRun = true;							// Set we have run the model check
 				if (mailbox_tag_message(&model[0], 4,
 					MAILBOX_TAG_GET_BOARD_REVISION, 4, 0, 0)) {
-					if ((model[3] >= 0x0002) && (model[3] <= 0x000F)) 
+					if ((model[3] >= 0x0002) && (model[3] <= 0x000F))
 					{												// Models A, B return 0002 to 000F
 						ActivityGPIOPort = 16;						// GPIO port 16 is activity led
 					} else ActivityGPIOPort = 47;					// GPIO port 47 activity as default
@@ -576,9 +576,9 @@ bool set_Activity_LED (bool on) {
 			gpio_output(47, on);									// GPIO port 47 on/off
 			return true;											// Return true
 		}
-		case 0xd03: {												// cortex-a53 AKA Pi3 
-			return (mailbox_tag_message(0, 5, 
-				MAILBOX_TAG_SET_GPIO_STATE, 
+		case 0xd03: {												// cortex-a53 AKA Pi3
+			return (mailbox_tag_message(0, 5,
+				MAILBOX_TAG_SET_GPIO_STATE,
 				8, 8, 130, (uint32_t)on));							// Mailbox message,set GPIO port 130, on/off
 		}
 	}
@@ -1018,7 +1018,11 @@ static void WriteChar16 (INTDC* dc, uint8_t Ch) {
 			RGB565 col = Bc;										// Preset background colour
 			int xoffs = i % 8;										// X offset
 			if ((b & 0x80000000) != 0) col = Fc;					// If bit set take text colour
+
+			//HERE   !!!!!
 			video_wr_ptr[xoffs] = col;								// Write pixel
+
+
 			b <<= 1;												// Roll font bits left
 			if (xoffs == 7) video_wr_ptr += dc->wth;				// If was bit 7 next line down
 		}
@@ -1256,7 +1260,7 @@ static void WriteChar32 (INTDC* dc, uint8_t Ch) {
 			RGBA col = dc->BkColor;									// Preset background colour
 			uint_fast8_t xoffs = i % 8;								// X offset
 			if ((b & 0x80000000) != 0) col = dc->TxtColor;			// If bit set take text colour
-			video_wr_ptr[xoffs] = col;								// Write pixel
+			//video_wr_ptr[xoffs] = col;								// Write pixel
 			b <<= 1;												// Roll font bits left
 			if (xoffs == 7) video_wr_ptr += dc->wth;				// If was bit 7 next line down
 		}
@@ -1357,7 +1361,7 @@ bool PiConsole_Init (int Width, int Height, int Depth, printhandler prn_handler)
 		break;
 	}
 
-	if (prn_handler) prn_handler("Screen resolution %i x %i Colour Depth: %i\n", 
+	if (prn_handler) prn_handler("Screen resolution %i x %i Colour Depth: %i\n",
 		Width, Height, Depth);										// If print handler valid print the display resolution message
 	return true;
 }
