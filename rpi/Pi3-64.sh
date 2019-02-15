@@ -5,7 +5,7 @@
 set -e
 
 bindir="/home/ubuntu/gcc-64-bits/bin/"  # <<< --- CHANGE THIS TO MATCH YOUR TOOLCAHIN'S PATH
-cpuflags="-Wall -O3 -march=armv8-a+simd -mtune=cortex-a53 -mstrict-align -fno-tree-loop-vectorize -fno-tree-slp-vectorize"
+cpuflags="-O3 -march=armv8-a+simd -mtune=cortex-a53 -mstrict-align -fno-tree-loop-vectorize -fno-tree-slp-vectorize"
 asmflags="-nostdlib -nostartfiles -ffreestanding -fno-asynchronous-unwind-tables -fomit-frame-pointer -Wa,-a>output/list_rp3.txt"
 linkerflags="-Wl,-gc-sections -Wl,--build-id=none -Wl,-Bdynamic -Wl,-Map,output/kernel_rp3.map"
 outflags="-o output/kernel_rp3.elf"
