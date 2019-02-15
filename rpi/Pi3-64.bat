@@ -15,7 +15,7 @@ set "outflags=-o output/kernel_rp3.elf"
 set "libflags=-lc -lm -lgcc"
 @echo on
 "%bindir%aarch64-elf-gcc.exe" %cpuflags% %asmflags% %linkerflags% -Wl,-T,linker/rpi64.ld ^
-  src/main.c
+  src/main.c ^
   src/boot/SmartStart64.S ^
   src/boot/rpi-SmartStart.c ^
   src/drivers/stdio/emb-stdio.c ^
