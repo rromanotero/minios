@@ -35,6 +35,9 @@ extern "C" {									// Put extern C directive wrapper around
 #include <stdbool.h>							// Needed for bool and true/false
 #include <stdint.h>								// Needed for uint8_t, uint32_t, etc
 
+
+void SmartStartPutPixelRaw( uint32_t, uint32_t);
+
 /***************************************************************************}
 {		  PUBLIC MACROS MUCH AS WE HATE THEM SOMETIMES YOU NEED THEM        }
 {***************************************************************************/

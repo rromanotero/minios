@@ -998,6 +998,15 @@ static void DiagLine16 (INTDC* dc, uint_fast32_t dx, uint_fast32_t dy, int_fast8
 	dc->curPos.y += (dy * ydir);									// Set current y2 position
 }
 
+//here
+void SmartStartPutPixelRaw( uint32_t position, uint32_t color ){
+	RGB565* __attribute__((aligned(2))) video_wr_ptr = (RGB565*)(uintptr_t)(console.fb);
+	RGB565 Bc;
+	RGB565 col = Bc;
+
+	video_wr_ptr[position] = col;								// Write pixel
+}
+
 /*-[INTERNAL: WriteChar16]--------------------------------------------------}
 . 16 Bit colour version of the text character draw. The given character is
 . drawn at the current position in the current text and background colours.

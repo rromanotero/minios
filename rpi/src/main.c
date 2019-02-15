@@ -54,6 +54,10 @@ int main (void) {
 
 	}*/
 
+	hal_io_video_init();
+
+	hal_io_video_puts( "HEY", 3, VIDEO_COLOR_WHITE );
+
 	//Typewriter
 	hal_io_serial_init();
 	hal_io_serial_puts( SerialA, "Typewriter:" );
@@ -66,8 +70,10 @@ int main (void) {
 		printf( "%c", c );
 	}
 
+
+
 	/* display bitmap on screen */
-	//DisplayBitmap(743, 624, "minios.bmp");   <<<<-- Doesn't seem to work
+	//DisplayBitmap(743, 624, "./MINIOS.BMP");   //<<<<-- Doesn't seem to work
 
 	while (1){
 		set_Activity_LED(1);			// Turn LED on
