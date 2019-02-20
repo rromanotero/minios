@@ -36,8 +36,6 @@ extern "C" {									// Put extern C directive wrapper around
 #include <stdint.h>								// Needed for uint8_t, uint32_t, etc
 
 
-void SmartStartPutPixelRaw( uint32_t, uint32_t);
-
 /***************************************************************************}
 {		  PUBLIC MACROS MUCH AS WE HATE THEM SOMETIMES YOU NEED THEM        }
 {***************************************************************************/
@@ -58,6 +56,9 @@ void SmartStartPutPixelRaw( uint32_t, uint32_t);
 /* print handler function proto type */
 /* you can make a UART or SCREEN version and direct output to that call */
 typedef int (*printhandler) (const char *fmt, ...);
+
+
+void SmartStartPutPixelRaw( printhandler, uint32_t, uint32_t);
 
 /***************************************************************************}
 {					     PUBLIC ENUMERATION CONSTANTS			            }
@@ -481,10 +482,6 @@ bool ARM_setmaxspeed (printhandler prn_handler);
 . 04Jul17 LdB
 .--------------------------------------------------------------------------*/
 void displaySmartStart (printhandler prn_handler);
-
-
-
-
 
 typedef int32_t		BOOL;							// BOOL is defined to an int32_t ... yeah windows is weird -1 is often returned
 typedef char		TCHAR;							// TCHAR is a char

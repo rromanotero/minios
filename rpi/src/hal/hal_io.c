@@ -9,7 +9,7 @@
 #include "hal.h"
 #include "fonts.h"
 #include "../boot/rpi-smartstart.h"
-
+#include "../drivers/stdio/emb-stdio.h"	
 
 static void uart0_init(void);
 static void uart0_putc(uint8_t);
@@ -166,7 +166,7 @@ void hal_io_video_put_pixel( VideoXY* pos, VideoColor color ){
 	//_hal_io_video_put_pixel_raw(  x_y_to_raw(pos->x,pos->y), color );   <<<---- This is defined in ARM assembly,
 	//																			 any 32-bit assembly will break
 	//																			 the build
-	SmartStartPutPixelRaw( x_y_to_raw(pos->x,pos->y), color );
+	SmartStartPutPixelRaw( &printf, x_y_to_raw(pos->x,pos->y), color );
 }
 
 static uint32_t x_y_to_raw(uint32_t x, uint32_t y){

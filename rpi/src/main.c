@@ -30,11 +30,12 @@ int main (void) {
 	printf("\n");
 
 	/* Display root directory */
-	printf("Directory (/): \n");
+	/*printf("Directory (/): \n");
 	DisplayDirectory("\\*.*");
 
 	printf("\n");
   printf("Opening Alice.txt \n");
+  */
 
 	/*
 	HANDLE fHandle = sdCreateFile("Alice.txt", GENERIC_READ, 0, 0, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, 0);
@@ -56,7 +57,7 @@ int main (void) {
 
 	hal_io_video_init();
 
-	hal_io_video_puts( "HEY", 3, VIDEO_COLOR_WHITE );
+	hal_io_video_puts( "HELLO THERE ", 3, VIDEO_COLOR_WHITE );
 
 	//Typewriter
 	hal_io_serial_init();

@@ -32,6 +32,7 @@
 #include <string.h>								// Needed for strlen
 #include "Font8x16.h"							// Provides the 8x16 bitmap font for console
 #include "rpi-SmartStart.h"						// This units header
+#include "../hal/hal.h"
 
 /***************************************************************************}
 {       PRIVATE INTERNAL RASPBERRY PI REGISTER STRUCTURE DEFINITIONS        }
@@ -999,12 +1000,18 @@ static void DiagLine16 (INTDC* dc, uint_fast32_t dx, uint_fast32_t dy, int_fast8
 }
 
 //here
-void SmartStartPutPixelRaw( uint32_t position, uint32_t color ){
-	RGB565* __attribute__((aligned(2))) video_wr_ptr = (RGB565*)(uintptr_t)(console.fb);
-	RGB565 Bc;
-	RGB565 col = Bc;
+void SmartStartPutPixelRaw( printhandler prn_handler, uint32_t position, uint32_t color ){
 
-	video_wr_ptr[position] = col;								// Write pixel
+  //prn_handler( " === INSIDE SMART PUT PIXEL RAW === " );
+	hal_io_serial_puts( SerialA, "INSIDE SMART PUT PIXEL" );
+
+	//RGB565* __attribute__((aligned(2))) video_wr_ptr = (RGB565*)(uintptr_t)(console.fb + position);
+	//RGB565 Bc;
+	//Bc.R = console.TxtColor.rgbRed >> 3;
+	//Bc.G = console.TxtColor.rgbGreen >> 2;
+	//Bc.B = console.TxtColor.rgbBlue >> 3;
+
+	//*video_wr_ptr = Bc;								// Write pixel
 }
 
 /*-[INTERNAL: WriteChar16]--------------------------------------------------}
