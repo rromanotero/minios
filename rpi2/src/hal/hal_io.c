@@ -64,12 +64,16 @@ void hal_io_video_putc( uint8_t c, uint32_t size, VideoColor color  ){
 								+ VIDEO_CHARACTER_VERTICAL_SPACE ) %  (VIDEO_MAX_Y-VIDEO_CHARACTER_HEIGHT);
 			return;
 	}
-	if( c == '\r' ){
+	else if( c == '\r' ){
 			curr_x = X_ORIGIN;
 			return;
 	}
-
-	hal_io_video_putc_x_y( curr_x, curr_y, c, size, color );
+	else if( c == ' ' ){
+			//nothing
+	}
+	else{
+		hal_io_video_putc_x_y( curr_x, curr_y, c, size, color );
+	}
 
 	//Move cursor
 	curr_x = ( curr_x
@@ -83,14 +87,15 @@ void hal_io_video_putc( uint8_t c, uint32_t size, VideoColor color  ){
 */
 void hal_io_video_putc_x_y( uint32_t x, uint32_t y, uint8_t c, uint32_t size, VideoColor color  ){
 
-	if( !fonts_is_implemented(c) ){
+	//We dont need thispart anymore, this is handled by printg other character nbow
+	//but I leave it here, so I can remove all this function altogether later.
+
+	/*if( !fonts_is_implemented(c) ){
 		return;
-	}
+	}*/
 
 	//double character so it looks bold
 	draw_character_raw(x, y, fonts_char_to_font(c), size, color );
-	draw_character_raw(x+1, y+1, fonts_char_to_font(c), size, color );
-
 }
 
 static void draw_character_raw( uint32_t x, uint32_t y, VideoFont* c, uint32_t size, VideoColor color ){

@@ -17,12 +17,8 @@
 #include "drivers/sdcard/SDCard.h"
 
 void kernel_init(void);
-void io_init(void);
-void show_init_info(uint8_t*);
-
-char buffer[500];
-
-void DisplayDirectory(const char*);
+void input_output_init(void);
+void sd_card_fs_demo();
 
 /*
  *		Kernel's entry point
@@ -31,8 +27,70 @@ void main(uint32_t r0, uint32_t r1, uint32_t atags){
 
   //Init
   kernel_init();
-  io_init();
+  input_output_init();
 
+  //sd_card_fs_demo();   //<<-- Uncomment this to show File System/SD Card demo
+
+  //Welcome Msg Video
+  printf( "\n\r\n\rWELCOME TO MINIOS PI ZERO\n\r" );
+  printf( "\n\r$ " );
+
+  uint8_t c;
+
+	while (1){
+    c = hal_io_serial_getc(SerialA);
+    printf( "%c", c );
+  }
+}
+
+/*
+* Initializes the kernel
+*/
+void kernel_init(void){
+
+  hal_io_init();
+  //console_init();
+  //system_calls_init();
+  //scheduler_init();
+  //faults_init();
+
+}
+
+/*
+* Initializes All IO
+*/
+void input_output_init(void){
+  uint32_t video_init_res = HAL_FAILED;
+
+#ifdef VIDEO_PRESENT
+  video_init_res = hal_io_video_init();
+#endif
+
+#ifdef SERIAL_PRESENT
+  hal_io_serial_init();
+#endif
+//NOTE: PAST THIS POINT WE CAN USE printf
+//      (printf needs both serial and video inits to be called first)
+
+  if ( video_init_res == HAL_SUCCESS )
+    printf( "VIDEO INITIALIZED\n\r" );
+  else
+    printf( "VIDEO INIT FAILED [x]\n\r" );
+
+    printf( "SERIAL INITIALIZED\n\r" );
+}
+
+
+
+/////////////////////////////////////////////////////////////////
+////////////////    D E M O    C O D E    ///////////////////////
+/////////////////////////////////////////////////////////////////
+
+char buffer[500];
+void DisplayDirectory(const char*);
+
+
+void sd_card_fs_demo(){
   sdInitCard (&printf, &printf, true);
 
   /* Display root directory */
@@ -59,50 +117,6 @@ void main(uint32_t r0, uint32_t r1, uint32_t atags){
 
   }
 
-  //Welcome Msg Video
-  printf( "\n\r\n\rWELCOME TO MINIOS (PI ZERO)\n\r" );
-  printf( "\n\r$ " );
-
-  uint8_t c;
-
-	while (1){
-    c = hal_io_serial_getc(SerialA);
-
-#ifdef SERIAL_PRESENT
-    printf( "%c", c );
-#endif
-  }
-}
-
-
-
-void io_init(void){
-
-#ifdef SERIAL_PRESENT
-  hal_io_serial_init();
-#endif
-  //NOTE: Past this point we can use
-  //      use Serial
-
-  show_init_info( "Serial Initialized" );
-
-  if ( hal_io_video_init() == HAL_SUCCESS )
-    show_init_info( "Video Initialized" );
-  else
-    show_init_info( "VIDEO INIT FAILED [x]" );
-
-}
-
-void kernel_init(void){
-  //HAL INIT
-  hal_io_init();
-}
-
-void show_init_info( uint8_t* msg ){
-#ifdef SERIAL_PRESENT
-  hal_io_serial_puts( SerialA, msg );
-  hal_io_serial_puts( SerialA, "\n\r" );
-#endif
 }
 
 void DisplayDirectory(const char* dirName) {

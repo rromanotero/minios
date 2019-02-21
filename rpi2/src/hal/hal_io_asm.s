@@ -84,7 +84,7 @@ _hal_io_video_put_pixel_raw:
 
 	@Draw Pixel
 	str color, [fb, #0]
-	@str color, [fb, #2]   @This is so that letters look BOLD
+	str color, [fb, #2]   @This is so that letters look BOLD
 
 	pop {r4-r6, pc}
 

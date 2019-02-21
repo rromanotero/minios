@@ -12,6 +12,8 @@
 //======================================================================
 // I harcoded this. SmartStart.S tried to get this dynamically, but
 //that'd mean porting that .S file, so instead, here it is.
+//
+//Rafael
 uint32_t RPi_IO_Base_Addr = 0x3f000000;
 //======================================================================
 

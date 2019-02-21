@@ -12,6 +12,5 @@ typedef struct{
 
 void fonts_init(void);
 VideoFont* fonts_char_to_font(uint8_t);
-bool fonts_is_implemented(uint8_t);
 
 #endif

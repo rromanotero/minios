@@ -15,19 +15,17 @@ static VideoFont DOLLAR_SIGN;
 static VideoFont* char_font_map[127];
 static bool char_is_implemented[127];
 
-bool fonts_is_implemented(uint8_t c){
-		return char_is_implemented[c];
-}
 
 VideoFont* fonts_char_to_font( uint8_t c ){
+
+		if( !char_is_implemented[c] )
+			return char_font_map['A']; //Just so the caller doesnt crash trying to dereference some null value
+
 		if( c >= 'a' && c<= 'z' )
 			return char_font_map[c-32];
-		else if( c >= 'A' && c<= 'Z' )
+		else
 			return char_font_map[c];
-		else{
-			/* We don't support other symbols*/
-			return char_font_map['A']; //Just so the caller doesnt crash trying to dereference some null value
-		}
+
 }
 
 void fonts_init(void){

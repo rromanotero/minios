@@ -4,6 +4,7 @@
 #include <ctype.h>			// isdigit etc
 #include <string.h>			// strnlen used
 #include "emb-stdio.h"			// This units header
+#include "../../kernel.h"		//Nothing will get printed withput this.... it checks for some defines
 
 #include "../../hal/hal.h"
 
@@ -299,8 +300,12 @@ int printf (const char *fmt, ...)
 	va_end(args);
 	for (int i = 0; i < printed; i++){
 		//Here, this is where we plug out HAL putc
+#ifdef SERIAL_PRESENT
 		hal_io_serial_putc( SerialA, printf_buf[i] );
-		hal_io_video_putc( printf_buf[i], 1, VIDEO_COLOR_WHITE );
+#endif
+#ifdef VIDEO_PRESENT
+		hal_io_video_putc( printf_buf[i], 2, VIDEO_COLOR_WHITE );
+#endif
 	}
 
 	return printed;
