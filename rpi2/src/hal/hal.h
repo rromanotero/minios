@@ -30,23 +30,27 @@ typedef struct{
 #define VIDEO_MAX_X 640      //Pixels per line
 #define VIDEO_MAX_Y 480      //Num of lines
 
-#define VIDEO_CHARACTER_WIDTH              5   //Unit Character dimensions
-#define VIDEO_CHARACTER_HEIGHT             8   //(It's unit, because they all get
+#define VIDEO_CHARACTER_WIDTH              4   //Unit Character dimensions
+#define VIDEO_CHARACTER_HEIGHT             6   //(It's unit, because they all get
 #define VIDEO_CHARACTER_HORIZONTAL_SPACE   3   // scaled by "size" when printing larger characters )
 #define VIDEO_CHARACTER_VERTICAL_SPACE     4
 
 #define VIDEO_COLOR_WHITE   0xFFFF
 #define VIDEO_COLOR_GREEN 	0x07E0
 #define VIDEO_COLOR_BLUE    0x001F
-#define VIDEO_COLOR_RED    0xF800
+#define VIDEO_COLOR_RED     0xF800
+#define VIDEO_COLOR_BLACK   0x0000
 
 void hal_io_init(void);
 uint32_t hal_io_video_init( void );
 void hal_io_video_put_pixel( VideoXY*, VideoColor );
+void hal_io_clear_screen( void );
 void hal_io_video_line( VideoXY*, VideoXY*, VideoColor );
 void hal_io_video_putc_x_y( uint32_t x, uint32_t y, uint8_t c, uint32_t size, VideoColor color );
 void hal_io_video_putc( uint8_t c, uint32_t size, VideoColor color  );
 void hal_io_video_puts( uint8_t*, uint32_t, VideoColor );
+
+
 ///
 ///  S E R I A L
 ///

@@ -289,7 +289,26 @@ int sprintf(char *buf, const char *fmt, ...)
 	return i;
 }
 
-int printf (const char *fmt, ...)
+int printf_video (const char *fmt, ...)
+{
+	char printf_buf[512];
+	va_list args;
+	int printed = 0;
+
+	va_start(args, fmt);
+	printed = vsprintf(printf_buf, fmt, args);
+	va_end(args);
+	for (int i = 0; i < printed; i++){
+		//Here, this is where we plug out HAL putc
+#ifdef VIDEO_PRESENT
+		hal_io_video_putc( printf_buf[i], 2, VIDEO_COLOR_WHITE );
+#endif
+	}
+
+	return printed;
+}
+
+int printf_serial (const char *fmt, ...)
 {
 	char printf_buf[512];
 	va_list args;
@@ -302,9 +321,6 @@ int printf (const char *fmt, ...)
 		//Here, this is where we plug out HAL putc
 #ifdef SERIAL_PRESENT
 		hal_io_serial_putc( SerialA, printf_buf[i] );
-#endif
-#ifdef VIDEO_PRESENT
-		hal_io_video_putc( printf_buf[i], 2, VIDEO_COLOR_WHITE );
 #endif
 	}
 

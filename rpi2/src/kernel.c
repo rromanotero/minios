@@ -18,6 +18,7 @@
 
 void kernel_init(void);
 void input_output_init(void);
+void sys_info( uint8_t* );
 void sd_card_fs_demo();
 
 /*
@@ -29,18 +30,23 @@ void main(uint32_t r0, uint32_t r1, uint32_t atags){
   kernel_init();
   input_output_init();
 
-  //sd_card_fs_demo();   //<<-- Uncomment this to show File System/SD Card demo
+  sd_card_fs_demo();   //<<-- Uncomment this to show File System/SD Card demo
 
   //Welcome Msg Video
-  printf( "\n\r\n\rWELCOME TO MINIOS PI ZERO\n\r" );
-  printf( "\n\r$ " );
+  hal_io_video_puts( "\n\r\n\rWelcome to MiniOS Pi Zero\n\r", 3, VIDEO_COLOR_GREEN );
+  hal_io_serial_puts( SerialA, "\n\r\n\rWelcome to MiniOS Pi Zero\n\r" );
+  hal_io_video_puts( "\n\r$ ", 2, VIDEO_COLOR_GREEN );
+  hal_io_serial_puts( SerialA, "\n\r$ " );
 
   uint8_t c;
 
 	while (1){
-    c = hal_io_serial_getc(SerialA);
-    printf( "%c", c );
+    c = hal_io_serial_getc( SerialA );
+
+    printf_video( "%c", c );  //<<--- We also have printfs
+    printf_serial( "%c", c );
   }
+
 }
 
 /*
@@ -73,14 +79,17 @@ void input_output_init(void){
 //      (printf needs both serial and video inits to be called first)
 
   if ( video_init_res == HAL_SUCCESS )
-    printf( "VIDEO INITIALIZED\n\r" );
+    sys_info( "Video Initialized\n\r" );
   else
-    printf( "VIDEO INIT FAILED [x]\n\r" );
+    sys_info( "Video Init Failed [x]\n\r" );
 
-    printf( "SERIAL INITIALIZED\n\r" );
+    sys_info( "Serial Initialized\n\r" );
 }
 
-
+void sys_info( uint8_t* msg ){
+  printf_video( msg );
+  printf_serial( msg );
+}
 
 /////////////////////////////////////////////////////////////////
 ////////////////    D E M O    C O D E    ///////////////////////
@@ -91,14 +100,15 @@ void DisplayDirectory(const char*);
 
 
 void sd_card_fs_demo(){
-  sdInitCard (&printf, &printf, true);
+  printf_serial("\n\n");
+  sdInitCard (&printf_serial, &printf_serial, true);
 
   /* Display root directory */
-  printf("Directory (/): \n");
+  printf_serial("\n\nDirectory (/): \n");
   DisplayDirectory("\\*.*");
 
-  printf("\n");
-  printf("Opening Alice.txt \n");
+  printf_serial("\n");
+  printf_serial("Opening Alice.txt \n");
 
   HANDLE fHandle = sdCreateFile("Alice.txt", GENERIC_READ, 0, 0, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, 0);
   if (fHandle != 0) {
@@ -106,10 +116,10 @@ void sd_card_fs_demo(){
 
     if ((sdReadFile(fHandle, &buffer[0], 500, &bytesRead, 0) == true))  {
         buffer[bytesRead-1] = '\0';  ///insert null char
-        printf("File Contents: %s", &buffer[0]);
+        printf_serial("File Contents: %s", &buffer[0]);
     }
     else{
-      printf("Failed to read" );
+      printf_serial("Failed to read" );
     }
 
     // Close the file
@@ -126,8 +136,8 @@ void DisplayDirectory(const char* dirName) {
 	fh = sdFindFirstFile(dirName, &find);							// Find first file
 	do {
 		if (find.dwFileAttributes == FILE_ATTRIBUTE_DIRECTORY)
-			printf("%s <DIR>\n", find.cFileName);
-		else printf("%c%c%c%c%c%c%c%c.%c%c%c Size: %9lu bytes, %2d/%s/%4d, LFN: %s\n",
+			printf_serial("%s <DIR>\n", find.cFileName);
+		else printf_serial("%c%c%c%c%c%c%c%c.%c%c%c Size: %9lu bytes, %2d/%s/%4d, LFN: %s\n",
 			find.cAlternateFileName[0], find.cAlternateFileName[1],
 			find.cAlternateFileName[2], find.cAlternateFileName[3],
 			find.cAlternateFileName[4], find.cAlternateFileName[5],

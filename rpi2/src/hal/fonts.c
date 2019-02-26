@@ -3,32 +3,48 @@
 *
 *	 Rafael Roman Otero
 *
+*  TO DO:
+*   edit font specs to use less space
+*
+*  E.g.:
+*
+*   font.lines[0] = (VideoLine){ 	.init = (VideoXY){ .x=0, .					y=0 }, 							.end = (VideoXY){ .x=BOX_WIDTH/2, 						.y= -(BOX_HEIGHT) } };
+*		font.lines[1] = (VideoLine){	.init = (VideoXY){ .x=BOX_WIDTH/2, .y=-(BOX_HEIGHT) }, 	.end = (VideoXY){ .x=BOX_WIDTH, 							.y=0 } };
+*		font.lines[2] = (VideoLine){ 	.init = (VideoXY){ .x=BOX_WIDTH/3, .y=-BOX_HEIGHT/3 }, 	.end = (VideoXY){ .x=BOX_WIDTH-(BOX_WIDTH/3), .y=-BOX_HEIGHT/3 } };
+*
 */
 
 #include <stdint.h>
 #include <stdbool.h>
 #include "fonts.h"
 
+#define NUM_OF_CHARS_IN_FONT	127
 
-static VideoFont A, B, C, D, E, F, G, H, I , J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z;
-static VideoFont DOLLAR_SIGN;
-static VideoFont* char_font_map[127];
-static bool char_is_implemented[127];
+static VideoFont font;		// Used to create evey char in the font
+static VideoFont char_font_map[NUM_OF_CHARS_IN_FONT];
 
 
 VideoFont* fonts_char_to_font( uint8_t c ){
+		if( c > 127 ) return &char_font_map[' '];
 
-		if( !char_is_implemented[c] )
-			return char_font_map['A']; //Just so the caller doesnt crash trying to dereference some null value
-
-		if( c >= 'a' && c<= 'z' )
-			return char_font_map[c-32];
-		else
-			return char_font_map[c];
-
+		//lowercase are mapped onto upppercase
+		return &char_font_map[
+								(c >= 'a' && c<= 'z') ?
+										c-32 :
+										c
+									];
 }
 
 void fonts_init(void){
+
+	//Fill whole map with spaces, so Unimplemented characters ARE
+	//displayed as space
+	font.num_lines = 0;
+
+	for( int i=0; i<NUM_OF_CHARS_IN_FONT; i++ )
+		char_font_map[i] = font;
+
+	//Now we can begin with the characters...
 
 	// Values are relative to origin
 	//   x=0           x= BOX_WIDTH
@@ -43,332 +59,462 @@ void fonts_init(void){
 	#define BOX_WIDTH		VIDEO_CHARACTER_WIDTH
 	#define BOX_HEIGHT	VIDEO_CHARACTER_HEIGHT
 
+	// -- SPACE --
+	font.num_lines = 0;
+
+	//Add entry to character to font map + mark it as implemented
+	char_font_map[' '] = font;
+
 	// -- A --
-	A.num_lines = 3;
-	A.lines[0] = (VideoLine){
-	      .init = (VideoXY){ .x=0, .y=0 },
-	      .end = (VideoXY){ .x=BOX_WIDTH/2, .y= -(BOX_HEIGHT) }
-	   };
-	A.lines[1] = (VideoLine){
-	      .init = (VideoXY){ .x=BOX_WIDTH/2, .y=-(BOX_HEIGHT) },
-	      .end = (VideoXY){ .x=BOX_WIDTH, .y=0 }
-	    };
-	A.lines[2] = (VideoLine){
-	          .init = (VideoXY){ .x=BOX_WIDTH/3, .y=-BOX_HEIGHT/3 },
-	          .end = (VideoXY){ .x=BOX_WIDTH-(BOX_WIDTH/3), .y=-BOX_HEIGHT/3 }
-	    };
+	font.num_lines = 3;
+	font.lines[0] = (VideoLine){ 	.init = (VideoXY){ .x=0, .					y=0 }, 							.end = (VideoXY){ .x=BOX_WIDTH/2, 						.y= -(BOX_HEIGHT) } };
+	font.lines[1] = (VideoLine){	.init = (VideoXY){ .x=BOX_WIDTH/2, .y=-(BOX_HEIGHT) }, 	.end = (VideoXY){ .x=BOX_WIDTH, 							.y=0 } };
+	font.lines[2] = (VideoLine){ 	.init = (VideoXY){ .x=BOX_WIDTH/3, .y=-BOX_HEIGHT/3 }, 	.end = (VideoXY){ .x=BOX_WIDTH-(BOX_WIDTH/3), .y=-BOX_HEIGHT/3 } };
 
 	//Add entry to character to font map + mark it as implemented
-	char_font_map['A'] = &A;
-	char_is_implemented['A'] = true;
+	char_font_map['A'] = font;
+
+	// -- B --
+	font.num_lines  = 5;
+	font.lines[0] = (VideoLine){  .init = (VideoXY){ .x=0, 					.y=0 },									.end = (VideoXY){ .x=0, 				.y=-BOX_HEIGHT }  };
+	font.lines[1] = (VideoLine){  .init = (VideoXY){ .x=0, 					.y=-BOX_HEIGHT },				.end = (VideoXY){ .x=BOX_WIDTH, .y=-2*BOX_HEIGHT/3 }  };
+	font.lines[2] = (VideoLine){  .init = (VideoXY){ .x=BOX_WIDTH, 	.y=-2*BOX_HEIGHT/3 },		.end = (VideoXY){ .x=0, 				.y=-BOX_HEIGHT/2 }  };
+ 	font.lines[3] = (VideoLine){  .init = (VideoXY){ .x=0, 					.y=-BOX_HEIGHT/2 },			.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT/3 }  };
+	font.lines[4] = (VideoLine){  .init = (VideoXY){ .x=BOX_WIDTH, 	.y=-BOX_HEIGHT/3 },			.end = (VideoXY){ .x=0, 				.y=0 }  };
+
+	//Add entry to character to font map + mark it as implemented
+	char_font_map['B'] = font;
+
+	// -- C --
+	font.num_lines  = 3;
+	font.lines[0] = (VideoLine){ .init = (VideoXY){ .x=0, .y=0 }, 					.end = (VideoXY){ .x=BOX_WIDTH, .y=0 }  };
+	font.lines[1] = (VideoLine){ .init = (VideoXY){ .x=0, .y=-BOX_HEIGHT }, .end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT }};
+	font.lines[2] = (VideoLine){ .init = (VideoXY){ .x=0, .y=-BOX_HEIGHT }, .end = (VideoXY){ .x=0, 				.y=0 } };
+
+	//Add entry to character to font map + mark it as implemented
+	char_font_map['C'] = font;
+
+	// -- D --
+	font.num_lines  = 3;
+	font.lines[0] = (VideoLine){  .init = (VideoXY){ .x=0, 					.y=0 },									.end = (VideoXY){ .x=0, 				.y=-BOX_HEIGHT }  };
+	font.lines[1] = (VideoLine){  .init = (VideoXY){ .x=0, 					.y=-BOX_HEIGHT },				.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT/2 }  };
+	font.lines[2] = (VideoLine){  .init = (VideoXY){ .x=BOX_WIDTH, 	.y=-BOX_HEIGHT/2 },				.end = (VideoXY){ .x=0, 				.y=0 }  };
+
+	//Add entry to character to font map + mark it as implemented
+	char_font_map['D'] = font;
+
 
 	// -- E --
-	C.num_lines  = 3;
-	C.lines[0] = (VideoLine){
-			 .init = (VideoXY){ .x=0, .y=0 },
-			 .end = (VideoXY){ .x=BOX_WIDTH, .y=0 }
-		 };
-	C.lines[1] = (VideoLine){
-				.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },
-				.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT }
-			};
-	C.lines[2] = (VideoLine){
-							.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },
-							.end = (VideoXY){ .x=0, .y=0 }
-				};
+	font.num_lines  = 4;
+	font.lines[0] = (VideoLine){  .init = (VideoXY){ .x=0, .y=0 },							.end = (VideoXY){ .x=BOX_WIDTH, .y=0 }  };
+	font.lines[1] = (VideoLine){ 	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT }, 		.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT } };
+	font.lines[2] = (VideoLine){	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT/2 },	.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT/2 } };
+	font.lines[3] = (VideoLine){	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },		.end = (VideoXY){ .x=0, 				.y=0 } };
 
 	//Add entry to character to font map + mark it as implemented
-	char_font_map['C'] = &C;
-	char_is_implemented['C'] = true;
+	char_font_map['E'] = font;
 
-	// -- E --
-	E.num_lines  = 4;
-	E.lines[0] = (VideoLine){
-			 .init = (VideoXY){ .x=0, .y=0 },
-			 .end = (VideoXY){ .x=BOX_WIDTH, .y=0 }
-		 };
-	E.lines[1] = (VideoLine){
-				.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },
-				.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT }
-			};
-	E.lines[2] = (VideoLine){
-						.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT/2 },
-						.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT/2 }
-			};
-	E.lines[3] = (VideoLine){
-							.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },
-							.end = (VideoXY){ .x=0, .y=0 }
-				};
+	// -- F --
+	font.num_lines  = 3;
+	font.lines[0] = (VideoLine){ 	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT }, 		.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT } };
+	font.lines[1] = (VideoLine){	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT/2 },	.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT/2 } };
+	font.lines[2] = (VideoLine){	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },		.end = (VideoXY){ .x=0, 				.y=0 } };
 
 	//Add entry to character to font map + mark it as implemented
-	char_font_map['E'] = &E;
-	char_is_implemented['E'] = true;
+	char_font_map['F'] = font;
+
+	// -- G --
+	font.num_lines  = 5;
+	font.lines[0] = (VideoLine){  .init = (VideoXY){ .x=0, .y=0 },							.end = (VideoXY){ .x=BOX_WIDTH, .y=0 }  };
+	font.lines[1] = (VideoLine){ 	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT }, 		.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT } };
+	font.lines[2] = (VideoLine){	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT/2 },	.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT/2 } };
+	font.lines[3] = (VideoLine){	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },		.end = (VideoXY){ .x=0, 				.y=0 } };
+  font.lines[4] = (VideoLine){	.init = (VideoXY){ .x=BOX_WIDTH, .y=0 },			.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT/2 } };
+
+	//Add entry to character to font map + mark it as implemented
+	char_font_map['G'] = font;
+
 
 	// -- H --
-	H.num_lines  = 3;
-	H.lines[0] = (VideoLine){
+	font.num_lines  = 3;
+	font.lines[0] = (VideoLine){
 			 .init = (VideoXY){ .x=0, .y=0 },
 			 .end = (VideoXY){ .x=0, .y=-BOX_HEIGHT }
 		 };
-	H.lines[1] = (VideoLine){
+	font.lines[1] = (VideoLine){
 				.init = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT },
 				.end = (VideoXY){ .x=BOX_WIDTH, .y=0 }
 			};
-	H.lines[2] = (VideoLine){
+	font.lines[2] = (VideoLine){
 						.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT/2 },
 						.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT/2 }
 			};
 
 		//Add entry to character to font map + mark it as implemented
-		char_font_map['H'] = &H;
-		char_is_implemented['H'] = true;
+		char_font_map['H'] = font;
 
 	// -- I --
-	I.num_lines  = 3;
-	I.lines[0] = (VideoLine){
+	font.num_lines  = 3;
+	font.lines[0] = (VideoLine){
        .init = (VideoXY){ .x=0, .y=0 },
 			 .end = (VideoXY){ .x=BOX_WIDTH, .y=0 }
 	   };
-	I.lines[1] = (VideoLine){
+	font.lines[1] = (VideoLine){
 	      .init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },
 	      .end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT }
 	    };
-  I.lines[2] = (VideoLine){
+  font.lines[2] = (VideoLine){
 	          .init = (VideoXY){ .x=BOX_WIDTH/2, .y=-BOX_HEIGHT },
 	          .end = (VideoXY){ .x=BOX_WIDTH/2, .y=0 }
 	    };
 
 	//Add entry to character to font map + mark it as implemented
-	char_font_map['I'] = &I;
-	char_is_implemented['I'] = true;
+	char_font_map['I'] = font;
+
+	// -- K --
+	font.num_lines  = 3;
+	font.lines[0] = (VideoLine){ .init = (VideoXY){ .x=0, .y=0 }, 						.end = (VideoXY){ .x=0, .y=-BOX_HEIGHT } };
+	font.lines[1] = (VideoLine){ .init = (VideoXY){ .x=0, .y=-BOX_HEIGHT/2 }, .end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT } };
+	font.lines[2] = (VideoLine){ .init = (VideoXY){ .x=0, .y=-BOX_HEIGHT/2 }, .end = (VideoXY){ .x=BOX_WIDTH, .y=0 } };
+
+	//Add entry to character to font map + mark it as implemented
+	char_font_map['K'] = font;
 
 	// -- L --
-	L.num_lines  = 2;
-	L.lines[0] = (VideoLine){
+	font.num_lines  = 2;
+	font.lines[0] = (VideoLine){
        .init = (VideoXY){ .x=0, .y=0 },
 			 .end = (VideoXY){ .x=BOX_WIDTH, .y=0 }
 	   };
-	L.lines[1] = (VideoLine){
+	font.lines[1] = (VideoLine){
 	      .init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },
 	      .end = (VideoXY){ .x=0, .y=0 }
 	    };
 
 
 	//Add entry to character to font map + mark it as implemented
-	char_font_map['L'] = &L;
-	char_is_implemented['L'] = true;
+	char_font_map['L'] = font;
 
 	// -- M` --
-  M.num_lines  = 4;
-  M.lines[0] = (VideoLine){
+  font.num_lines  = 4;
+  font.lines[0] = (VideoLine){
  			.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },
  			.end = (VideoXY){ .x=0, .y=0 }
  		};
-  M.lines[1] = (VideoLine){
+  font.lines[1] = (VideoLine){
  					 .init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },
  					 .end = (VideoXY){ .x=BOX_WIDTH/2, .y=-BOX_HEIGHT/4 }
  		 };
-  M.lines[2] = (VideoLine){
+  font.lines[2] = (VideoLine){
  					.init = (VideoXY){ .x=BOX_WIDTH/2, .y=-BOX_HEIGHT/4 },
  					.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT }
  				};
- 	M.lines[3] = (VideoLine){
+ 	font.lines[3] = (VideoLine){
  							 .init = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT },
  							 .end = (VideoXY){ .x=BOX_WIDTH, .y=0 }
  				 };
 
   //Add entry to character to font map + mark it as implemented
-	char_font_map['M'] = &M;
-	char_is_implemented['M'] = true;
+	char_font_map['M'] = font;
 
 	// -- N` --
-	N.num_lines  =3;
-	N.lines[0] = (VideoLine){
+	font.num_lines  =3;
+	font.lines[0] = (VideoLine){
 				 .init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },
 				 .end = (VideoXY){ .x=0, .y=0 }
 	};
-	N.lines[1] = (VideoLine){
+	font.lines[1] = (VideoLine){
 				 	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },
 				 	.end = (VideoXY){ .x=BOX_WIDTH, .y=0 }
 	};
-	N.lines[2] = (VideoLine){
+	font.lines[2] = (VideoLine){
 				 	.init = (VideoXY){ .x=BOX_WIDTH, .y=0 },
 				 	.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT }
 	};
 
  //Add entry to character to font map + mark it as implemented
- char_font_map['N'] = &N;
- char_is_implemented['N'] = true;
+ char_font_map['N'] = font;
 
 	// -- O --
-	O.num_lines  = 4;
-	O.lines[0] = (VideoLine){
+	font.num_lines  = 4;
+	font.lines[0] = (VideoLine){
        .init = (VideoXY){ .x=0, .y=0 },
 			 .end = (VideoXY){ .x=BOX_WIDTH, .y=0 }
 	   };
-	O.lines[1] = (VideoLine){
+	font.lines[1] = (VideoLine){
 	      .init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },
 	      .end = (VideoXY){ .x=0, .y=0 }
 	    };
-	O.lines[2] = (VideoLine){
+	font.lines[2] = (VideoLine){
 		       .init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },
 					 .end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT }
 			   };
-	O.lines[3] = (VideoLine){
+	font.lines[3] = (VideoLine){
 			      .init = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT },
 			      .end = (VideoXY){ .x=BOX_WIDTH, .y=0 }
 			    };
 
 			//Add entry to character to font map + mark it as implemented
-			char_font_map['O'] = &O;
-			char_is_implemented['O'] = true;
+			char_font_map['O'] = font;
 
-	// -- R --
-	P.num_lines  = 3;
-	P.lines[0] = (VideoLine){
+	// -- P --
+	font.num_lines  = 3;
+	font.lines[0] = (VideoLine){
 					.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },
 					 .end = (VideoXY){ .x=0, .y=0 }
 		};
-	P.lines[1] = (VideoLine){
+	font.lines[1] = (VideoLine){
 				.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },
 				.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT*(2.0/3.0) }
 	 };
-	P.lines[2] = (VideoLine){
+	font.lines[2] = (VideoLine){
 				.init = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT*(2.0/3.0) },
 				.end = (VideoXY){ .x=0, .y=-BOX_HEIGHT*(1.0/3.0) }
 	};
 
 			//Add entry to character to font map + mark it as implemented
-			char_font_map['P'] = &P;
-			char_is_implemented['P'] = true;
+			char_font_map['P'] = font;
 
 		// -- R --
-		R.num_lines  = 4;
-		R.lines[0] = (VideoLine){
+		font.num_lines  = 4;
+		font.lines[0] = (VideoLine){
 			    .init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },
 					 .end = (VideoXY){ .x=0, .y=0 }
 	   };
-		R.lines[1] = (VideoLine){
+		font.lines[1] = (VideoLine){
 		      .init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },
 		      .end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT*(2.0/3.0) }
 		 };
-		R.lines[2] = (VideoLine){
+		font.lines[2] = (VideoLine){
 					.init = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT*(2.0/3.0) },
 					.end = (VideoXY){ .x=0, .y=-BOX_HEIGHT*(1.0/3.0) }
 		};
-		R.lines[3] = (VideoLine){
+		font.lines[3] = (VideoLine){
 					.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT*(1.0/3.0) },
 					.end = (VideoXY){ .x=BOX_WIDTH, .y=0 }
 		};
 
 	//Add entry to character to font map + mark it as implemented
-	char_font_map['R'] = &R;
-	char_is_implemented['R'] = true;
+	char_font_map['R'] = font;
 
 
 	// -- S --
-	S.num_lines  = 3;
-	S.lines[0] = (VideoLine){
-				.init = (VideoXY){ .x=0, .y=0 },
-				 .end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT/3 }
-	 };
-	S.lines[1] = (VideoLine){
-				.init = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT/3 },
-				.end = (VideoXY){ .x=0, .y=-BOX_HEIGHT*(2.0/3.0) }
-	 };
-	S.lines[2] = (VideoLine){
-				.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT*(2.0/3.0) },
-				.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT }
-	};
+	font.num_lines  = 3;
+	font.lines[0] = (VideoLine){ .init = (VideoXY){ .x=0, 				.y=0 }, 										.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT/3 } };
+	font.lines[1] = (VideoLine){ .init = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT/3 }, 				.end = (VideoXY){ .x=0, 				.y=-BOX_HEIGHT*(2.0/3.0) } };
+	font.lines[2] = (VideoLine){ .init = (VideoXY){ .x=0, 				.y=-BOX_HEIGHT*(2.0/3.0) }, .end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT }};
 
 
-//Add entry to character to font map + mark it as implemented
-char_font_map['S'] = &S;
-char_is_implemented['S'] = true;
+	//Add entry to character to font map + mark it as implemented
+	char_font_map['S'] = font;
+
 
 	// -- T --
-	T.num_lines  = 2;
-	T.lines[0] = (VideoLine){
+	font.num_lines  = 2;
+	font.lines[0] = (VideoLine){
 			 .init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },
 			 .end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT }
 		 };
-	T.lines[1] = (VideoLine){
+	font.lines[1] = (VideoLine){
 						.init = (VideoXY){ .x=BOX_WIDTH/2, .y=-BOX_HEIGHT },
 						.end = (VideoXY){ .x=BOX_WIDTH/2, .y=0 }
 			};
 
 
  //Add entry to character to font map + mark it as implemented
- char_font_map['T'] = &T;
- char_is_implemented['T'] = true;
+ char_font_map['T'] = font;
+
+ // -- U --
+ font.num_lines  = 3;
+ font.lines[0] = (VideoLine){  .init = (VideoXY){ .x=0, 				.y=0 },		.end = (VideoXY){ .x=0, 				.y=-BOX_HEIGHT }  };
+ font.lines[1] = (VideoLine){  .init = (VideoXY){ .x=BOX_WIDTH, .y=0 },		.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT }  };
+ font.lines[2] = (VideoLine){  .init = (VideoXY){ .x=0, .y=0 },						.end = (VideoXY){ .x=BOX_WIDTH, .y=0 }  };
+
+
+ //Add entry to character to font map + mark it as implemented
+ char_font_map['U'] = font;
+
+ // -- V --
+ font.num_lines  = 2;
+ font.lines[0] = (VideoLine){  .init = (VideoXY){ .x=BOX_WIDTH/2, 	.y=0 },				.end = (VideoXY){ .x=0, 				.y=-BOX_HEIGHT }  };
+ font.lines[1] = (VideoLine){  .init = (VideoXY){ .x=BOX_WIDTH/2, 	.y=0 },				.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT }  };
+
+
+ //Add entry to character to font map + mark it as implemented
+ char_font_map['V'] = font;
 
  // -- W` --
- W.num_lines  = 4;
- W.lines[0] = (VideoLine){
+ font.num_lines  = 4;
+ font.lines[0] = (VideoLine){
 			.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },
 			.end = (VideoXY){ .x=BOX_WIDTH/4, .y=0 }
 		};
- W.lines[1] = (VideoLine){
+ font.lines[1] = (VideoLine){
 					 .init = (VideoXY){ .x=BOX_WIDTH/4, .y=0 },
 					 .end = (VideoXY){ .x=BOX_WIDTH/2, .y=-BOX_HEIGHT/2 }
 		 };
- W.lines[2] = (VideoLine){
+ font.lines[2] = (VideoLine){
 					.init = (VideoXY){ .x=BOX_WIDTH/2, .y=-BOX_HEIGHT/2 },
 					.end = (VideoXY){ .x=BOX_WIDTH, .y=0 }
 				};
-W.lines[3] = (VideoLine){
+font.lines[3] = (VideoLine){
 							 .init = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT },
 							 .end = (VideoXY){ .x=BOX_WIDTH, .y=0 }
 				 };
 
-		char_font_map['W'] = &W;
-		char_is_implemented['W'] = true;
+		char_font_map['W'] = font;
+
+		// -- X --
+	  font.num_lines  = 2;
+	  font.lines[0] = (VideoLine){  .init = (VideoXY){ .x=0, 	.y=-BOX_HEIGHT },	.end = (VideoXY){ .x=BOX_WIDTH, 	.y=0 }  };
+	  font.lines[1] = (VideoLine){  .init = (VideoXY){ .x=0, 	.y=0 },						.end = (VideoXY){ .x=BOX_WIDTH,	 	.y=-BOX_HEIGHT }  };
+
+	  //Add entry to character to font map + mark it as implemented
+	  char_font_map['X'] = font;
+
+		// -- Y --
+	  font.num_lines  = 3;
+	  font.lines[0] = (VideoLine){  .init = (VideoXY){ .x=BOX_WIDTH/2, 	.y=0 },							.end = (VideoXY){ .x=BOX_WIDTH/2, .y=-BOX_HEIGHT/2 }  };
+	  font.lines[1] = (VideoLine){  .init = (VideoXY){ .x=BOX_WIDTH/2, 	.y=-BOX_HEIGHT/2 },	.end = (VideoXY){ .x=0, 					.y=-BOX_HEIGHT }  };
+		font.lines[2] = (VideoLine){  .init = (VideoXY){ .x=BOX_WIDTH/2, 	.y=-BOX_HEIGHT/2 },	.end = (VideoXY){ .x=BOX_WIDTH, 	.y=-BOX_HEIGHT }  };
+
+	  //Add entry to character to font map + mark it as implemented
+	  char_font_map['Y'] = font;
+
 	// -- Z --
-	Z.num_lines  = 3;
-	Z.lines[0] = (VideoLine){
-	 		 .init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },
-	 		 .end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT }
-		 	 };
- Z.lines[1] = (VideoLine){
-					.init = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT },
-					.end = (VideoXY){ .x=0, .y=0 }
- 		};
-  Z.lines[2] = (VideoLine){
-				 .init = (VideoXY){ .x=0, .y=0 },
-				 .end = (VideoXY){ .x=BOX_WIDTH, .y=0 }
-		};
+	font.num_lines  = 3;
+	font.lines[0] = (VideoLine){ .init = (VideoXY){ .x=0, 				.y=-BOX_HEIGHT }, .end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT } };
+ 	font.lines[1] = (VideoLine){ .init = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT }, .end = (VideoXY){ .x=0, .y=0 } };
+  font.lines[2] = (VideoLine){ .init = (VideoXY){ .x=0, 				.y=0 }, 					.end = (VideoXY){ .x=BOX_WIDTH, .y=0 } };
+
+	char_font_map['Z'] = font;
+
+//////////////////////////////////////////
+/////////////////////////////////////////
+
+// -- 1 --
+font.num_lines  = 1;
+font.lines[0] = (VideoLine){  .init = (VideoXY){ .x=BOX_WIDTH/2, 	.y=0 },	.end = (VideoXY){ .x=BOX_WIDTH/2, 	.y=-BOX_HEIGHT }  };
+
+//Add entry to character to font map + mark it as implemented
+char_font_map['1'] = font;
+
+// -- 2 --
+font.num_lines  = 3;
+font.lines[0] = (VideoLine){ .init = (VideoXY){ .x=0, 				.y=-BOX_HEIGHT }, 		.end = (VideoXY){ .x=BOX_WIDTH, .y=-5*BOX_HEIGHT/6 } };
+font.lines[1] = (VideoLine){ .init = (VideoXY){ .x=BOX_WIDTH, .y=-5*BOX_HEIGHT/6 }, .end = (VideoXY){ .x=0, .y=0 } };
+font.lines[2] = (VideoLine){ .init = (VideoXY){ .x=0, 				.y=0 }, 							.end = (VideoXY){ .x=BOX_WIDTH, .y=0 } };
+
+char_font_map['2'] = font;
+
+// -- 3 --
+font.num_lines  = 4;
+font.lines[0] = (VideoLine){  .init = (VideoXY){ .x=0, .y=0 },									.end = (VideoXY){ .x=BOX_WIDTH, .y=0 }  };
+font.lines[1] = (VideoLine){ 	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT }, 				.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT } };
+font.lines[2] = (VideoLine){	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT/2 },			.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT/2 } };
+font.lines[3] = (VideoLine){	.init = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT },.end = (VideoXY){ .x=BOX_WIDTH, .y=0 } };
+
+//Add entry to character to font map + mark it as implemented
+char_font_map['3'] = font;
+
+// -- 4 --
+font.num_lines  = 3;
+font.lines[0] = (VideoLine){  .init = (VideoXY){ .x=BOX_WIDTH, .y=0 },									.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT }  };
+font.lines[1] = (VideoLine){ 	.init = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT }, 				.end = (VideoXY){ .x=0, .y=-BOX_HEIGHT/2 } };
+font.lines[2] = (VideoLine){	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT/2 },			.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT/2 } };
+
+//Add entry to character to font map + mark it as implemented
+char_font_map['4'] = font;
+
+// -- 5 --
+font.num_lines  = 5;
+font.lines[0] = (VideoLine){  .init = (VideoXY){ .x=0, .y=0 },							.end = (VideoXY){ .x=BOX_WIDTH, .y=0 }  };
+font.lines[1] = (VideoLine){ 	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT }, 		.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT } };
+font.lines[2] = (VideoLine){	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT/2 },	.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT/2 } };
+font.lines[3] = (VideoLine){	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },		.end = (VideoXY){ .x=0, 				.y=-BOX_HEIGHT/2 } };
+font.lines[4] = (VideoLine){	.init = (VideoXY){ .x=BOX_WIDTH, .y=0 },			.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT/2 } };
+
+//Add entry to character to font map + mark it as implemented
+char_font_map['5'] = font;
+
+// -- 6 --
+font.num_lines  = 5;
+font.lines[0] = (VideoLine){  .init = (VideoXY){ .x=0, .y=0 },							.end = (VideoXY){ .x=BOX_WIDTH, .y=0 }  };
+font.lines[1] = (VideoLine){ 	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT }, 		.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT } };
+font.lines[2] = (VideoLine){	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT/2 },	.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT/2 } };
+font.lines[3] = (VideoLine){	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },		.end = (VideoXY){ .x=0, 				.y=0 } };
+font.lines[4] = (VideoLine){	.init = (VideoXY){ .x=BOX_WIDTH, .y=0 },			.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT/2 } };
+
+//Add entry to character to font map + mark it as implemented
+char_font_map['6'] = font;
+
+// -- 7 --
+font.num_lines  = 2;
+font.lines[0] = (VideoLine){  .init = (VideoXY){ .x=0, 				.y=-BOX_HEIGHT},	.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT }  };
+font.lines[1] = (VideoLine){ 	.init = (VideoXY){ .x=BOX_WIDTH,.y=-BOX_HEIGHT }, .end = (VideoXY){ .x=0,	 				.y=0 } };
+
+//Add entry to character to font map + mark it as implemented
+char_font_map['7'] = font;
 
 
-char_font_map['Z'] = &Z;
-char_is_implemented['Z'] = true;
+// -- 8 --
+font.num_lines  = 5;
+font.lines[0] = (VideoLine){  .init = (VideoXY){ .x=0, .y=0 },							.end = (VideoXY){ .x=BOX_WIDTH, .y=0 }  };
+font.lines[1] = (VideoLine){ 	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT }, 		.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT } };
+font.lines[2] = (VideoLine){	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT/2 },	.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT/2 } };
+font.lines[3] = (VideoLine){	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },		.end = (VideoXY){ .x=0, 				.y=0 } };
+font.lines[4] = (VideoLine){	.init = (VideoXY){ .x=BOX_WIDTH, .y=0 },			.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT } };
 
+//Add entry to character to font map + mark it as implemented
+char_font_map['8'] = font;
+
+// -- 9 --
+font.num_lines  = 5;
+font.lines[0] = (VideoLine){  .init = (VideoXY){ .x=0, .y=0 },							.end = (VideoXY){ .x=BOX_WIDTH, .y=0 }  };
+font.lines[1] = (VideoLine){ 	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT }, 		.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT } };
+font.lines[2] = (VideoLine){	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT/2 },	.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT/2 } };
+font.lines[3] = (VideoLine){	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },		.end = (VideoXY){ .x=0, 				.y=-BOX_HEIGHT/2 } };
+font.lines[4] = (VideoLine){	.init = (VideoXY){ .x=BOX_WIDTH, .y=0 },			.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT } };
+
+//Add entry to character to font map + mark it as implemented
+char_font_map['9'] = font;
+
+// -- 0 --
+font.num_lines  = 5;
+font.lines[0] = (VideoLine){  .init = (VideoXY){ .x=0, .y=0 },							.end = (VideoXY){ .x=BOX_WIDTH, .y=0 }  };
+font.lines[1] = (VideoLine){ 	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT }, 		.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT } };
+font.lines[2] = (VideoLine){	.init = (VideoXY){ .x=0, .y=0 },							.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT } };
+font.lines[3] = (VideoLine){	.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT },		.end = (VideoXY){ .x=0, 				.y=0 } };
+font.lines[4] = (VideoLine){	.init = (VideoXY){ .x=BOX_WIDTH, .y=0 },			.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT } };
+
+//Add entry to character to font map + mark it as implemented
+char_font_map['0'] = font;
 
 //////////////////////////////////////////
 /////////////////////////////////////////
 
 // -- DOLLAR_SIGN --
-DOLLAR_SIGN.num_lines  = 4;
-DOLLAR_SIGN.lines[0] = (VideoLine){
+font.num_lines  = 4;
+font.lines[0] = (VideoLine){
 			.init = (VideoXY){ .x=0, .y=0 },
 			 .end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT/3 }
  };
-DOLLAR_SIGN.lines[1] = (VideoLine){
+font.lines[1] = (VideoLine){
 			.init = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT/3 },
 			.end = (VideoXY){ .x=0, .y=-BOX_HEIGHT*(2.0/3.0) }
  };
-DOLLAR_SIGN.lines[2] = (VideoLine){
+font.lines[2] = (VideoLine){
 			.init = (VideoXY){ .x=0, .y=-BOX_HEIGHT*(2.0/3.0) },
 			.end = (VideoXY){ .x=BOX_WIDTH, .y=-BOX_HEIGHT }
 };
-DOLLAR_SIGN.lines[3] = (VideoLine){
+font.lines[3] = (VideoLine){
 			.init = (VideoXY){ .x=BOX_WIDTH/2, .y=-BOX_HEIGHT },
 			.end = (VideoXY){ .x=BOX_WIDTH/2, .y=0 }
 };
 
 
 //Add entry to character to font map + mark it as implemented
-char_font_map['$'] = &DOLLAR_SIGN;
-char_is_implemented['$'] = true;
+char_font_map['$'] = font;
 
 
 }
