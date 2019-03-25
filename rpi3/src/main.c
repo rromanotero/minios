@@ -14,7 +14,7 @@
 #include "drivers/sdcard/SDCard.h"
 #include "hal/hal.h"
 
-char buffer[500];
+char buffer[2000];
 
 void DisplayDirectory(const char*);
 
@@ -37,12 +37,12 @@ int main (void) {
   printf("Opening Alice.txt \n");
   */
 
-	/*
-	HANDLE fHandle = sdCreateFile("Alice.txt", GENERIC_READ, 0, 0, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, 0);
+
+	HANDLE fHandle = sdCreateFile("AliceLong.txt", GENERIC_READ, 0, 0, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, 0);
 	if (fHandle != 0) {
 		uint32_t bytesRead;
 
-		if ((sdReadFile(fHandle, &buffer[0], 500, &bytesRead, 0) == true))  {
+		if ((sdReadFile(fHandle, &buffer[0], 2000, &bytesRead, 0) == true))  {
 				buffer[bytesRead-1] = '\0';  ///insert null char
 				printf("File Contents: %s", &buffer[0]);
 		}
@@ -53,7 +53,7 @@ int main (void) {
 		// Close the file
 		sdCloseHandle(fHandle);
 
-	}*/
+	}
 
 	hal_io_video_init();
 

@@ -1,9 +1,9 @@
 ﻿;@"+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
-;@"																			"			
+;@"																			"
 ;@"      Filename: smartstart32.s											"
 ;@"      Copyright(c): Leon de Boer(LdB) 2017								"
 ;@"      Version: 2.02														"
-;@"																			"		
+;@"																			"
 ;@"**************[ THIS CODE IS FREEWARE UNDER CC Attribution]**************"
 ;@"																            "
 ;@"     This sourcecode is released for the purpose to promote programming  "
@@ -92,18 +92,18 @@ _start:
 ;@ If the cpu is in HYP_MODE(EL2) we will bring it SVC_MODE (EL1).
 ;@"================================================================"
 multicore_start:
-    mrs r0,cpsr								;@ Fetch the cpsr register which includes CPU mode bits 
- 	and r1, r0, #0x1F						;@ Mask off the CPU mode bits to register r1                            
- 	cmp r1, #CPU_HYPMODE					;@ Check we are in HYP_MODE											
-	bne .NotInHypMode						;@ Branch if not equal meaning was not in HYP_MODE  
-	bic r0,r0,#0x1F							;@ Clear the CPU mode bits in register r0							
-	orr r0, r0, #CPU_SVCMODE_VALUE			;@ SVC_MODE bits onto register with Irq/Fiq disabled	
+    mrs r0,cpsr								;@ Fetch the cpsr register which includes CPU mode bits
+ 	and r1, r0, #0x1F						;@ Mask off the CPU mode bits to register r1
+ 	cmp r1, #CPU_HYPMODE					;@ Check we are in HYP_MODE
+	bne .NotInHypMode						;@ Branch if not equal meaning was not in HYP_MODE
+	bic r0,r0,#0x1F							;@ Clear the CPU mode bits in register r0
+	orr r0, r0, #CPU_SVCMODE_VALUE			;@ SVC_MODE bits onto register with Irq/Fiq disabled
     msr spsr_cxsf,r0						;@ Hold value in spsr_cxsf
     add lr,pc,#4							;@ Calculate address of .NotInHypMode label
 	/* I borrowed this trick from Ultibo because ARM6 code running on an ARM7/8 needs this opcode  */
 	/* The ARM6 compiler does not know these instructions so it is a way to get needed opcode here */
     /* So our ARM6 code can drop an arm7 or arm8 out of HYP mode and run on an ARM7/8.             */
- 	/* Native ARM7/8 compilers already understand the OPCODE but do not mind it this way either	   */        
+ 	/* Native ARM7/8 compilers already understand the OPCODE but do not mind it this way either	   */
 	.long 0xE12EF30E						;@ "msr ELR_hyp, lr" Set the address to ELR_hyp
 	.long 0xE160006E						;@ "eret" Elevated return which will exit at .NotInHypMode in SVC_MODE
 .NotInHypMode:
@@ -134,18 +134,18 @@ multicore_start:
     ldr r3, = __FIQ_stack_core3				;@ Address of fiq_stack_core3 stack pointer value
     ldr r4, = __IRQ_stack_core3				;@ Address of irq_stack_core3 stack pointer value
 set_svc_stack:
-	mov sp, r2								;@ Set the stack pointer for SVC_MODE 
-    mrs r0,cpsr								;@ Fetch the cpsr register which includes CPU mode bits 
-	bic r0,r0,#0x1F							;@ Clear the CPU mode bits in register r0							
+	mov sp, r2								;@ Set the stack pointer for SVC_MODE
+    mrs r0,cpsr								;@ Fetch the cpsr register which includes CPU mode bits
+	bic r0,r0,#0x1F							;@ Clear the CPU mode bits in register r0
 	orr r0, r0, #CPU_FIQMODE_VALUE			;@ FIQ_MODE bits onto register with Irq/Fiq disabled
     msr CPSR_c, r0							;@ Switch to FIQ_MODE
-	mov sp, r3								;@ Set the stack pointer for FIQ_MODE 
-	bic r0,r0,#0x1F							;@ Clear the CPU mode bits in register r0	
-	orr r0, r0, #CPU_IRQMODE_VALUE			;@ IRQ_MODE bits onto register with Irq/Fiq disabled	
+	mov sp, r3								;@ Set the stack pointer for FIQ_MODE
+	bic r0,r0,#0x1F							;@ Clear the CPU mode bits in register r0
+	orr r0, r0, #CPU_IRQMODE_VALUE			;@ IRQ_MODE bits onto register with Irq/Fiq disabled
     msr CPSR_c, r0							;@ Switch to IRQ_MODE
-	mov sp, r4								;@ Set the stack pointer for IRQ_MODE 
-	bic r0,r0,#0x1F							;@ Clear the CPU mode bits in register r0							
-	orr r0, r0, #CPU_SVCMODE_VALUE			;@ SVC_MODE bits onto register with Irq/Fiq disabled	
+	mov sp, r4								;@ Set the stack pointer for IRQ_MODE
+	bic r0,r0,#0x1F							;@ Clear the CPU mode bits in register r0
+	orr r0, r0, #CPU_SVCMODE_VALUE			;@ SVC_MODE bits onto register with Irq/Fiq disabled
     msr CPSR_c, r0							;@ Switch to SVC_MODE again all stacks ready to go
 @"================================================================"
 ;@ PI NSACR regsister setup for access to floating point unit
@@ -186,7 +186,7 @@ set_svc_stack:
 	mrc p15,0,r0,c0,c0,0					;@ Read CPU ID Register
 	ldr r1, =#ARM6_CPU_ID					;@ fetch ARM6_CPU_ID
 	cmp r1, r0								;@ Check for match
-	beq .cpu0_exit_multicore_park			;@ Branch as Arm6 has only 1 CPU 
+	beq .cpu0_exit_multicore_park			;@ Branch as Arm6 has only 1 CPU
 ;@"================================================================"
 ;@ Now park Core 1,2,3 into secondary spinloop on BCM2836, BCM2837
 ;@ If bootloader is used this will not happen but booting with the
@@ -196,7 +196,7 @@ set_svc_stack:
 	ands r0, r0, #0x3					    ;@ Make core 2 bit bitmask in R0
 	beq  .cpu0_exit_multicore_park			;@ Core 0 jumps out
 	ldr r1, =RPi_CoresReady					;@ Address of CoreReady count
-	ldr r0, [r1]							;@ Load current core count 
+	ldr r0, [r1]							;@ Load current core count
 	add r0, r0, #1							;@ Add one as core about to go ready
 	str r0, [r1]							;@ Update CoreReady count
 	b    SecondarySpin						;@ Jump to setup secondary spin
@@ -228,7 +228,7 @@ set_svc_stack:
 ;@"================================================================"
 	ldr r1, =RPi_CpuId						;@ Address to hold CPU id
 	mrc p15, 0, r0, c0, c0, 0				;@ Read Main ID Register
-	str r0, [r1]							;@ Save CPU Id for interface 
+	str r0, [r1]							;@ Save CPU Id for interface
 ;@"================================================================"
 ;@ Store the compiler mode in RPi_CompileMode
 ;@"================================================================"
@@ -242,9 +242,9 @@ set_svc_stack:
 .if (__ARM_ARCH == 8)						// Compiling for ARM8
 	mov r0, #0x08							;@ Compiled for ARM8 CPU
 .endif
-	orr r0, r0, #(4 << 5)					;@ Code is setup to support 4 cores			
+	orr r0, r0, #(4 << 5)					;@ Code is setup to support 4 cores
 	ldr r1, =RPi_CompileMode
-	str r0, [r1]							;@ Store the compiler mode  
+	str r0, [r1]							;@ Store the compiler mode
 ;;@"================================================================"
 ;@ Try Auto-Detect Raspberry PI IO base address at 1st position
 ;@"================================================================"
@@ -292,8 +292,8 @@ set_svc_stack:
 	str	r0, [r1]
 .autodetect_done:
 ;@"================================================================"
-;@  We are getting close to handing over to C so we need to copy the 
-;@  ISR table to position 0x0000 so interrupts can be used if wanted 
+;@  We are getting close to handing over to C so we need to copy the
+;@  ISR table to position 0x0000 so interrupts can be used if wanted
 ;@"================================================================"
 	ldr r0, = _isr_Table					;@ Address of isr_Table
 	mov     r1, #0x0000						;@ Destination 0x0000
@@ -305,7 +305,7 @@ set_svc_stack:
 ;@ Now Clear the .BSS segment as the C compiler expects us to do
 ;@"================================================================"
 	ldr   r0, =__bss_start__
-	ldr   r1, =__bss_end__	
+	ldr   r1, =__bss_end__
 	mov   r2, #0
 .clear_bss:
     cmp   r0, r1
@@ -324,7 +324,7 @@ set_svc_stack:
 	ldr r1, =RPi_BootAddr					;@ Address to hold Boot address
 	ldr r0, [r1]							;@ Fetch bootAddress
 	ldr r1, =#0x8000						;@ Check against 0x8000
-	cmp r1, r0								;@ Check for match	
+	cmp r1, r0								;@ Check for match
 	bne .NoMultiCoreSetup					;@ Not bootladed so jump multicore setup
  	mov	r1, #1073741824						;@ 0x40000000
     ldr r2, =multicore_start				;@ Address of CoreSetup call
@@ -374,7 +374,7 @@ _prefetch_abort_vector_h:           .word   hang
 _data_abort_vector_h:               .word   hang
 _unused_handler_h:                  .word   hang
 _interrupt_vector_h:                .word   _irq_handler_stub
-_fast_interrupt_vector_h:           .word   hang	
+_fast_interrupt_vector_h:           .word   hang
 
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++}
@@ -384,7 +384,7 @@ _fast_interrupt_vector_h:           .word   hang
 SecondarySpin:
 	mrc     p15, 0, r0, c0, c0, 5
 	ands r0, r0, #0x3					    // Make core 2 bit bitmask in R0
-	ldr r5, =mbox		
+	ldr r5, =mbox
 	ldr r5, [r5]		@ mbox
 	mov	r3, #0			@ magic
 	add	r5, #(0x400000CC-0x4000008C)	@ mbox
@@ -395,9 +395,9 @@ SecondarySpinLoop:
 @ clear mailbox
 	str	r4, [r5, r0, lsl #4]
 	mov	r0, #0
-	ldr r1, =machid		
+	ldr r1, =machid
 	ldr r1, [r1]		@ BCM2708 machine id
-	ldr r2, = atags		
+	ldr r2, = atags
 	ldr r2, [r2]		@ ATAGS
 	ldr lr, =SecondarySpin
 	bx	r4
@@ -410,10 +410,10 @@ atags:  .4byte 0x100
 
 .globl RPi_CpuIdString
 RPi_CpuIdString:
-	ldr r0, =ARM6_STR						
+	ldr r0, =ARM6_STR
 	mrc p15,0,r2,c0,c0,0					;@ Read Main ID Register
 	ldr r1, =#ARM6_CPU_ID					;@ Fetch ARM6_CPU_ID
-	cmp r1, r2								;@ Check for match	
+	cmp r1, r2								;@ Check for match
 	beq CpuIdStringDone
 	ldr r0, =ARM7_STR
 	ldr r1, =#ARM7_CPU_ID					;@ Fetch ARM7_CPU_ID
@@ -422,7 +422,7 @@ RPi_CpuIdString:
 	ldr r0, =ARM8_STR
 	ldr r1, =#ARM8_CPU_ID					;@ Fetch ARM8_CPU_ID
 	cmp r1, r2								;@ Check for match
-	beq CpuIdStringDone	
+	beq CpuIdStringDone
 	ldr r0, =ARMX_STR
 CpuIdStringDone:
 	bx  lr									;@ Return
@@ -465,7 +465,7 @@ CoreExecuteFail:
 /* "PROVIDE C FUNCTION: uint32_t ARMaddrToGPUaddr (void* ARMaddress);" */
 .section .text.ARMaddrToGPUaddr, "ax", %progbits
 .balign	4
-.globl ARMaddrToGPUaddr;		
+.globl ARMaddrToGPUaddr;
 .type ARMaddrToGPUaddr, %function
 .syntax unified
 .arm
@@ -476,7 +476,7 @@ CoreExecuteFail:
 ;@"================================================================"
 ARMaddrToGPUaddr:
 	ldr r1, =RPi_BusAlias
-    ldr r1,[r1]								;@ Fetch bus alias	
+    ldr r1,[r1]								;@ Fetch bus alias
 	orr r0, r0, r1							;@ Create bus address
 	bx   lr									;@ Return
 .balign	4
@@ -487,7 +487,7 @@ ARMaddrToGPUaddr:
 /* "PROVIDE C FUNCTION: uint32_t GPUaddrToARMaddr (uint32_t BUSaddress);" */
 .section .text.GPUaddrToARMaddr, "ax", %progbits
 .balign	4
-.globl GPUaddrToARMaddr;		
+.globl GPUaddrToARMaddr;
 .type GPUaddrToARMaddr, %function
 .syntax unified
 .arm
@@ -498,7 +498,7 @@ ARMaddrToGPUaddr:
 ;@"================================================================"
 GPUaddrToARMaddr:
 	ldr r1, =RPi_BusAlias
-    ldr r1,[r1]								;@ Fetch bus alias	
+    ldr r1,[r1]								;@ Fetch bus alias
 	bic r0, r0, r1							;@ Create arm address
 	bx   lr									;@ Return
 .balign	4
@@ -542,7 +542,7 @@ _irq_handler_stub:
 
 .section .text._sbrk, "ax", %progbits
 .balign	4
-.globl _sbrk;			
+.globl _sbrk;
 .type _sbrk, %function
 .syntax unified
 .arm
@@ -571,7 +571,7 @@ ARM8_STR: .string "cortex-a53\0"
 ARMX_STR: .string "unknown ARM cpu\0"
 
 /****************************************************************
-       	   DATA FOR SMARTSTART32 EXPOSED TO INTERFACE 
+       	   DATA FOR SMARTSTART32 EXPOSED TO INTERFACE
 ****************************************************************/
 .section ".data.smartstart32", "aw"
 .balign 4
@@ -593,4 +593,3 @@ RPi_CpuId : .4byte 0;					// CPU Id is 4 byte variable in 32bit mode
 
 .globl RPi_CompileMode;					// Make sure RPi_CompileMode label is global
 RPi_CompileMode : .4byte 0;				// Compile mode is 4 byte variable in 32bit mode
-
