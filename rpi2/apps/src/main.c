@@ -16,7 +16,7 @@ uint32_t dummy2(){
     "svc #1" //Dummy Syscall (just fo testing)
     :[result] "=r" (p_some_val)
     :
-    : "lr"
+    : "lr" // <<<--- dont'r remove this!!!!!
   );
 
   return some_val;
@@ -25,7 +25,7 @@ uint32_t dummy2(){
 int main( void ){
 
 
-  for(volatile long i=0; i<1000000000;i++);
+  //for(volatile long i=0; i<1000000000;i++);
 
   printf( "Hello there. This is a process!\n\r" );
 
@@ -45,7 +45,7 @@ int main( void ){
 
   memcpy( dst, src, 10 );*/
 
-  for(volatile long i=0; i<1000000000;i++);
+  //for(volatile long i=0; i<1000000000;i++);
 
   //NOte:
   //  I haven't tested getc() but it shoudln't be used
