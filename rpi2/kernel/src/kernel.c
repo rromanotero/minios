@@ -25,6 +25,7 @@ void sys_info( uint8_t* );
 
 extern void _enable_interrupts();
 
+
 /*
  *		Kernel's entry point
 **/

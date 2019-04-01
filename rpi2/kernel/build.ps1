@@ -39,7 +39,7 @@ Write-Host "Building..."
 
 	arm-none-eabi-objdump -D .\output\kernel.elf | Out-File -filepath output/kernel.lss -Encoding ASCII
 	arm-none-eabi-objdump -s .\output\kernel.elf | Out-File -filepath output/kernel.dump -Encoding ASCII
-& 'C:\Program Files (x86)\GNU Tools ARM Embedded\8 2018-q4-major\bin\arm-none-eabi-objcopy.exe' output/kernel.elf -O binary output/kernel7.img
+
 
 
 Write-Host "Success"

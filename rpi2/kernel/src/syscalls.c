@@ -14,6 +14,7 @@
 
 #include "hal/hal.h"
 #include "syscalls.h"
+#include "drivers/stdio/emb-stdio.h"
 
 
 void syscalls_entry_point(void);
@@ -71,11 +72,14 @@ void syscalls_entry_point(void){
 	uint32_t svc_number = ((uint32_t*)ret_address)[-1];
 	svc_number &= 0xFF;
 
+
 	//attend syscall
 	switch(svc_number){
 		//Serial
+    case SVCDummy:          printf_serial("This is a dummy syscall. param1=%d,param2=%d,param3=%d\n\r", arg0, arg1, arg2);     break;
+    case SVCDummy2:         *((uint32_t*)arg0) = 11;		                                                 break;
 #ifdef SERIAL_PRESENT
-		case SVCSerialPutc:			hal_io_serial_putc( SerialA, (uint8_t)arg0 );				         break;
+    case SVCSerialPutc:			hal_io_serial_putc( SerialA, (uint8_t)arg0 );				         break;
 		case SVCSerialGetc:			*((uint32_t*)arg1) = hal_io_serial_getc( SerialA );		       break;
 #endif
 		//Display

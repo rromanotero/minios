@@ -2,10 +2,22 @@
 #include "minilib/display.h"
 #include "minilib/serial.h"
 #include "stdio/stdio.h"
+#include "minilib/dummy.h"
 
 int main( void ){
 
-  printf( "Hello there. This is a process!" );
+  printf( "Hello there. This is a process!\n\r" );
+
+  asm volatile(
+    "mov  r0, #7 \n"
+    "mov  r1, #7 \n "
+    "mov  r2, #7 \n"
+    "svc #0" //Dummy Syscall (just fo testing)
+  );
+
+  uint32_t some_val = dummy2();
+
+  printf( "I received back from the syscall: %d", some_val );
 
   //NOte:
   //  I haven't tested getc() but it shoudln't be used
