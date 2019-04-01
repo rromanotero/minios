@@ -22,7 +22,7 @@ Write-Host "Building..."
   -o output/app.elf `
 	-O0	`
 	-s `
-	-lc -lm -lg -lgcc  ## THIS IS COMMENTED OUT!
+	-lc -lm -lg -lgcc  
 
 
 Write-Host "Converting ELF to binary..."

@@ -51,27 +51,6 @@ serial_getc_aux:
   	svc SVCSerialGetc
   	pop {pc}
 
-.globl dummy2
-  dummy2:
-  	/* prologue */
-  	push {lr}
-  	sub sp, #4				     /* uint32_t c; */
-
-  	mov r0, sp
-  	bl dummy_aux		/* dummy2( &c ); */
-
-  	ldr r0, [sp]			     /* return (uint32_t)c;  */
-
-  	/* epilogue */
-  	add sp, #4
-  	pop {pc}
-
-dummy_aux:
-    push {lr}
-    svc #1
-    pop {pc}
-
-
 
 
 /*

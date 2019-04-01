@@ -25,6 +25,10 @@ void sys_info( uint8_t* );
 
 extern void _enable_interrupts();
 
+uint32_t test2(){
+  return 0;
+}
+
 
 /*
  *		Kernel's entry point
@@ -36,7 +40,7 @@ void main(uint32_t r0, uint32_t r1, uint32_t atags){
   input_output_init();
 
   //Uncomment this out to see the PI's Generic Timer Tick
-  per_core_timer_test();
+  //per_core_timer_test();
 
   console_begin();
 
