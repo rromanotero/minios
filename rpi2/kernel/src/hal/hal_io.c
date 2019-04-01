@@ -24,6 +24,11 @@ static void delay(uint32_t);
 extern uint32_t _hal_io_video_init(void);
 extern void _hal_io_video_put_pixel_raw( uint32_t, VideoColor );
 
+#define X_ORIGIN 	VIDEO_CHARACTER_WIDTH
+#define Y_ORIGIN  VIDEO_CHARACTER_HEIGHT*3
+uint32_t curr_x=X_ORIGIN;
+uint32_t curr_y=Y_ORIGIN;
+
 /*
 *  HAL IO Init
 */
@@ -40,6 +45,34 @@ uint32_t hal_io_video_init( void ){
 }
 
 /*
+*  HAL IO Video Draw Image
+*/
+void hal_io_video_draw_image( uint8_t* buffer, uint32_t bytes, uint32_t width, uint32_t height ){
+
+	//printf_serial( "bytes read: %d", bytes );
+
+	//   ---   CURRENTLY NOT WORKING ---
+	//   THIS NEEDS WORK. I UNDERSTIMATED IT. I NEED TO GO NOW,
+	//   SO I'LL JUST LEAVE IT AS IT'S NOW.
+	//   SEE HERE:
+	//        https://engineering.purdue.edu/ece264/16au/hw/HW13
+	//
+	for(uint32_t i=0x36; i<bytes; i++){
+			uint32_t rgb1 = (((uint32_t)buffer[i])<<0) + (((uint32_t)buffer[i+1])<<8) + (((uint32_t)buffer[i+2])<<16);
+			_hal_io_video_put_pixel_raw(  x_y_to_raw(curr_x,curr_y), rgb1 );
+
+			 curr_x += 1;
+
+			 if( curr_x >= width ){
+				 	curr_x = X_ORIGIN;
+					curr_y += 1;
+		 		}
+		}
+
+		curr_x = X_ORIGIN;
+}
+
+/*
 *  HAL IO Video Puts
 *
 */
@@ -52,10 +85,6 @@ void hal_io_video_puts( uint8_t* string, uint32_t size, VideoColor color ){
 *  HAL IO Video Putc
 *
 */
-#define X_ORIGIN 	VIDEO_CHARACTER_WIDTH
-#define Y_ORIGIN  VIDEO_CHARACTER_HEIGHT*3
-uint32_t curr_x=X_ORIGIN;
-uint32_t curr_y=Y_ORIGIN;
 void hal_io_video_putc( uint8_t c, uint32_t size, VideoColor color  ){
 
 	if( c == '\n' ){

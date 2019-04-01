@@ -22,6 +22,7 @@
 #include "commands.h"
 #include "../kernel.h"
 #include "../loader.h"
+#include "../drivers/per_core_timer/per_core_timer.h"
 
 static void print( uint8_t* );
 static void readln( uint8_t* );
@@ -31,6 +32,7 @@ static int32_t command_index( uint8_t* );
 static bool is_alpha( uint8_t );
 static bool is_number( uint8_t );
 static void print_welcome_message(void);
+static void show_logo(void);
 
 #define MAX_COMMAND_LEN			20			//command length (arbitrary)
 #define MAX_PARAM_LEN				20			//param length (arbitrary)
@@ -108,6 +110,9 @@ void console_begin( void ){
 	//wait for any character
 	//hal_io_serial_getc(SerialA); //accounts for spurious 0x00 character received
 
+	//Show MiniOS Logo
+	show_logo();
+
 	//prints welcome msg
 	print_welcome_message();
 
@@ -171,11 +176,13 @@ void console_begin( void ){
 
 			//Run App
 			uint32_t ret_val = ((int(*)(void))(proc_memregion.base))();
-			
+
 			if( ret_val != 0){
 				printf_serial( "\n\rProcess exited with value %d", ret_val );
 				printf_video( "\n\rProcess exited with value %d", ret_val );
 			}
+
+			per_core_timer_reset_everything();
 			continue;
 		  //sched_rval = scheduler_process_create( cmd, cmd, &loader_rval );
 			//Load app binary
@@ -185,24 +192,30 @@ void console_begin( void ){
 				return SCHEDULER_PROCESS_CREATE_FAILED;
 			}*/
 
-
-		//	while(1);
-
-		/*	if( sched_rval == SCHEDULER_PROCESS_CREATE_SUCCESS ){
-				//process creation went fine, halt
-				//TO DO: Support to continue executing commands
-				while(1);
-			}
-			else{
-				if( loader_rval == LOADER_NO_APP_FOUND) 		console_puts( "Command not recognized" );
-				else if( loader_rval == LOADER_APP_TOO_LARGE )	console_puts( "Application is too large" );
-				else{
-					// Unknown error
-				}
-			}*/
-
 		}//end if
 	}//end while
+}
+
+#define MAX_FILE_SIZE	58000
+uint8_t buffer_logo[MAX_FILE_SIZE];
+
+static void show_logo(void){
+
+	//checks file
+	uint32_t size = hal_nvmem_fat_file_size( SYS_LOGO_FILENAME );
+	if( size == 0 ){
+		uint8_t msg[30];
+		sprintf( msg, "\n\rFailed to display logo \n\r%s not found\n\r", SYS_LOGO_FILENAME );
+		hal_io_video_puts( msg, 2, VIDEO_COLOR_RED );
+		return;
+	}
+
+	//reads
+	uint32_t bytes_read =  hal_nvmem_fat_file_read( SYS_LOGO_FILENAME, buffer_logo, MAX_FILE_SIZE );
+
+	//display
+	hal_io_video_draw_image( (uint8_t*)buffer_logo, bytes_read, SYS_LOGO_WIDTH, SYS_LOGO_HEIGHT );
+
 }
 
 static void print_welcome_message(void){
@@ -212,7 +225,7 @@ static void print_welcome_message(void){
 
 	//line2, welcome
 	uint8_t welcome_line[ MAX_LINE_LEN ];
-	sprintf( welcome_line, "\n\rWelcome to %s %s\n\r", SYS_NAME, SYS_VERSION );
+	sprintf( welcome_line, "\n\r\n\rWelcome to %s %s\n\r", SYS_NAME, SYS_VERSION );
 
 	hal_io_video_puts( welcome_line, 3, VIDEO_COLOR_GREEN );
   hal_io_serial_puts( SerialA, welcome_line );

@@ -7,6 +7,9 @@
 */
 #define SYS_NAME                   "MiniOS"
 #define SYS_VERSION                "Pi Zero"
+#define SYS_LOGO_FILENAME	         "MINIOS.BMP"
+#define SYS_LOGO_WIDTH	           372//743
+#define SYS_LOGO_HEIGHT	           312//624
 
 //From the 256MB Available,
 //256MB are for the kernel, and 256MB for Apps (Half for App, half for User stack)

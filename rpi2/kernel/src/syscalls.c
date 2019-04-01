@@ -15,6 +15,7 @@
 #include "hal/hal.h"
 #include "syscalls.h"
 #include "drivers/stdio/emb-stdio.h"
+#include "drivers/per_core_timer/per_core_timer.h"
 
 
 void syscalls_entry_point(void);
@@ -89,5 +90,7 @@ void syscalls_entry_point(void){
 		//Error
 		default:																								                             break;
 	}
+
+  per_core_timer_reset_everything();
 
 }

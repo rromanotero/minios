@@ -98,6 +98,7 @@ void hal_io_init(void);
 uint32_t hal_io_video_init( void );
 void hal_io_video_put_pixel( VideoXY*, VideoColor );
 void hal_io_clear_screen( void );
+void hal_io_video_draw_image( uint8_t*, uint32_t, uint32_t, uint32_t );
 void hal_io_video_line( VideoXY*, VideoXY*, VideoColor );
 void hal_io_video_putc_x_y( uint32_t x, uint32_t y, uint8_t c, uint32_t size, VideoColor color );
 void hal_io_video_putc( uint8_t c, uint32_t size, VideoColor color  );

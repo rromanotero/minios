@@ -142,33 +142,44 @@ uint32_t read_cntfrq(void)
 void c_irq_handler(void)
 {
     if (read_core0timer_pending() & 0x08 ) {
-        write_cntv_tval(cntfrq);    // clear cntv interrupt and set next 1sec timer.
+        cntfrq = read_cntfrq();
+        asm volatile ("mcr p15, 0, %0, c14, c3, 0" :: "r"(cntfrq) );
+        //write_cntv_tval(1000);    // clear cntv interrupt and set next 1sec timer.
 
-        uart_puts("core0timer_pendig : ");
-        uart_hex_puts(read_core0timer_pending());
-        uart_puts("handler CNTV_TVAL : ");
-        uart_hex_puts(read_cntv_tval());
-        uart_puts("handler CNTVCT    : ");
-        uart_hex_puts( (uint32_t) read_cntvct() & 0xFFFFFFFF);
+        uart_puts("tick");
+        //uart_puts("core0timer_pendig : ");
+        //uart_hex_puts(read_core0timer_pending());
+        //uart_puts("handler CNTV_TVAL : ");
+        //uart_hex_puts(read_cntv_tval());
+        //uart_puts("handler CNTVCT    : ");
+        //uart_hex_puts( (uint32_t) read_cntvct() & 0xFFFFFFFF);
     }
     return;
 }
 
 void per_core_timer_test(void)
 {
-    uint32_t val;
+    //uint32_t val;
 
-    uart_puts("CNTFRQ  : ");
-    cntfrq = read_cntfrq();
-    uart_hex_puts(cntfrq);
+    //uart_puts("CNTFRQ  : ");
+    //cntfrq = read_cntfrq();
+    //uart_hex_puts(cntfrq);
 
-    write_cntv_tval(cntfrq);    // clear cntv interrupt and set next 1 sec timer.
-    uart_puts("CNTV_TVAL: ");
-    val = read_cntv_tval();
-    uart_hex_puts(val);
+    //asm volatile ("mcr p15, 0, %0, c14, c3, 0" :: "r"(1000000) );
+  //  write_cntv_tval(cntfrq);    // clear cntv interrupt and set next 1 sec timer.
+    //uart_puts("CNTV_TVAL: ");
+    //val = read_cntv_tval();
+    //uart_hex_puts(val);
 
     routing_core0cntv_to_core0irq();
     enable_cntv();
     enable_irq();
+
+}
+
+void per_core_timer_reset_everything(void){
+  //routing_core0cntv_to_core0irq();
+  //enable_cntv();
+  enable_irq();
 
 }

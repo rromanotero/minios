@@ -6,6 +6,9 @@
 
 int main( void ){
 
+
+  for(volatile long i=0; i<1000000000;i++);
+
   printf( "Hello there. This is a process!\n\r" );
 
   asm volatile(
@@ -18,6 +21,8 @@ int main( void ){
   uint32_t some_val = dummy2();
 
   printf( "I received back from the syscall: %d", some_val );
+
+  for(volatile long i=0; i<1000000000;i++);
 
   //NOte:
   //  I haven't tested getc() but it shoudln't be used
