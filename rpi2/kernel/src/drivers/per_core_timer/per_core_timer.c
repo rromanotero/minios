@@ -1,8 +1,9 @@
 
 
 /*
+*   Per core timer:
 *
-*   From here:
+*   Adapted from here:
 *       https://github.com/eggman/raspberrypi/blob/master/qemu-raspi2/timer01/boot.S
 *
 */
@@ -15,6 +16,13 @@
 extern void enable_irq(void);
 extern void disable_irq(void);
 extern void io_halt(void);
+
+
+
+
+
+
+
 
 // Memory-Mapped I/O output
 static inline void mmio_write(uint32_t reg, uint32_t data)
@@ -89,7 +97,7 @@ uint32_t read_core0timer_pending(void)
     return tmp;
 }
 
-static uint32_t cntfrq = 0;
+
 
 void enable_cntv(void)
 {
@@ -128,33 +136,43 @@ uint32_t read_cntv_tval(void)
 
 void write_cntv_tval(uint32_t val)
 {
-	asm volatile ("mcr p15, 0, %0, c14, c3, 0" :: "r"(cntfrq) );
+	asm volatile ("mcr p15, 0, %0, c14, c3, 0" :: "r"(val) );
     return;
 }
 
 uint32_t read_cntfrq(void)
 {
     uint32_t val;
-	asm volatile ("mrc p15, 0, %0, c14, c0, 0" : "=r"(val) );
+	   asm volatile ("mrc p15, 0, %0, c14, c0, 0" : "=r"(val) );
     return val;
+}
+
+
+
+
+uint32_t ms_to_cntv_val( uint32_t ms ){
+  return read_cntfrq()*ms/1000;
 }
 
 void c_irq_handler(void)
 {
     if (read_core0timer_pending() & 0x08 ) {
+        //set cntv_tval
+        //(Needs to be set again on every tick)
+        write_cntv_tval( ms_to_cntv_val(5) );
 
-        //set timer freq
-        cntfrq = 500000; //roughly 5 ms
-        asm volatile ("mcr p15, 0, %0, c14, c3, 0" :: "r"(cntfrq) );
-
-        uart_puts("tick");
-
+        uart_puts("tick ");
     }
     return;
 }
 
+
+
 void per_core_timer_test(void)
 {
+    //set cntv_tval
+    write_cntv_tval( ms_to_cntv_val(5) );
+
     //init
     routing_core0cntv_to_core0irq();
     enable_cntv();
@@ -163,8 +181,5 @@ void per_core_timer_test(void)
 }
 
 void per_core_timer_reset_everything(void){
-  //routing_core0cntv_to_core0irq();
-  //enable_cntv();
   enable_irq();
-
 }

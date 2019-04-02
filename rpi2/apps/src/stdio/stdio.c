@@ -326,7 +326,7 @@ int printf (const char *fmt, ...)
 	printed = vsprintf(printf_buf, fmt, args);
 	va_end(args);
 	for (int i = 0; i < printed; i++){
-		//Here, this is where we plug out the OS's putc
+		//Here, this is where we plug in the OS's putcs
 		display_putc( printf_buf[i] );
     serial_putc( printf_buf[i] );
 	}

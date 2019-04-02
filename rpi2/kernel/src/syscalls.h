@@ -17,7 +17,6 @@ void syscalls_init(void);
 */
 enum{
 	SVCDummy					= 0,
-	SVCDummy2					= 1,
 	//Serial
 	SVCSerialPutc			= 9,
 	SVCSerialGetc			= 10,

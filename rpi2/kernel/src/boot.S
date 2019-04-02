@@ -2,7 +2,7 @@
 	A simple bootloader for ARMv8
 
   Started off from hte bootloader here:
-      https://github.com/mmuszkow/NoOsBootstrap/tree/master/arm 
+      https://github.com/mmuszkow/NoOsBootstrap/tree/master/arm
 
 	Rafael R.O.
 */

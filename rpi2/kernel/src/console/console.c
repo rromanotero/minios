@@ -182,15 +182,7 @@ void console_begin( void ){
 				printf_video( "\n\rProcess exited with value %d", ret_val );
 			}
 
-			per_core_timer_reset_everything();
 			continue;
-		  //sched_rval = scheduler_process_create( cmd, cmd, &loader_rval );
-			//Load app binary
-			/*uint32_t rval = loader_load_app( binary_file_name, &proc_memregion, &stack_sz );
-			if(  rval != LOADER_LOAD_SUCCESS ){
-				*loader_rval = rval;				//populate loader error
-				return SCHEDULER_PROCESS_CREATE_FAILED;
-			}*/
 
 		}//end if
 	}//end while
