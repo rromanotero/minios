@@ -16,17 +16,24 @@
 
 
 
+
+
 //
 // I R Q s
 //
-void hal_cpu_irqs_start( void(*)(void) );
+void hal_cpu_irq_start( void(*)(void) );
 
 
 //
-// S V C
+// C P U
 //
+void hal_cpu_systimer_start(uint32_t, void(*)(void));
+void hal_cpu_systimer_stop(void);
+void hal_cpu_systimer_reestart( uint32_t );
+bool hal_cpu_systimer_is_pending();
 void hal_cpu_svc_start( void(*)(void) );
-
+void hal_cpu_irq_enable( void );
+void hal_cpu_irq_disable( void );
 
 ///
 ///  M E M  -  R E G I O N S
@@ -88,11 +95,11 @@ typedef struct{
 #define VIDEO_CHARACTER_VERTICAL_SPACE     4
 #define VIDEO_CHARACTER_SPACE_BEFORE_END   2*VIDEO_CHARACTER_HEIGHT + VIDEO_CHARACTER_VERTICAL_SPACE
 
-#define VIDEO_COLOR_WHITE   0xFFFF
-#define VIDEO_COLOR_GREEN 	0x07E0
-#define VIDEO_COLOR_BLUE    0x001F
-#define VIDEO_COLOR_RED     0xF800
-#define VIDEO_COLOR_BLACK   0x0000
+#define VIDEO_COLOR_WHITE   0xFFFFFF
+#define VIDEO_COLOR_GREEN 	0x00FF00
+#define VIDEO_COLOR_BLUE    0xFF0000
+#define VIDEO_COLOR_RED     0x0000FF
+#define VIDEO_COLOR_BLACK   0x000000
 
 void hal_io_init(void);
 uint32_t hal_io_video_init( void );

@@ -79,16 +79,38 @@ _hal_io_video_put_pixel_raw:
 	ldr r5, =frame_buffer_ptr
 	ldr fb, [r5]
 
-	@Set up position
-	add fb, position
-
 	@Draw Pixel
-	str color, [fb, #0]
-	str color, [fb, #2]   @This is so that letters look BOLD
+	str color, [fb, position]
+
 
 	pop {r4-r6, pc}
 
+	/*
+	*   HAL IO Video Put Pixel
+	*
+	*   void _hal_io_video_put_byte_raw(uint32_t raw_linear_position, uint8_t)
+	*
+	*  Adapted from:
+	*     https://github.com/mmuszkow/NoOsBootstrap/tree/master/arm
+	*
+	*/
+	.globl _hal_io_video_put_byte_raw
+	_hal_io_video_put_byte_raw:
+		fb    		.req r4
+		position 	.req r0
+		byte 			.req r1
 
+		push {r4-r6, lr}
+
+		@Set up the frame buffer ptr
+		ldr r5, =frame_buffer_ptr
+		ldr fb, [r5]
+
+		@Draw Pixel
+		strb byte, [fb, position]
+
+
+		pop {r4-r6, pc}
 
 @@@@@@@@@@@@@@@ VC @@@@@@@@@@@@@@
 
@@ -147,7 +169,7 @@ mb0_c8_read:
 vc_set_res:  .word 80, 0                      @ total size, code (0=req)
              .word 0x00048003, 8, 8, 640, 480 @ set physical size (640x480)
              .word 0x00048004, 8, 8, 640, 480 @ set virtual size (640x480)
-             .word 0x00048005, 4, 4, 16       @ set depth (16-bit)
+             .word 0x00048005, 4, 4, 24       @ set depth (24-bit)
              .word 0, 0, 0, 0                 @ end tag & padding
 
 vc_alloc_fb: .word 32, 0                      @ total size, code (0=req)

@@ -16,6 +16,7 @@ static uint8_t uart0_getc(void);
 static void draw_character_raw( uint32_t, uint32_t, VideoFont*, uint32_t, VideoColor );
 static void setup_fonts(void);
 static uint32_t x_y_to_raw(uint32_t, uint32_t);
+static uint32_t x_y_to_raw_byte(uint32_t, uint32_t);
 static int32_t abs(int32_t);
 static void str(uint32_t, uint32_t);
 static uint32_t ldr(uint32_t);
@@ -23,6 +24,8 @@ static void delay(uint32_t);
 
 extern uint32_t _hal_io_video_init(void);
 extern void _hal_io_video_put_pixel_raw( uint32_t, VideoColor );
+extern void _hal_io_video_put_byte_raw( uint32_t, uint8_t );
+
 
 #define X_ORIGIN 	VIDEO_CHARACTER_WIDTH
 #define Y_ORIGIN  VIDEO_CHARACTER_HEIGHT*3
@@ -36,6 +39,8 @@ uint32_t curr_y=Y_ORIGIN;
 void hal_io_init( void ){
 	fonts_init();
 }
+
+
 
 /*
 *  HAL IO Video Init
@@ -57,19 +62,28 @@ void hal_io_video_draw_image( uint8_t* buffer, uint32_t bytes, uint32_t width, u
 	//   SEE HERE:
 	//        https://engineering.purdue.edu/ece264/16au/hw/HW13
 	//
-	for(uint32_t i=0x36; i<bytes; i++){
-			uint32_t rgb1 = (((uint32_t)buffer[i])<<0) + (((uint32_t)buffer[i+1])<<8) + (((uint32_t)buffer[i+2])<<16);
-			_hal_io_video_put_pixel_raw(  x_y_to_raw(curr_x,curr_y), rgb1 );
+	curr_x = 0;
+	curr_y += height;
+	for(uint32_t i=0x36; i<width*height*3; i+=3){
 
-			 curr_x += 1;
+			uint8_t blue =  ((uint8_t)buffer[i+0]);
+			uint8_t green = ((uint8_t)buffer[i+1]);
+			uint8_t red =  ((uint8_t)buffer[i+2]);
 
-			 if( curr_x >= width ){
-				 	curr_x = X_ORIGIN;
-					curr_y += 1;
+			_hal_io_video_put_byte_raw(  x_y_to_raw_byte(curr_x+0,curr_y), red );
+			_hal_io_video_put_byte_raw(  x_y_to_raw_byte(curr_x+1,curr_y), green );
+			_hal_io_video_put_byte_raw(  x_y_to_raw_byte(curr_x+2,curr_y), blue );
+
+			 curr_x += 3;
+
+			 if( curr_x >= width*3  ){
+				 	curr_x = 0;
+					curr_y -= 1;
 		 		}
 		}
 
 		curr_x = X_ORIGIN;
+		curr_y += height;
 }
 
 /*
@@ -221,18 +235,23 @@ void hal_io_video_put_pixel( VideoXY* pos, VideoColor color ){
 
 void hal_io_clear_screen( void ){
 	for( int y=0; y<VIDEO_MAX_Y; y++ ){
-		for( int x=0; x<VIDEO_MAX_X*2; x++ ){
+		for( int x=0; x<VIDEO_MAX_X*3; x++ ){
 			_hal_io_video_put_pixel_raw(  x_y_to_raw(x,y), VIDEO_COLOR_BLACK );
 		}
 	}
 }
 
-static uint32_t x_y_to_raw(uint32_t x, uint32_t y){
-	//For some reason On a 640x480
-	//x has 640*2-1 pixels, not 640-1 vo.0v
-	#define FIXED_VIDEO_MAX_X		2*VIDEO_MAX_X
 
-	return y*FIXED_VIDEO_MAX_X + 2*x;
+static uint32_t x_y_to_raw_byte(uint32_t x, uint32_t y){
+	#define FIXED_VIDEO_MAX_X		3*VIDEO_MAX_X
+
+	return y*FIXED_VIDEO_MAX_X + x;
+}
+
+static uint32_t x_y_to_raw(uint32_t x, uint32_t y){
+	#define FIXED_VIDEO_MAX_X		3*VIDEO_MAX_X
+
+	return y*FIXED_VIDEO_MAX_X + 3*x;
 }
 
 /*

@@ -8,13 +8,14 @@
 #include <stddef.h>
 #include <stdbool.h>
 #include <stdint.h>
-#include "drivers/per_core_timer/per_core_timer.h"
+#include "irq.h"
 
 #include "kernel.h"
 #include "hal/hal.h"
 #include "console/console.h"
 #include "loader.h"
 #include "syscalls.h"
+#include "scheduler.h"
 
 #include "drivers/stdio/emb-stdio.h"			// Needed for printf
 #include "drivers/sdcard/SDCard.h"
@@ -22,12 +23,6 @@
 void kernel_init(void);
 void input_output_init(void);
 void sys_info( uint8_t* );
-
-extern void _enable_interrupts();
-
-uint32_t test2(){
-  return 0;
-}
 
 
 /*
@@ -38,9 +33,6 @@ void main(uint32_t r0, uint32_t r1, uint32_t atags){
   //Init
   kernel_init();
   input_output_init();
-
-  //Uncomment this out to see the PI's Generic Timer Tick
-  per_core_timer_test();
 
   console_begin();
 
@@ -58,7 +50,8 @@ void kernel_init(void){
   console_init();
   loader_init();
   syscalls_init();
-  //scheduler_init();
+  irq_init();
+  scheduler_init();
   //faults_init();
 
 

@@ -15,7 +15,6 @@
 #include "hal/hal.h"
 #include "syscalls.h"
 #include "drivers/stdio/emb-stdio.h"
-#include "drivers/per_core_timer/per_core_timer.h"
 
 extern void disable_irq(void);
 extern void enable_irq(void);
@@ -91,6 +90,6 @@ void syscalls_entry_point(void){
 		default:																								                             break;
 	}
 
-  enable_irq();
+  hal_cpu_irq_enable();
 
 }

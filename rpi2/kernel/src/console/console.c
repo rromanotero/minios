@@ -188,7 +188,7 @@ void console_begin( void ){
 	}//end while
 }
 
-#define MAX_FILE_SIZE	58000
+#define MAX_FILE_SIZE	700000
 uint8_t buffer_logo[MAX_FILE_SIZE];
 
 static void show_logo(void){

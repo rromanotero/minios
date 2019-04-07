@@ -8,7 +8,6 @@
 .align 4
 
 //Serial
-
 .equ	SVCSerialPutc,	  	 9
 .equ	SVCSerialGetc,		   10
 
@@ -23,13 +22,24 @@
 
 
 /*
+	Display Putc
+*/
+.globl display_putc
+display_putc:
+  push {lr}
+	svc SVCDisplayPutc
+  pop {pc}
+
+/*
 	Serial
 */
 .globl serial_putc
 serial_putc:
-  push {lr}   /* We need prologue and epilogue when Apps run in kernel mode (since kernel and app share the STack!)*/
+  push {lr}
 	svc SVCSerialPutc
   pop {pc}
+
+
 
 .globl serial_getc
 serial_getc:
@@ -50,14 +60,3 @@ serial_getc_aux:
     push {lr}
   	svc SVCSerialGetc
   	pop {pc}
-
-
-
-/*
-	Display
-*/
-.globl display_putc
-display_putc:
-  push {lr}   /* We need prologue and epilogue when Apps run in kernel mode (since kernel and app share the STack!)*/
-	svc SVCDisplayPutc
-  pop {pc}

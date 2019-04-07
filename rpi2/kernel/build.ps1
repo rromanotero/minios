@@ -30,7 +30,8 @@ Write-Host "Building..."
 	src/syscalls.c `
 	src/hal/hal_cpu.c `
 	src/hal/hal_cpu_asm.s `
-	src/irqs.c `
+	src/irq.c `
+	src/scheduler.c `
 	src/drivers/per_core_timer/per_core_timer.c `
   -o output/kernel.elf `
 	-O0	`
