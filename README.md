@@ -42,7 +42,7 @@ What exactly can you build? Still exploring this. One example is MCU robots, suc
 
 # On what platforms does it run?
 
-Currently the SAM4S Xplained Pro, but I'm currently attempting x86.
+Currently the SAM4S Xplained Pro, but I'm currently attempting Raspberry PI.
 
 
 # Compiling Source code
