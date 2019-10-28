@@ -17,9 +17,7 @@ MiniOS was originally written as an instructional OS for teaching Operating Syst
 
 The OS is intended to be delivered together with *the MiniOS Book*. A book showing step by step how to build MiniOS from scratch. So you need to have the book to make sense of this code.
 
-How to get the book? Well, the book is for the most part complete, but my co-author (Dr. Alex Aravind) and me have been busy and are still working out the final details (as of 2019). Should you want a copy for academic purposes or just for yourself to build your own OS, feel free to send me an e-mail! 
-
-Bare in mind MiniOS and the book have both been edited since the paper publications (section have been added and sections have been dropped out). So, there's some mitmatch between all the sections as described in the MiniOS papers, and the ones you'll see in the book (the main ones are still there, though). 
+How to get the book? [Here](http://embedntks.com/minios-book/MiniOS%20Book.pdf)
 
 
 # Can a microcontroller be used to teach Operating Systems?
