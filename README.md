@@ -17,7 +17,7 @@ MiniOS was originally written as an instructional OS for teaching Operating Syst
 
 The OS is intended to be delivered together with *the MiniOS Book*. A book showing step by step how to build MiniOS from scratch. So you need to have the book to make sense of this code.
 
-How to get the book? [Here](http://embedntks.com/minios-book/MiniOS%20Book.pdf)
+How to get the book? [Here](https://cubosoft-public.s3.ca-central-1.amazonaws.com/MiniOS_Book_.pdf)
 
 
 # Can a microcontroller be used to teach Operating Systems?
@@ -62,9 +62,9 @@ You'd need:
 
 Rafael Roman Otero and Alex Aravind. 2018. MiniOS: an instructional platform for teaching operating systems labs. arXiv:1811.09792, Dec 2018. [PDF here](https://arxiv.org/abs/1811.09792v2)
 
-Rafael Roman Otero and Alex Aravind. 2015. MiniOS: An Instructional Platform for Teaching Operating Systems Projects. In Proceedings of the 46th ACM Technical Symposium on Computer Science Education (SIGCSE ’15). ACM, New York, NY, USA, 430-435. [PDF here](http://embedntks.com/datastructs/papers/minios%20paper%20%28published%20version%29.pdf)
+Rafael Roman Otero and Alex Aravind. 2015. MiniOS: An Instructional Platform for Teaching Operating Systems Projects. In Proceedings of the 46th ACM Technical Symposium on Computer Science Education (SIGCSE ’15). ACM, New York, NY, USA, 430-435.
 
 This is the one about teaching computer architecture:
 
-Rafael Roman Otero and Alex Aravind. 2018. Teaching Computer Architecture Labs using a MCU Platform. In Proceedings of the 23rd Western Canadian Conference on Computing Education (WCCCE '18). ACM, New York, NY, USA, Article 3, 6 pages. [PDF here](http://embedntks.com/datastructs/papers/wccce%20teaching%20computer%20architecture%20%28published%20version%29.pdf)
+Rafael Roman Otero and Alex Aravind. 2018. Teaching Computer Architecture Labs using a MCU Platform. In Proceedings of the 23rd Western Canadian Conference on Computing Education (WCCCE '18). ACM, New York, NY, USA, Article 3, 6 pages.
 
